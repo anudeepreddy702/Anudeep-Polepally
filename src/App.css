@@ -1,0 +1,218 @@
+/* styles.css */
+body {
+  font-family: "Roboto Slab", Georgia, Times, serif;
+  margin: 0;
+  padding: 10px;
+  /* color: black; */
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #666;
+}
+
+
+header {
+  text-align: center;
+  padding: 2rem;
+  /* background-color: #ffffff; */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #444;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+main {
+  padding: 1rem;
+  margin: 15px;
+}
+
+.intro-img img {
+  box-sizing: border-box;
+  height: auto;
+  width: 20%;
+  max-width: 100%;
+  border-radius: 150px;
+  align-items: center;
+  margin: 25px;
+}
+
+#bucket-list {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#bucket-list h2 {
+  text-align: center;
+  color: #444;
+}
+
+
+#list {
+  list-style-type: disc !important;
+  padding-left: 20px !important;
+  margin: 10px 0 !important;
+}
+
+#list li {
+  font-size: 18px;
+  padding-left: 20px;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  /* Indicates the item is interactive */
+}
+
+#list li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  transition: all 0.5s ease;
+}
+
+#list li.strikethrough {
+  color: #666;
+  position: relative;
+  text-decoration: line-through;
+}
+
+#list li.strikethrough::after {
+  width: 100%;
+  /* Full width strike-through */
+}
+
+/* Hover effects */
+#list li:hover {
+  color: black;
+  /* Subtle movement on hover */
+}
+
+#list li.strikethrough:hover {
+    color: black;
+}
+
+
+
+/* For small devices (mobile phones) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    margin: 1rem;
+    padding: 0.5rem;
+  }
+
+  img {
+    width: 50%;
+    /* Reduce image size for small screens */
+    height: auto;
+  }
+}
+
+/* For tablets and medium devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    margin: 2rem;
+  }
+
+  img {
+    width: 30%;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #list li {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+}
+
+.img-container img {
+  box-sizing: border-box;
+  height: 10%;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: bottom;
+  border-radius: 40px;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.img-container-circle img {
+  box-sizing: border-box;
+  height: 10%;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: bottom;
+  border-radius: 40px;
+  clip-path: circle(40%);
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+.img-details {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.img-details:hover{
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  /* background-color: #f4f4f4; */
+}
+
+.footer-img {
+  display: flex;
+  justify-content: center; /* centers the image */
+  align-items: center;
+  overflow: hidden; /* hides the cropped parts */
+  height: 250px; /* fixed height for footer image */
+}
+
+.footer-img img {
+  width: 100%;       /* stretch horizontally */
+  height: 100%;      /* match container height */
+  object-fit: cover; /* crop top/bottom, keep proportion */
+  object-position: center; /* focus center part */
+  display: block;
+}
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
