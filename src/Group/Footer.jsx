@@ -39,7 +39,7 @@ function Footer({ darkMode, toggleMode })
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com/in/anudeep-polepally" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/polepally-anudeep" target="_blank" rel="noopener noreferrer">
                   LinkedIn
                 </a>
               </li>

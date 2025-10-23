@@ -396,7 +396,9 @@ mark {
 }
 
 .img-container-square img:hover {
-  transform:  scale(1.02);
+  transform:  scale(1.01);
+  transition: "all 0.5s ease-in-out";
+  box-shadow: 0 0 25px rgba(30, 215, 96, 0.5); 
 }
 
 .img-container-circle img {
@@ -1438,7 +1440,7 @@ footer {
 
 .menu-subtitle {
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   font-size: 0.9rem;
   color: #999;
   font-weight: 400;

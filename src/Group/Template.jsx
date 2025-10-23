@@ -228,6 +228,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Visit the Charminar in Hyderabad, Telangana, India.</li>
                     <li>Visit Golden Temple, Amritsar, India.</li>
                     <li>Have a candlelight dinner</li>
+                    <li>Visit Mt. Washington, NH</li>
                     <li>Hike Mount Washington, New Hampshire, USA</li>
                     <li>Visit Sri Lanka</li>
                     <li>Witness the sunrise at Kanyakumari, India.</li>
