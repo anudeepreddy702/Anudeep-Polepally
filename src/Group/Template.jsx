@@ -24,7 +24,7 @@ function Template({ darkMode, toggleMode }) {
             const completed = completedItems.length;
             const active = total - completed;
 
-            setCounts({
+            setCounts({ 
                 completed,
                 active,
                 total
