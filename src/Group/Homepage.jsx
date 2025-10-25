@@ -19,6 +19,11 @@ function Homepage({ darkMode, toggleMode }) {
                 I'm a passionate traveler, adventure seeker, and life enthusiast who believes
                 that the best stories are written through experiences, not possessions.
               </p>
+              <p>
+                I am from India, Specially from south part of India a state called Telangana where I have explored the most places, In Telangana State it is a previlage to have a world Heritage Site temple that kicked in the idea of exploring to places like temples.
+                
+                I got a chance to explore USA, Currently living in Fitchburg, Massachusetts.
+              </p>
             </div>
 
 

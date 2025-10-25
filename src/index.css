@@ -1329,6 +1329,228 @@ footer {
   transform-origin: center;
 }
 
+/**/
+/* Hero Introduction */
+.hero-intro {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.intro-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #F47600;
+}
+
+.intro-content {
+  text-align: left;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.intro-text strong {
+  color: #F47600;
+  font-weight: 700;
+}
+
+/* Stats Banner */
+.stats-banner {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  background: rgba(244, 118, 0, 0.05);
+  margin: 3rem 0;
+  border-radius: 15px;
+  flex-wrap: wrap;
+}
+
+.appdark .stats-banner {
+  background: rgba(244, 118, 0, 0.1);
+}
+
+.stat-box-inline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-box-inline .stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #F47600;
+  line-height: 1;
+}
+
+.stat-box-inline .stat-text {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.philosophy-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #F47600;
+}
+
+.philosophy-content {
+  font-size: 1.15rem;
+  line-height: 1.9;
+}
+
+.philosophy-content p {
+  margin-bottom: 1.5rem;
+}
+
+.philosophy-content strong {
+  color: #F47600;
+  font-size: 1.25rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* What You'll Find */
+.what-youll-find {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.what-youll-find h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Featured Story Section */
+.featured-story-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.featured-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.story-content {
+  padding: 2rem;
+}
+
+.story-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #F47600;
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.story-content em {
+  color: #F47600;
+  font-style: italic;
+}
+
+.story-highlight {
+  background: rgba(244, 118, 0, 0.1);
+  padding: 1.5rem;
+  border-left: 4px solid #F47600;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.story-highlight strong {
+  font-size: 1.2rem;
+}
+
+/* CTA Banner */
+.home-cta-banner {
+  background: linear-gradient(135deg, #F47600 0%, #D66500 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 20px;
+  margin: 4rem auto;
+  max-width: 1100px;
+}
+
+.home-cta-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-cta-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.cta-buttons-center {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary {
+  background: white;
+  color: #F47600;
+}
+
+.cta-primary:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  .stats-banner {
+    gap: 1.5rem;
+  }
+
+  .featured-story {
+    grid-template-columns: 1fr;
+  }
+
+  .what-youll-find h2,
+  .philosophy-section h2 {
+    font-size: 2rem;
+  }
+}
+/**/
+
 /* Close Button */
 .close-btn {
   position: absolute;
