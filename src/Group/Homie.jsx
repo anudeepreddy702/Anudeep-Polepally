@@ -12,7 +12,13 @@ function Homie({ darkMode, toggleMode }) {
           I believe in collecting experiences, not things. This website is my digital journal
           where I track my dreams, goals, and the incredible experiences I've had along the way.
         </p>
-        
+        <div className="story-image-homepage">
+              <img 
+                src="src/assets/43316.jpeg" 
+                alt="Andy's adventure" 
+                className="hero-image-intro"
+              />
+            </div>
         <div className="feature-grid">
           <div className="feature-item">
             <h3>🌍 Travel</h3>

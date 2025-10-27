@@ -14,32 +14,38 @@ function Homepage({ darkMode, toggleMode }) {
           <div className="about-content">
             <h1>About Me</h1>
             <div className="about-intro">
-              <h2>Hi, I'm Andeep Reddy  Polepally but you can call me Andy!👋</h2>
-              <p>
-                I'm a passionate traveler, adventure seeker, and life enthusiast who believes
-                that the best stories are written through experiences, not possessions.
+              <h2>Hi, I'm Andeep Reddy  Polepally (Andy)!👋</h2>
+
+              <p>I'm a Frontend Engineer with over 4 years of experience in crafting dynamic, responsive,
+                and user-centric web interfaces.
+              
+                My journey in software development began with a curiosity to bridge the gap between design and functionality.
+                Today, I transform complex ideas into engaging, scalable, and pixel-perfect solutions.
+                I'm passionate about usability, performance optimization, and the power of lifelong learning to deliver impactful results.
               </p>
               <p>
-                I am from India, Specially from south part of India a state called Telangana where I have explored the most places, In Telangana State it is a previlage to have a world Heritage Site temple that kicked in the idea of exploring to places like temples.
-                
-                I got a chance to explore USA, Currently living in Fitchburg, Massachusetts.
+                Let’s connect and bring great ideas to life!
               </p>
             </div>
 
-
+            <div className="img-special">
+              <img src="src/assets/IMG_2741.jpg" alt="Guitar poster" height="250px" width="100%" />
+            </div>
             <div className="about-story">
-              <h3>My Journey</h3>
+              <h3>Professional Background</h3>
+
+              <p>I hold a Master’s degree in Computer Information Systems from New England College, NH, where I honed my skills in software development, frontend architecture, and user experience (UX) design.
+                My professional focus is on creating seamless digital experiences that are both beautiful and functional.</p>
+
+              <h3>My Origin story</h3>
               <p>
-                Growing up, I always had an insatiable curiosity about the world. Every place
-                I visited, every culture I experienced, and every person I met shaped who I am today.
-                This bucket list isn't just a checklist—it's a testament to my commitment to living
-                life fully and intentionally.
+                I am originally from Telangana, a state in the southern part of India.
+                It's a region rich with history, and I grew up near a UNESCO World Heritage Site temple.
+                This sparked my lifelong passion for exploring new places, understanding different cultures, and appreciating history. </p>
+
+              <p>This curiosity has carried me across the world.
+                I've had the wonderful opportunity to explore parts of the USA and am currently based in <>Boston, Massachusetts.</>
               </p>
-
-
-              <div className="img-special">
-                <img src="src/assets/IMG_2741.jpg" alt="Guitar poster" height="250px" width="100%" />
-              </div>
               <p>
                 From the bustling streets of Times Square to the serene temples of India, from
                 learning to play guitar to experiencing the thrill of driving an excavator, each
@@ -49,16 +55,19 @@ function Homepage({ darkMode, toggleMode }) {
 
             <div className="about-philosophy">
               <h3>My Philosophy</h3>
+              <p>
+                Beyond coding, I am a passionate traveler, adventure seeker, and life enthusiast. I live by the philosophy:
+              </p>
               <blockquote>
                 "Life is not measured by the number of breaths we take, but by the moments that
                 take our breath away."
               </blockquote>
               <p>
-                I believe in pushing boundaries, stepping out of comfort zones, and embracing
-                both the big adventures and small joys. Whether it's attending a F1 race,
-                visiting all 50 US states, or simply learning to bake bread, every goal matters.
+                I believe in pushing boundaries, stepping out of comfort zones, and embracing both big adventures and small joys.
               </p>
             </div>
+
+            
 
             <div className="about-achievements">
               <h3>Milestones So Far</h3>
@@ -78,6 +87,13 @@ function Homepage({ darkMode, toggleMode }) {
               </div>
             </div>
 
+          <div className="story-image-homepage">
+              <img 
+                src="src/assets/IMG_6263.jpeg" 
+                alt="Andy's adventure" 
+                className="hero-image-intro"
+              />
+            </div>
             <div className="about-next">
               <h3>What's Next?</h3>
               <p>

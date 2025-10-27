@@ -1,7 +1,8 @@
-
+import { useNavigate } from "react-router-dom";
 import SidebarMenu from "./Sides";
 function Footer({ darkMode, toggleMode }) 
 {
+  const navigate = useNavigate();
   return (
    <>
     <SidebarMenu />
@@ -18,10 +19,10 @@ function Footer({ darkMode, toggleMode })
           <div className="footer-section">
             <h4>Navigate</h4>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/bucketlist">Bucket List</a></li>
-              <li><a href="/about">About Me</a></li>
-              <li><a href="/aboutsite">Site Info & Contact</a></li>
+              <li><button onClick={()=>navigate("/")}>Home</button></li>
+              <li><button onClick={()=>navigate("/about")}>About Me</button></li>
+              <li><button onClick={()=>navigate("/bucketlist")}>Bucket List</button></li>
+              <li><button onClick={()=>navigate("/aboutsite")}>Site Info & Contact</button></li>
             </ul>
           </div>
 
@@ -29,19 +30,19 @@ function Footer({ darkMode, toggleMode })
             <h4>Connect</h4>
             <ul>
               <li>
-                <a href="mailto:anudeepreddypolepally@gmail.com" target="_blank" rel="noopener noreferrer">
+                <button href="mailto:anudeepreddypolepally@gmail.com" target="_blank" rel="noopener noreferrer">
                   Email
-                </a>
+                </button>
               </li>
               <li>
-                <a href="https://github.com/anudeep-polepally" target="_blank" rel="noopener noreferrer">
+                <button href="https://github.com/anudeep-polepally" target="_blank" rel="noopener noreferrer">
                   GitHub
-                </a>
+                </button>
               </li>
               <li>
-                <a href="https://linkedin.com/in/polepally-anudeep" target="_blank" rel="noopener noreferrer">
+                <button onClick="https://linkedin.com/in/polepally-anudeep" target="_blank" rel="noopener noreferrer">
                   LinkedIn
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -57,6 +58,7 @@ function Footer({ darkMode, toggleMode })
 
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Andy's World. All rights reserved.</p>
+
         <p className="footer-credit">Built with passion, powered by React</p>
       </div>
     </footer>
