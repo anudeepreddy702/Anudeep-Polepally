@@ -31,9 +31,9 @@ function Template({ darkMode, toggleMode }) {
             });
         };
 
-        // Count initially and whenever the component updates
-        countItems();
-    }, []);
+        const timer = setTimeout(countItems, 0);
+  return () => clearTimeout(timer);
+}, []);
     return (
         <>
             <Navi darkMode={darkMode} toggleMode={toggleMode} />
@@ -177,7 +177,6 @@ function Template({ darkMode, toggleMode }) {
                                 height="152"
                                 frameBorder="0"
                                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                                allowFullScreen
                                 loading="lazy"
                                 title="Spotify Playlist"
                                 className="spotify-embed"

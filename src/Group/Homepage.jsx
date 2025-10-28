@@ -12,9 +12,9 @@ function Homepage({ darkMode, toggleMode }) {
       <div className="page-container">
         <section className="about-section">
           <div className="about-content">
-            <h1>About Me</h1>
+            <h2>About me & My orgin story</h2>
             <div className="about-intro">
-              <h2>Hi, I'm Andeep Reddy  Polepally (Andy)!👋</h2>
+              <h3>Hi, I'm Andeep Reddy  Polepally (Andy)!👋</h3>
 
               <p>I'm a Frontend Engineer with over 4 years of experience in crafting dynamic, responsive,
                 and user-centric web interfaces.
@@ -29,7 +29,7 @@ function Homepage({ darkMode, toggleMode }) {
             </div>
 
             <div className="img-special">
-              <img src="src/assets/IMG_2741.jpg" alt="Guitar poster" height="250px" width="100%" />
+              <img src="./src/assets/IMG_2741.jpg" alt="Posing towards the waterfalls" height="250px" width="100%" />
             </div>
             <div className="about-story">
               <h3>Professional Background</h3>

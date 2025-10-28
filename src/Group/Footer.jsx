@@ -30,17 +30,17 @@ function Footer({ darkMode, toggleMode })
             <h4>Connect</h4>
             <ul>
               <li>
-                <button href="mailto:anudeepreddypolepally@gmail.com" target="_blank" rel="noopener noreferrer">
+                <button onClick={() => window.open("mailto:anudeepreddypolepally@gmail.com","_blank","noopener noreferrer")}>
                   Email
                 </button>
               </li>
               <li>
-                <button href="https://github.com/anudeep-polepally" target="_blank" rel="noopener noreferrer">
+                <button onClick={() => window.open("https://github.com/anudeep-polepally", "_blank","noopener,noreferrer")}>
                   GitHub
                 </button>
               </li>
               <li>
-                <button onClick="https://linkedin.com/in/polepally-anudeep" target="_blank" rel="noopener noreferrer">
+                <button onClick={() => window.open("https://www.linkedin.com/in/polepally-anudeep", "_blank", "noopener,noreferrer")}>
                   LinkedIn
                 </button>
               </li>
