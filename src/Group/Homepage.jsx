@@ -29,7 +29,7 @@ function Homepage({ darkMode, toggleMode }) {
             </div>
 
             <div className="img-special">
-              <img src="./src/assets/IMG_2741.jpg" alt="Posing towards the waterfalls" height="250px" width="100%" />
+              <img src="/IMG_2741.jpg" alt="Posing looking towards the waterfalls" height="250px" width="100%" />
             </div>
             <div className="about-story">
               <h3>Professional Background</h3>
@@ -89,8 +89,8 @@ function Homepage({ darkMode, toggleMode }) {
 
           <div className="story-image-homepage">
               <img 
-                src="src/assets/IMG_6263.jpeg" 
-                alt="Andy's adventure" 
+                src="/IMG_6263.jpeg" 
+                alt="Andy's camping in car" 
                 className="hero-image-intro"
               />
             </div>

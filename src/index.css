@@ -408,6 +408,14 @@ mark {
   box-shadow: 0 0 25px rgba(30, 215, 96, 0.5); 
 }
 
+.img-container-circle {
+  width: 100%;
+  max-width: 300px; /* Adjust size as needed */
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
 .img-container-circle img {
   box-sizing: border-box;
   height: 0%;
@@ -429,7 +437,6 @@ mark {
   z-index: 10;
   position: relative;
 }
-
 .img-details {
   margin-top: 0;
   padding-top: 0;
@@ -482,7 +489,7 @@ mark {
 }
 
 .stat-item.completed .count {
-  color: #28a745;
+  color: #a72828;
 }
 
 .stat-item.active .count {
@@ -490,7 +497,7 @@ mark {
 }
 
 .stat-item.total .count {
-  color: #17a2b8;
+  color: #003b44;
 }
 
 .progress-bar {
@@ -833,7 +840,7 @@ main {
   text-align: center;
   padding: 2rem 1rem;
   margin-bottom: 0;
-  background-image: url('/src/assets/wall.png');  /* Your collage image */
+  background-image: url('/wall.png');  /* Your collage image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

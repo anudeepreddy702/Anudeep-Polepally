@@ -14,7 +14,7 @@ function Homie({ darkMode, toggleMode }) {
         </p>
         <div className="story-image-homepage">
               <img 
-                src="src/assets/43316.jpeg" 
+                src="/43316.jpeg" 
                 alt="Andy's adventure" 
                 className="hero-image-intro"
               />
@@ -40,7 +40,7 @@ function Homie({ darkMode, toggleMode }) {
           <div className="featured-story">
             <div className="story-image">
               <img 
-                src="src/assets/Maine-Andy.jpg" 
+                src="/Maine-Andy.jpg" 
                 alt="Andy's adventure" 
                 className="hero-image"
               />

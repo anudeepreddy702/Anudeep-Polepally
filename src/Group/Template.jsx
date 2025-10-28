@@ -72,7 +72,7 @@ function Template({ darkMode, toggleMode }) {
                 <h2>My Bucket List</h2>
 
                 {/* COUNTER DISPLAY */}
-                <div className="bucket-counter">
+                <div className="home-banner">
                     <div className="stat-item total">
                         <span className="count">{counts.total}</span>
                         <span className="label"> Total Goals</span>
@@ -108,7 +108,7 @@ function Template({ darkMode, toggleMode }) {
                     <div className="img-container-square">
                         <li className="strikethrough">Pose like a model for a brand</li>
                         <div className="img-details">
-                            <img src="src/assets/DSC_0311 Edited.jpg" alt="Posing listening to music on skull candy earphones" />
+                            <img src="/DSC_0311 Edited.jpg" alt="Posing listening to music on skull candy earphones" />
                             <p><mark>Tried to pose while listening to music.</mark></p>
                         </div>
                     </div>
@@ -119,7 +119,7 @@ function Template({ darkMode, toggleMode }) {
                     <div className="img-container-square">
                         <li>Attend an F1 Race</li>
                         <div className="img-details">
-                            <img src="src/assets/2025-f1-wallpapers-2-2.jpg" alt="Lando_Norris F1_Car_2025" />
+                            <img src="/2025-f1-wallpapers-2-2.jpg" alt="Lando_Norris F1_Car_2025" />
                             <p><mark>Lando Norris F1 Car 2025 - my dream team I support</mark></p>
                         </div>
                     </div>
@@ -140,7 +140,7 @@ function Template({ darkMode, toggleMode }) {
                     <div className="img-container-square">
                         <li className="strikethrough">Visit the Statue of Liberty, NY, United States</li>
                         <div className="img-details">
-                            <img src="src/assets/44072.jpg" alt="Statue of liFberty" height="250px" width="100%" />
+                            <img src="/44072.jpg" alt="Statue of liFberty" height="250px" width="100%" />
                             <p><mark>That's me, the guy in the Finisher Winter Hat, clicking pictures!</mark></p>
                         </div>
                     </div>
@@ -153,11 +153,12 @@ function Template({ darkMode, toggleMode }) {
                     <li>Attend an anonymous wedding in India</li>
                     <li>Travel to Canada</li>
                     <li>Learn swimming</li>
+                    <li>Fly in a Helicopter</li>
                     <li>Build a farmhouse with plantations and a Swimming Pool</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Visit Times Square, NY, United States</li>
                         <div className="img-details">
-                            <img src="src/assets/44150_times_square.jpg" alt="Statue of liberty" height="250px" width="100%" />
+                            <img src="/44150_times_square.jpg" alt="Times Square at Night" height="250px" width="100%" />
                             <p><mark>Yeah, that's me in the jacket. I witnessed Times Square.</mark></p>
                         </div>
                     </div>
@@ -190,7 +191,7 @@ function Template({ darkMode, toggleMode }) {
                     <div className="img-container-square">
                         <li className="strikethrough">Experience Sensitive hydraulic lever Operations of Excavator</li>
                         <div className="img-details">
-                            <img src="src/assets/FB_IMG_1494518369546.jpg" alt="Excavator Driving" height="250px" width="100%" />
+                            <img src="/FB_IMG_1494518369546.jpg" alt="Excavator Driving" height="250px" width="100%" />
                             <p><mark>pose after driving, exhausted! (vintage edit)</mark></p>
                         </div>
                     </div>
@@ -208,7 +209,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Own a second property of land on my own</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Learn to play guitar</li>
-                        <img src="src/assets/IMG-20200114-WA0019.jpg" alt="Guitar poster" height="250px" width="100%" />
+                        <img src="/IMG-20200114-WA0019.jpg" alt="Guitar poster style pose" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>Guiter Poster - old poster style picture after learing some lessons</mark></p>
                         </div>
@@ -219,7 +220,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Travel across the Golden Gate Bridge, San Francisco, United States</li>
                     <li className="strikethrough">Try to capture professional landscape photos</li>
                     <div className="img-container-square">
-                        <img src="src/assets/45817.jpeg" alt="Mountains fall colours photo" height="250px" width="100%" />
+                        <img src="/45817.jpeg" alt="Mountains fall colours photo" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>Mountains with fall colors - Stowe Mountain Resort, Stowe, VT 05672</mark></p>
                         </div>
@@ -228,13 +229,19 @@ function Template({ darkMode, toggleMode }) {
                     <li>Visit Golden Temple, Amritsar, India.</li>
                     <li>Have a candlelight dinner</li>
                     <li>Visit Mt. Washington, NH</li>
-                    <li>Hike Mount Washington, New Hampshire, USA</li>
+                    <div className="img-container-square">
+                    <li className="strikethrough">Hike Mount Washington, New Hampshire, USA</li>
+                        <img src="/47354.jpeg" alt="Mount Washington photo" height="250px" width="100%" />
+                        <div className="img-details">
+                            <p><mark>View from top of Mount Washington, NH - Live Free or Die</mark></p>
+                        </div>
+                    </div>
                     <li>Visit Sri Lanka</li>
                     <li>Witness the sunrise at Kanyakumari, India.</li>
                     <li>Get married</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Explore Singareni Collieries, Telangana, India</li>
-                        <img src="src/assets/IMG-20200216-WA0017.jpg" alt="Me and My friends looking the mining sites" height="250px" width="100%" />
+                        <img src="/IMG-20200216-WA0017.jpg" alt="Me and My friends looking the mining sites" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>My friends and I are looking at the mining sites.</mark></p>
                         </div>
@@ -256,7 +263,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Relax on Bali beaches, Indonesia</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Watch the rain from a beach or mountain.</li>
-                        <img src="src/assets/IMG_3975.jpg" alt="Eating octopus picture" height="250px" width="100%" />
+                        <img src="/IMG_3975.jpg" alt="Rain and beach picture" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>I witnessed the rain from a beach, it was phenomenal.</mark></p>
                         </div>
@@ -271,7 +278,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Drive a Tesla</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Try Octopus</li>
-                        <img src="src/assets/IMG_3492_copy.jpg" alt="Eating octopus picture" height="250px" width="100%" />
+                        <img src="/IMG_3492_copy.jpg" alt="Eating octopus picture" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>I cannot hold it but I still tried it with chopsticks.</mark></p>
                         </div>

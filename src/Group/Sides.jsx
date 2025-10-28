@@ -35,7 +35,7 @@ function SidebarMenu({ darkMode, toggleMode }) {  // Add these props
 
         <div className="sidebar-image">
           <div className="image-placeholder">
-            <img src="src/assets/IMG_6325.jpeg" alt="Guitar poster" height="500px" width="100%"/>
+            <img src="/IMG_6325.jpeg" alt="Guitar poster" height="500px" width="100%"/>
           </div>
         </div>
 
