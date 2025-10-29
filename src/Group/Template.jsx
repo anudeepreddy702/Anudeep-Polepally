@@ -102,8 +102,14 @@ function Template({ darkMode, toggleMode }) {
 
 
                 <ul id="list">
+                    <li>Attend a masterclass on photography and editing</li>
                     <li>Visit London, United Kingdom</li>
+                    <li>Drive a muscle car in the U.S.</li>
+                    <li>Drive an ATV in the desert.</li>
+                    <li className="strikethrough">Own a collectible watch</li>
                     <li>Travel an unknown distance without navigation</li>
+                    <li>Try Belgian waffles in Belgium.</li>
+                    <li>Reconnect with an old school friend.</li>
                     <li>Explore India</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Pose like a model for a brand</li>
@@ -115,6 +121,15 @@ function Template({ darkMode, toggleMode }) {
                     <li>Run a Marathon</li>
                     <li>Attend a Martin Garrix live concert</li>
                     <li>Go to Amsterdam, Netherlands</li>
+                    <li className="strikethrough">Help a friend achieve one of their dreams.</li>
+                    <li>Meet your favorite artist backstage.</li>
+                    <li>Take your sibling on a surprise trip.</li>
+                    <li>Attend a chocolate-making workshop in Belgium.</li>
+                    <li className="strikethrough">Visit a hidden waterfall in your state.</li>
+                    <li>Go to Ultra Music Festival in Miami.</li>
+                    <li>Spend a silent day reflecting on your goals.</li>
+                    <li className="strikethrough">Take a solo trip abroad.</li>
+                    <li>Trek to Valley of Flowers, Uttarakhand.</li>
                     <li>Visit Niagara Falls, NY, United States</li>
                     <div className="img-container-square">
                         <li>Attend an F1 Race</li>
@@ -147,10 +162,12 @@ function Template({ darkMode, toggleMode }) {
                     <li>Visit Yellowstone National Park, United States</li>
                     <li>Visit the Maldives</li>
                     <li>Visit all 50 US states (7  done)</li>
-                    <li>Attend a masterclass on photography and editing</li>
+                    <li>Capture a time-lapse of a city from dawn to dusk.</li>
                     <li>Learn a new language and talk fluently with a native person</li>
                     <li>Buy a car</li>
+                    <li>Create a cinematic travel short film from drone footage.</li>
                     <li>Attend an anonymous wedding in India</li>
+                    <li>Visit Ferrari World, Abu Dhabi.</li>
                     <li>Travel to Canada</li>
                     <li>Learn swimming</li>
                     <li>Fly in a Helicopter</li>
@@ -162,8 +179,10 @@ function Template({ darkMode, toggleMode }) {
                             <p><mark>Yeah, that's me in the jacket. I witnessed Times Square.</mark></p>
                         </div>
                     </div>
+                    <li className="strikethrough">Write a letter to your future self.</li>
                     <li>Meet old friends whom I had a fight with and apologize</li>
                     <li>Make a calendar with my own pics & achievements</li>
+                    <li className="strikethrough">Inspire someone to start their own bucket list.</li>
                     <li>Visit Andaman & Nicobar Islands in India and explore the coral reefs</li>
                     <li>Go off-roading</li>
                     <li>Visit Goa beaches, India</li>
@@ -188,6 +207,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Buy a property on my own</li>
                     <li className="strikethrough">Visit Ramappa Temple, UNESCO World Heritage Site, India</li>
                     <li>Climb to Tirumala Tirupati Temple, Andhra Pradesh, India</li>
+                    <li>Learn to speak Spanish fluently.</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Experience Sensitive hydraulic lever Operations of Excavator</li>
                         <div className="img-details">
@@ -215,7 +235,7 @@ function Template({ darkMode, toggleMode }) {
                         </div>
                     </div>
                     <li>Visit Lakshadweep Islands, India.</li>
-                    <li>Buy a drone</li>
+                    <li>Buy a drone and learn how to fly</li>
                     <li>Visit Yosemite National Park, United states</li>
                     <li>Travel across the Golden Gate Bridge, San Francisco, United States</li>
                     <li className="strikethrough">Try to capture professional landscape photos</li>
