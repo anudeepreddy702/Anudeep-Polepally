@@ -12,7 +12,7 @@ function Homepage({ darkMode, toggleMode }) {
       <div className="page-container">
         <section className="about-section">
           <div className="about-content">
-            <h2>About me & My orgin story</h2>
+            <h2>About me & My origin story</h2>
             <div className="about-intro">
               <h3>Hi, I'm Andeep Reddy  Polepally (Andy)!👋</h3>
 

@@ -200,7 +200,7 @@ mark {
 
 /* Enhanced Footer Styles */
 .site-footer {
-  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  background: #000000;
   color: #f5f5f5;
   padding: 3rem 2rem 1rem;
   margin: 0;
@@ -211,7 +211,7 @@ mark {
 }
 
 .appdark .site-footer {
-  background: linear-gradient(135deg, #0a0a0a 0%, #000000 100%);
+  background: #000000;
 }
 
 .footer-content {
@@ -336,30 +336,6 @@ mark {
   }
 }
 
-/* Mobile Responsive Footer */
-@media (max-width: 768px) {
-  .site-footer {
-    padding: 2rem 1rem 1rem;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .footer-links {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .footer-brand h3 {
-    font-size: 1.5rem;
-  }
-
-  .footer-section h4 {
-    font-size: 1.1rem;
-  }
-}
 
 /* For tablets and medium devices */
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -603,6 +579,10 @@ mark {
 footer {
   text-align: center;
   padding: 1rem;
+  /* --- ADDED FOR BLACK BACKGROUND --- */
+  background: black; 
+  color: white;
+  /* -------------------------------- */
 }
 
 .footer-img img {
@@ -678,7 +658,7 @@ body:has(.appdark) {
 
 /* Dark mode footer */
 .appdark footer {
-  background-color: #1a1a1a;
+  background-color: #000000; /* CHANGED to pure black */
   color: #f5f5f5;
 }
 
@@ -814,10 +794,10 @@ body:has(.appdark) {
 /* Andy Mode Toggle Button */
 .mode-toggle {
   background: #1a1a1a;
-  /* 👈 DARK BOX in light mode */
+  /* 争 DARK BOX in light mode */
   border: 2px solid #1a1a1a;
   color: #ffffff;
-  /* 👈 WHITE TEXT in light mode */
+  /* 争 WHITE TEXT in light mode */
   padding: 0.6rem 1.2rem;
   border-radius: 25px;
   cursor: pointer;
@@ -841,10 +821,10 @@ body:has(.appdark) {
 /* Dark mode - white box */
 .appdark .mode-toggle {
   background: #ffffff;
-  /* 👈 WHITE BOX in dark mode */
+  /* 争 WHITE BOX in dark mode */
   border-color: #ffffff;
   color: #1a1a1a;
-  /* 👈 DARK TEXT in dark mode */
+  /* 争 DARK TEXT in dark mode */
   box-shadow: 0 2px 8px rgba(244, 118, 0, 0.4);
 }
 
@@ -1008,7 +988,7 @@ ease;
 
 .cta-button:hover {
   background: #D66500;
-  /* 👈 Darker shade on hover */
+  /* 争 Darker shade on hover */
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(244, 118, 0, 0.5);
 }
@@ -1291,6 +1271,10 @@ footer {
   margin-top: 4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   opacity: 0.7;
+  /* --- ADDED FOR BLACK BACKGROUND --- */
+  background: black; 
+  color: white;
+  /* -------------------------------- */
 }
 
 .app-light footer {
@@ -2224,4 +2208,3 @@ footer {
     font-size: 0.9rem;
   }
 }
-
