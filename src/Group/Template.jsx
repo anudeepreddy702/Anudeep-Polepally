@@ -104,7 +104,7 @@ height="250px" width="100%" />
                     <li>Attend a masterclass on photography and editing.</li>
                     <li>Visit London, United Kingdom.</li>
                     <li>Drive a muscle car in the U.S.</li>
-                    <li>Drive an ATV in the dessert.</li>
+                    <li>Drive an ATV in the desert.</li>
                     <li className="strikethrough">Own a collectible watch.</li>
                     <li>Travel an unknown distance without navigation.</li>
                     <li>Try Belgian waffles in Belgium.</li>
@@ -146,15 +146,15 @@ height="250px" width="100%" />
                     <li>Attend a Tomorrowland festival.</li>
                     <li>Plant a tree</li>
                     <li className="strikethrough">Spend a full day without social media.</li>
-                    <li>Go wine tasting</li>
-                    <li>Drive a bus</li>
+                    <li>Go wine tasting.</li>
+                    <li>Drive a bus.</li>
                     <li className="strikethrough">Make my own icecream.</li>
                     <li>Compliment a stranger genuinely.</li>
                     <li>Visit Alaska, AK, United States.</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Visit the Statue of Liberty, NY, United States.</li>
                         <div className="img-details">
-                            <img src="/44072.jpg" alt="Statue of liFberty" height="250px" width="100%" />
+                            <img src="/44072.jpg" alt="Statue of liberty" height="250px" width="100%" />
                             <p><mark>That's me, the guy in the Finisher Winter Hat, clicking pictures!</mark></p>
                         </div>
                     </div>
@@ -217,7 +217,7 @@ height="250px" width="100%" />
                         <li className="strikethrough">Learn to play guitar.</li>
                         <img src="/IMG-20200114-WA0019.jpg" alt="Guitar poster style pose" height="250px" width="100%" />
                         <div className="img-details">
-                            <p><mark>Guiter Poster - old poster style picture after learing some lessons.</mark></p>
+                            <p><mark>Guitar Poster - old poster style picture after learning some lessons.</mark></p>
                         </div>
                     </div>
                     <li>Visit Lakshadweep Islands, India.</li>
@@ -227,23 +227,32 @@ height="250px" width="100%" />
                     <li>Retire early and live off investments.</li>
                     <li className="strikethrough">Watch fireworks from a rooftop.</li>
                     <li>Surprise someone with flowers.</li>
+                    <li>Get an autograph.</li>
+                    <li className="strikethrough">Visit your school on special day and meet teachers and friends.</li>
                     <li>Attend a traditional Indian wedding in a different state.</li>
-                    <li>Visit a lighthouse at night</li>
+                    <li>Arrange or cook food for 15-20 guests</li>
                     <li>Stay in a cozy Airbnb for one night.</li>
+                    <li>Design a house according to my liking.</li>
+                    <li>Go to a drive-in theatre.</li>
                     <li>Walk through the foggy streets early in the morning.</li>
                     <li>Make a vision board of my life inspired by movies.</li>
                     <li className="strikethrough">Make a Greeting Card Handmade.</li>
                     <li>Visit Yosemite National Park, United states.</li>
                     <li>Travel across the Golden Gate Bridge, San Francisco, United States.</li>
+                    <li className="strikethrough">Do a photoshoot</li>
                     <li>Make a DIY scrapbook.</li>
-                    <li className="strikethrough">Try to capture professional landscape photos.</li>
                     <div className="img-container-square">
+                    <li className="strikethrough">Try to capture professional landscape photos.</li>
                         <img src="/45817.jpeg" alt="Mountains fall colours photo" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>Mountains with fall colors - Stowe Mountain Resort, Stowe, VT 05672.</mark></p>
                         </div>
                     </div>
                     <li>Visit the Charminar in Hyderabad, Telangana, India.</li>
+                    <li>Visit a lighthouse at night.</li>
+                    <li>Give a speech infront of 100+ people.</li>
+                    <li>Bake bread from scratch.</li>
+                    <li>Get an autograph from Martin Garrix.</li>
                     <li>Visit Golden Temple, Amritsar, India.</li>
                     <li>Visit a new city solo and talk to a stranger.</li>
                     <li className="strikethrough">Visit a nearby waterfall or lake.</li>
@@ -254,6 +263,7 @@ height="250px" width="100%" />
                     <li>Try digital art or doodling.</li>
                     <li>Stay in a forest for one night alone.</li>
                     <li>Go to a movie theatre alone and enjoy watching a movie.</li>
+                    <li className="strikethrough">Fall in love.</li>
                     <li>Have a candlelight dinner.</li>
                     <li>Brew my own beer or cider.</li>
                     <div className="img-container-square">
@@ -270,9 +280,12 @@ height="250px" width="100%" />
                     <li className="strikethrough">Be a mentor to a young person outside of a professional setting.</li>
                     <li>Buy a suit that is custom-tailored for me.</li>
                     <li>Own rental properties in multiple cities.</li>
+                    <li>Learn and try to do a backflip.</li>
                     <li>Host a dinner for 10 close friends.</li>
+                    <li>Milk a cow/buffalo.</li>
                     <li>Witness the sunrise at Kanyakumari, India.</li>
                     <li>Get married.</li>
+                    <li>Do a huge zipline.</li>
                     <li>Plant 100 trees in your lifetime.</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Explore Singareni Collieries, Telangana, India.</li>
@@ -318,7 +331,7 @@ height="250px" width="100%" />
                     <li className="strikethrough">Enjoy Hyderabadi biryani at paradise hotel.</li>
                     <li>Develop a private party hub on one of the properties I own.</li>
                     <li>Own my own bus.</li>
-                    <li>Go dessert safari in Jaisalmer, India.</li>
+                    <li>Go desert safari in Jaisalmer, India.</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Try Octopus.</li>
                         <img src="/IMG_3492_copy.jpg" alt="Eating octopus picture" height="250px" width="100%" />
@@ -333,7 +346,14 @@ height="250px" width="100%" />
                     <li>Visit the Pyramids of Giza, Egypt.</li>
                     <li className="strikethrough">Visit Chilkur Balaji Temple, Hyderabad, India.</li>
                     <li>Visit Sabarimala Temple, Kerala, India.</li>
-                    <li>Go off-roading in Rajasthan dessert.</li>
+                    <li>Go off-roading in Rajasthan desert.</li>
+                    <div className="img-container-square">
+                    <li className="strikethrough">Go leaf peeping in New England.</li>
+                    <img src="/Andy_colors.jpg" alt="Mountains and andy with fall colours photo" height="250px" width="100%" />
+                    <div className="img-details">
+                            <p><mark>Exoloring Fall Colors at Acadia National Park, ME.</mark></p>
+                        </div>
+                    </div>
                     <li>Have a whiskey collection.</li>
                     <li>Go on a cruise.</li>
                     <li>Camp under the Northern Lights in Iceland.</li>

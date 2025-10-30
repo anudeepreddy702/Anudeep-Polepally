@@ -14,7 +14,7 @@ function Homepage({ darkMode, toggleMode }) {
           <div className="about-content">
             <h2>About me & My origin story</h2>
             <div className="about-intro">
-              <h3>Hi, I'm Andeep Reddy  Polepally (Andy)!👋</h3>
+              <h3>Hi, I'm Anudeep Reddy  Polepally (Andy)!👋</h3>
 
               <p>I'm a Frontend Engineer with over 4 years of experience in crafting dynamic, responsive,
                 and user-centric web interfaces.

@@ -8,6 +8,14 @@ function Footer({ darkMode, toggleMode }) {
       <footer className="site-footer">
         <div className="footer-content">
           <div className="footer-brand">
+            {/* Logo Image */}
+            <div className="footer-logo">
+              <img 
+                src="/A.png" 
+                alt="Andy's World Logo" 
+                className="brand-logo"
+              />
+            </div>
             <h3>Andy's World</h3>
             <p className="footer-tagline">
               <mark>It's an Andy Thing</mark>
