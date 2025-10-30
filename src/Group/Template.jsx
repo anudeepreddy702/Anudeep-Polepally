@@ -24,7 +24,7 @@ function Template({ darkMode, toggleMode }) {
             const completed = completedItems.length;
             const active = total - completed;
 
-            setCounts({ 
+            setCounts({
                 completed,
                 active,
                 total
@@ -32,8 +32,8 @@ function Template({ darkMode, toggleMode }) {
         };
 
         const timer = setTimeout(countItems, 0);
-  return () => clearTimeout(timer);
-}, []);
+        return () => clearTimeout(timer);
+    }, []);
     return (
         <>
             <Navi darkMode={darkMode} toggleMode={toggleMode} />
@@ -41,35 +41,31 @@ function Template({ darkMode, toggleMode }) {
             <div className="page-container">
                 {/* Hero with background image */}
                 <section className="hero-section">
-                    <h1 className="hero-title">Welcome to My Journey</h1>
+                    <h1 className="hero-title">Welcome to My Journey: The Ultimate Quest</h1>
                     <p className="hero-subtitle">Exploring the world, one adventure at a time</p>
 
                 </section>
             </div>
             <div className="bucket-intro">
-                <p className="intro-text">
-                    This is my living document of dreams, adventures, and experiences I want to collect throughout my lifetime.
-                    Each item represents a commitment to living fully, exploring boldly, and creating memories that matter.
-                </p>
-                <div className="intro-stats">
-                    <div className="stat-box">
-                        <h3>Why a Bucket List?</h3>
-                        <p>
-                            Life is meant to be experienced, not just observed. This list keeps me accountable,
-                            motivated, and constantly seeking new horizons. Every checked item is a story worth telling.
-                        </p>
-                    </div>
-                    <div className="stat-box">
-                        <h3>The Journey</h3>
-                        <p>
-                            From tasting exotic foods to exploring ancient temples, from learning new skills to
-                            conquering fears - this list represents who I am and who I'm becoming.
-                        </p>
-                    </div>
+                <div className="homepage-content">
+                    <h3>Why a Bucket List?</h3>
+
+                    <p>
+                        I started writing this list back when I was feeling the kind of stress that comes from just observing life, not living it. Before I knew it, a simple list of "things to do" exploded into a constantly evolving document of goals.
+                    </p>
+                <div className="img-special">
+                    <img src="/IMG_6721945.jpg" alt="Posing looking towards the waterfalls" height="250px" width="100%" />
+                </div>
+                    <p>
+                        This is my living document of dreams, adventures, and experiences I want to collect throughout my lifetime. Each item represents a commitment to living fully, exploring boldly, and creating memories that matter.
+                    </p>
+                <p>
+                    Crossing off a goal is a feeling like no other. While I always strive to capture that moment with a picture, sometimes the experience is too good to pause for the camera, and I simply choose to savor the moment instead.
+                    </p>
                 </div>
             </div>
             <section id="bucket-list">
-                <h2>My Bucket List</h2>
+                <h2>The Journey So Far..</h2>
 
                 {/* COUNTER DISPLAY */}
                 <div className="home-banner">
@@ -181,25 +177,25 @@ function Template({ darkMode, toggleMode }) {
                     </div>
                     <li className="strikethrough">Write a letter to your future self.</li>
                     <li>Meet old friends whom I had a fight with and apologize.</li>
-                    <li>Make a calendar with my own pics & achievements</li>
+                    <li>Make a calendar with my own pics & achievements.</li>
                     <li className="strikethrough">Inspire someone to start their own bucket list.</li>
-                    <li>Visit Andaman & Nicobar Islands in India and explore the coral reefs</li>
-                    <li>Go off-roading</li>
-                    <li>Visit Goa beaches, India</li>
-                    <li>Restore a bike to its old glory</li>
-                    <li>Buy a property on my own</li>
-                    <li className="strikethrough">Visit Ramappa Temple, UNESCO World Heritage Site, India</li>
-                    <li>Climb to Tirumala Tirupati Temple, Andhra Pradesh, India</li>
+                    <li>Visit Andaman & Nicobar Islands in India and explore the coral reefs.</li>
+                    <li>Go off-roading.</li>
+                    <li>Visit Goa beaches, India.</li>
+                    <li>Restore a bike to its old glory.</li>
+                    <li>Buy a property on my own.</li>
+                    <li className="strikethrough">Visit Ramappa Temple, UNESCO World Heritage Site, India.</li>
+                    <li>Climb to Tirumala Tirupati Temple, Andhra Pradesh, India.</li>
                     <li>Learn to speak Spanish fluently.</li>
                     <div className="img-container-square">
-                        <li className="strikethrough">Experience Sensitive hydraulic lever Operations of Excavator</li>
+                        <li className="strikethrough">Experience Sensitive hydraulic lever Operations of Excavator.</li>
                         <div className="img-details">
                             <img src="/FB_IMG_1494518369546.jpg" alt="Excavator Driving" height="250px" width="100%" />
-                            <p><mark>pose after driving, exhausted! (vintage edit)</mark></p>
+                            <p><mark>pose after driving, exhausted! (vintage edit).</mark></p>
                         </div>
                     </div>
-                    <li>Witness the Taj Mahal at sunrise</li>
-                    <li>Explore a ghost town</li>
+                    <li>Witness the Taj Mahal at sunrise.</li>
+                    <li>Explore a ghost town.</li>
                     <li>Walk through the old Delhi lanes of Chandni Chowk, India.</li>
                     <li className="about-philosophy">
                         Visit Dhanushkodi, Tamilnadu.
@@ -208,34 +204,34 @@ function Template({ darkMode, toggleMode }) {
                         </blockquote>
                     </li>
                     <li>Visit the Gateway of India.</li>
-                    <li className="strikethrough">Try street food in Delhi, India</li>
-                    <li>Own a second property of land on my own</li>
+                    <li className="strikethrough">Try street food in Delhi, India.</li>
+                    <li>Own a second property of land on my own.</li>
                     <div className="img-container-square">
-                        <li className="strikethrough">Learn to play guitar</li>
+                        <li className="strikethrough">Learn to play guitar.</li>
                         <img src="/IMG-20200114-WA0019.jpg" alt="Guitar poster style pose" height="250px" width="100%" />
                         <div className="img-details">
-                            <p><mark>Guiter Poster - old poster style picture after learing some lessons</mark></p>
+                            <p><mark>Guiter Poster - old poster style picture after learing some lessons.</mark></p>
                         </div>
                     </div>
                     <li>Visit Lakshadweep Islands, India.</li>
-                    <li>Buy a drone and learn how to fly</li>
-                    <li>Visit Yosemite National Park, United states</li>
-                    <li>Travel across the Golden Gate Bridge, San Francisco, United States</li>
-                    <li className="strikethrough">Try to capture professional landscape photos</li>
+                    <li>Buy a drone and learn how to fly.</li>
+                    <li>Visit Yosemite National Park, United states.</li>
+                    <li>Travel across the Golden Gate Bridge, San Francisco, United States.</li>
+                    <li className="strikethrough">Try to capture professional landscape photos.</li>
                     <div className="img-container-square">
                         <img src="/45817.jpeg" alt="Mountains fall colours photo" height="250px" width="100%" />
                         <div className="img-details">
-                            <p><mark>Mountains with fall colors - Stowe Mountain Resort, Stowe, VT 05672</mark></p>
+                            <p><mark>Mountains with fall colors - Stowe Mountain Resort, Stowe, VT 05672.</mark></p>
                         </div>
                     </div>
                     <li>Visit the Charminar in Hyderabad, Telangana, India.</li>
                     <li>Visit Golden Temple, Amritsar, India.</li>
-                    <li>Have a candlelight dinner</li>
-                    <li>Attend a traditional Indian wedding in a different state</li>
+                    <li>Have a candlelight dinner.</li>
+                    <li>Attend a traditional Indian wedding in a different state.</li>
                     <li>Brew my own beer or cider.</li>
-                    <li>Visit Mt. Washington, NH</li>
+                    <li>Visit Mt. Washington, NH.</li>
                     <div className="img-container-square">
-                    <li className="strikethrough">Hike Mount Washington, New Hampshire, USA.</li>
+                        <li className="strikethrough">Hike Mount Washington, New Hampshire, USA.</li>
                         <img src="/47354.jpeg" alt="Mount Washington photo" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>View from top of Mount Washington, NH - Live Free or Die.</mark></p>
@@ -254,27 +250,27 @@ function Template({ darkMode, toggleMode }) {
                     <li>Get married.</li>
                     <li>Plant 100 trees in your lifetime.</li>
                     <div className="img-container-square">
-                        <li className="strikethrough">Explore Singareni Collieries, Telangana, India</li>
+                        <li className="strikethrough">Explore Singareni Collieries, Telangana, India.</li>
                         <img src="/IMG-20200216-WA0017.jpg" alt="Me and My friends looking the mining sites" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>My friends and I are looking at the mining sites.</mark></p>
                         </div>
                     </div>
                     <li>Visit Nallamala Forest, Telangana, India.</li>
-                    <li className="strikethrough">Try Bamboo Chicken at Araku Valley, Andhra Pradesh, India</li>
-                    <li>Watch a live cricket match in a Stadium</li>
-                    <li>Camp under the stars in Ladakh, India</li>
-                    <li>Witness the cherry blossom festival in Japan</li>
-                    <li>Visit Mount Rushmore National Memorial, SD, United States</li>
-                    <li>Drive a tractor</li>
-                    <li className="strikethrough">Trek to Pandavula Gutta caves, Telangana, India</li>
-                    <li>Try and learn Skateboarding</li>
-                    <li>Explore the Grand Palace, Bangkok</li>
-                    <li>Explore mountain roads of Colorado, USA</li>
-                    <li>Explore wildlife sanctuaries in Madhya Pradesh, India</li>
-                    <li className="strikethrough">Try chicken shawarma</li>
+                    <li className="strikethrough">Try Bamboo Chicken at Araku Valley, Andhra Pradesh, India.</li>
+                    <li>Watch a live cricket match in a Stadium.</li>
+                    <li>Camp under the stars in Ladakh, India.</li>
+                    <li>Witness the cherry blossom festival in Japan.</li>
+                    <li>Visit Mount Rushmore National Memorial, SD, United States.</li>
+                    <li>Drive a tractor.</li>
+                    <li className="strikethrough">Trek to Pandavula Gutta caves, Telangana, India.</li>
+                    <li>Try and learn Skateboarding.</li>
+                    <li>Explore the Grand Palace, Bangkok.</li>
+                    <li>Explore mountain roads of Colorado, USA.</li>
+                    <li>Explore wildlife sanctuaries in Madhya Pradesh, India.</li>
+                    <li className="strikethrough">Try chicken shawarma.</li>
                     <li>Attend Bonalu festival in Telangana, India.</li>
-                    <li>Relax on Bali beaches, Indonesia</li>
+                    <li>Relax on Bali beaches, Indonesia.</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Watch the rain from a beach or mountain.</li>
                         <img src="/IMG_3975.jpg" alt="Rain and beach picture" height="250px" width="100%" />
@@ -282,41 +278,41 @@ function Template({ darkMode, toggleMode }) {
                             <p><mark>I witnessed the rain from a beach, it was phenomenal.</mark></p>
                         </div>
                     </div>
-                    <li>Learn coding and build a personal website</li>
-                    <li>Visit Marina Bay Sands SkyPark, Singapore</li>
-                    <li>Explore Jaipur’s Pink City, India</li>
-                    <li>Take a houseboat ride in Alleppey, Kerala, India</li>
+                    <li className="strikethrough">Learn coding and build a personal website.</li>
+                    <li>Visit Marina Bay Sands SkyPark, Singapore.</li>
+                    <li>Explore Jaipur’s Pink City, India.</li>
+                    <li>Take a houseboat ride in Alleppey, Kerala, India.</li>
                     <li>Visit the IT capital of India, Bengaluru,India.</li>
-                    <li className="strikethrough">Visit the Thousand Pillar Temple, Telangana, India</li>
+                    <li className="strikethrough">Visit the Thousand Pillar Temple, Telangana, India.</li>
                     <li>Visit the Lepakshi temple in Andhra Pradesh, India.</li>
-                    <li>Drive a Tesla</li>
-                    <li>Stay in a 5-star hotel</li>
-                    <li className="strikethrough">Drink palm water</li>
-                    <li>Skydiving over Dubai, UAE</li>
-                    <li>Ride the world’s fastest roller coaster in Abu Dhabi, UAE</li>
-                    <li className="strikethrough">Enjoy Hyderabadi biryani at paradise hotel</li>
-                    <li>Develop a private party hub on one of the properties I own</li>
-                    <li>Own my own bus</li>
-                    <li>Go dessert safari in Jaisalmer, India</li>
+                    <li>Drive a Tesla.</li>
+                    <li>Stay in a 5-star hotel.</li>
+                    <li className="strikethrough">Drink palm water.</li>
+                    <li>Skydiving over Dubai, UAE.</li>
+                    <li>Ride the world’s fastest roller coaster in Abu Dhabi, UAE.</li>
+                    <li className="strikethrough">Enjoy Hyderabadi biryani at paradise hotel.</li>
+                    <li>Develop a private party hub on one of the properties I own.</li>
+                    <li>Own my own bus.</li>
+                    <li>Go dessert safari in Jaisalmer, India.</li>
                     <div className="img-container-square">
-                        <li className="strikethrough">Try Octopus</li>
+                        <li className="strikethrough">Try Octopus.</li>
                         <img src="/IMG_3492_copy.jpg" alt="Eating octopus picture" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>I cannot hold it but I still tried it with chopsticks.</mark></p>
                         </div>
                     </div>
-                    <li>Climb Mount Fuji, Japan</li>
-                    <li>Learn to bake bread</li>
+                    <li>Climb Mount Fuji, Japan.</li>
+                    <li>Learn to bake bread.</li>
                     <li>Explore the ruins of Hampi, Karnataka.</li>
-                    <li>Fly business class</li>
-                    <li>Visit the Pyramids of Giza, Egypt</li>
-                    <li className="strikethrough">Visit Chilkur Balaji Temple, Hyderabad, India</li>
-                    <li>Visit Sabarimala Temple, Kerala, India</li>
-                    <li>Go off-roading in Rajasthan dessert</li>
-                    <li>Have a whiskey collection</li>
-                    <li>Go on a cruise</li>
-                    <li>Camp under the Northern Lights in Iceland</li>
-                    <li>Learn to make jalebi in a traditional Indian sweet shop</li>
+                    <li>Fly business class.</li>
+                    <li>Visit the Pyramids of Giza, Egypt.</li>
+                    <li className="strikethrough">Visit Chilkur Balaji Temple, Hyderabad, India.</li>
+                    <li>Visit Sabarimala Temple, Kerala, India.</li>
+                    <li>Go off-roading in Rajasthan dessert.</li>
+                    <li>Have a whiskey collection.</li>
+                    <li>Go on a cruise.</li>
+                    <li>Camp under the Northern Lights in Iceland.</li>
+                    <li>Learn to make jalebi in a traditional Indian sweet shop.</li>
                     <li className="strikethrough">
                         Make a playlist that represents your mood or year.
                         <blockquote className="spotify-block">
