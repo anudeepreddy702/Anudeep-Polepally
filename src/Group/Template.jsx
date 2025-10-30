@@ -54,19 +54,21 @@ function Template({ darkMode, toggleMode }) {
                         I started writing this list back when I was feeling the kind of stress that comes from just observing life, not living it. Before I knew it, a simple list of "things to do" exploded into a constantly evolving document of goals.
                     </p>
                 <div className="img-special">
-                    <img src="/IMG_6721945.jpg" alt="Posing looking towards the waterfalls" height="250px" width="100%" />
+                    <img src="/IMG_945151.jpg" alt="Posing looking towards the waterfalls" height="250px" width="100%" />
                 </div>
                     <p>
-                        This is my living document of dreams, adventures, and experiences I want to collect throughout my lifetime. Each item represents a commitment to living fully, exploring boldly, and creating memories that matter.
+                        This is my living document of dreams, adventures, and experiences I want to collect throughout my lifetime.
+                         Each item represents a commitment to living fully, exploring boldly, and creating memories that matter.
                     </p>
                 <p>
-                    Crossing off a goal is a feeling like no other. While I always strive to capture that moment with a picture, sometimes the experience is too good to pause for the camera, and I simply choose to savor the moment instead.
-                    </p>
+                    Crossing off a goal is a feeling like no other. 
+                    While I always strive to capture that moment with a picture, 
+                    sometimes the experience is too good to pause for the camera, and I simply choose to savor the moment instead. 
+                </p>
                 </div>
             </div>
             <section id="bucket-list">
                 <h2>The Journey So Far..</h2>
-
                 {/* COUNTER DISPLAY */}
                 <div className="home-banner">
                     <div className="stat-item total">
@@ -196,6 +198,10 @@ function Template({ darkMode, toggleMode }) {
                     </div>
                     <li>Witness the Taj Mahal at sunrise.</li>
                     <li>Explore a ghost town.</li>
+                    <li className="strikethrough">Make a handmade gift.</li>
+                    <li>Visit Thailand.</li>
+                    <li>Achieve my ideal weight according to BMI</li>
+                    <li>Learn to do a Wheelie on a bike.</li>
                     <li>Walk through the old Delhi lanes of Chandni Chowk, India.</li>
                     <li className="about-philosophy">
                         Visit Dhanushkodi, Tamilnadu.
@@ -215,8 +221,11 @@ function Template({ darkMode, toggleMode }) {
                     </div>
                     <li>Visit Lakshadweep Islands, India.</li>
                     <li>Buy a drone and learn how to fly.</li>
+                    <li className="strikethrough">Make a Greeting Card Handmade.</li>
                     <li>Visit Yosemite National Park, United states.</li>
+                    <li>Learn and try snow skiing on real mountain slopes</li>
                     <li>Travel across the Golden Gate Bridge, San Francisco, United States.</li>
+                    <li>Make a DIY scrapbook.</li>
                     <li className="strikethrough">Try to capture professional landscape photos.</li>
                     <div className="img-container-square">
                         <img src="/45817.jpeg" alt="Mountains fall colours photo" height="250px" width="100%" />
@@ -229,7 +238,6 @@ function Template({ darkMode, toggleMode }) {
                     <li>Have a candlelight dinner.</li>
                     <li>Attend a traditional Indian wedding in a different state.</li>
                     <li>Brew my own beer or cider.</li>
-                    <li>Visit Mt. Washington, NH.</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Hike Mount Washington, New Hampshire, USA.</li>
                         <img src="/47354.jpeg" alt="Mount Washington photo" height="250px" width="100%" />

@@ -68,6 +68,7 @@ main {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
+  margin-top: 0;
 }
 
 .Wallposter {
@@ -951,6 +952,7 @@ ease;
   object-position: center;
   display: block;
   transition: transform 0.3s ease;
+
 }
 
 .hero-image:hover {
@@ -1359,10 +1361,13 @@ footer {
   /* Centers the image */
   border-radius: 15px;
   margin-bottom: 0.5rem;
+  
 }
 
 .img-special:hover {
   transform: scale(1.01);
+  
+  
 }
 
 /* ========================================
