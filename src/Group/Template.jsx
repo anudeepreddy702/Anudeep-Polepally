@@ -53,8 +53,9 @@ function Template({ darkMode, toggleMode }) {
                     <p>
                         I started writing this list back when I was feeling the kind of stress that comes from just observing life, not living it. Before I knew it, a simple list of "things to do" exploded into a constantly evolving document of goals.
                     </p>
-                <div className="img-special">
-                    <img src="/IMG_945151.jpg" alt="Posing looking towards the waterfalls" height="250px" width="100%" />
+          <div className="story-image-homepage">
+                    <img src="/IMG_945151.jpg" alt="Posing looking towards the waterfalls" className="hero-image-intro"
+height="250px" width="100%" />
                 </div>
                     <p>
                         This is my living document of dreams, adventures, and experiences I want to collect throughout my lifetime.
@@ -220,10 +221,19 @@ function Template({ darkMode, toggleMode }) {
                         </div>
                     </div>
                     <li>Visit Lakshadweep Islands, India.</li>
+                    <li className="strikethrough">Take a long walk listening music.</li>
                     <li>Buy a drone and learn how to fly.</li>
+                    <li>Learn and try snow skiing on real mountain slopes.</li>
+                    <li>Retire early and live off investments.</li>
+                    <li className="strikethrough">Watch fireworks from a rooftop.</li>
+                    <li>Surprise someone with flowers.</li>
+                    <li>Attend a traditional Indian wedding in a different state.</li>
+                    <li>Visit a lighthouse at night</li>
+                    <li>Stay in a cozy Airbnb for one night.</li>
+                    <li>Walk through the foggy streets early in the morning.</li>
+                    <li>Make a vision board of my life inspired by movies.</li>
                     <li className="strikethrough">Make a Greeting Card Handmade.</li>
                     <li>Visit Yosemite National Park, United states.</li>
-                    <li>Learn and try snow skiing on real mountain slopes</li>
                     <li>Travel across the Golden Gate Bridge, San Francisco, United States.</li>
                     <li>Make a DIY scrapbook.</li>
                     <li className="strikethrough">Try to capture professional landscape photos.</li>
@@ -235,8 +245,16 @@ function Template({ darkMode, toggleMode }) {
                     </div>
                     <li>Visit the Charminar in Hyderabad, Telangana, India.</li>
                     <li>Visit Golden Temple, Amritsar, India.</li>
+                    <li>Visit a new city solo and talk to a stranger.</li>
+                    <li className="strikethrough">Visit a nearby waterfall or lake.</li>
+                    <li>Attend a workshop or webinar.</li>
+                    <li>Create my own film script from all the films I’ve seen.</li>
+                    <li>Trip to a country for 30 days.</li>
+                    <li className="strikethrough">Walk in rain and listen to rain sounds.</li>
+                    <li>Try digital art or doodling.</li>
+                    <li>Stay in a forest for one night alone.</li>
+                    <li>Go to a movie theatre alone and enjoy watching a movie.</li>
                     <li>Have a candlelight dinner.</li>
-                    <li>Attend a traditional Indian wedding in a different state.</li>
                     <li>Brew my own beer or cider.</li>
                     <div className="img-container-square">
                         <li className="strikethrough">Hike Mount Washington, New Hampshire, USA.</li>
@@ -253,7 +271,6 @@ function Template({ darkMode, toggleMode }) {
                     <li>Buy a suit that is custom-tailored for me.</li>
                     <li>Own rental properties in multiple cities.</li>
                     <li>Host a dinner for 10 close friends.</li>
-                    <li>Retire early and live off investments.</li>
                     <li>Witness the sunrise at Kanyakumari, India.</li>
                     <li>Get married.</li>
                     <li>Plant 100 trees in your lifetime.</li>

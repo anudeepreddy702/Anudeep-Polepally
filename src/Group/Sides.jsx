@@ -47,6 +47,7 @@ function SidebarMenu({ darkMode, toggleMode }) {  // Add these props
             >
               <span className="menu-number">I</span>
               <span className="menu-text">HOME</span>
+              <span className="menu-subtitle">Intro</span>
             </div>
 
             <div 
