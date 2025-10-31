@@ -251,6 +251,13 @@ height="250px" width="100%" />
                     <li>Visit the Charminar in Hyderabad, Telangana, India.</li>
                     <li>Visit a lighthouse at night.</li>
                     <li>Give a speech infront of 100+ people.</li>
+                    <div className="img-container-square">
+                    <li className="strikethrough">Play with a icicle which is formed naturally from dripping water freezing.</li>
+                    <img src="/Snow-sword.jpg" alt="Mountains fall colours photo" height="250px" width="100%" />
+                    <div className="img-details">
+                            <p><mark>On a snowy ground, holding a long icicle with both hands as if it were a sword.</mark></p>
+                        </div>
+                    </div>
                     <li>Bake bread from scratch.</li>
                     <li>Get an autograph from Martin Garrix.</li>
                     <li>Visit Golden Temple, Amritsar, India.</li>

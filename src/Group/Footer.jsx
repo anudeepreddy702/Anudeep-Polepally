@@ -18,7 +18,7 @@ function Footer({ darkMode, toggleMode }) {
             </div>
             <h3>Andy's World</h3>
             <p className="footer-tagline">
-              <mark>It's an Andy Thing</mark>
+              <mark>It's an Andy Polepally Thing</mark>
             </p>
           </div>
 
