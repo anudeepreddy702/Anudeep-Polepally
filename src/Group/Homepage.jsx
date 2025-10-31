@@ -36,6 +36,16 @@ function Homepage({ darkMode, toggleMode }) {
 
               <p>I hold a Master’s degree in Computer Information Systems from New England College, NH, where I honed my skills in software development, frontend architecture, and user experience (UX) design.
                 My professional focus is on creating seamless digital experiences that are both beautiful and functional.</p>
+              <p>
+                Professionally, I specialize in building scalable, responsive, and visually refined web applications that combine performance and aesthetics.
+                My expertise lies in React.js, JavaScript (ES6+), TypeScript, and modern UI frameworks — crafting seamless interfaces that enhance both usability and engagement.</p>
+
+              <p>I’m passionate about translating complex business requirements into elegant, intuitive user experiences, ensuring every design decision is purposeful. 
+                My approach blends engineering precision, creative design thinking, and data-driven insights to deliver impactful digital products that align with both user needs and organizational goals.</p>
+
+              <p>Beyond coding, I continuously explore modern web trends, accessibility standards, and performance optimization techniques,
+                 aiming to elevate front-end craftsmanship and create experiences that truly connect people with technology.
+              </p>
 
               <h3>My Origin story</h3>
               <p>
@@ -101,6 +111,10 @@ function Homepage({ darkMode, toggleMode }) {
                 concert, running a marathon, and exploring more of India's incredible heritage sites.
                 I'm also passionate about photography, entrepreneurship, and building meaningful
                 connections with people around the world.
+              </p>
+              <p>
+                As I continue growing both personally and professionally, I aim to blend creativity with technology building experiences that inspire, empower, and bring people together.
+                 Every new step is a story in progress, and I’m excited to keep discovering, creating, and sharing what comes next.
               </p>
               <p>
                 Join me on this journey, and let's inspire each other to live life without regrets!

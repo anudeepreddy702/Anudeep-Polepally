@@ -1037,7 +1037,6 @@ ease;
 
 .intro-section h2 {
   font-size: 5rem;
-  
   font-weight: 700;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -1046,7 +1045,7 @@ ease;
 }
 
 .intro-section p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
   opacity: 0.9;
@@ -1229,8 +1228,9 @@ ease;
 }
 
 .about-content h3 {
-  font-size: 2.5rem;
-  margin-top: 4rem;
+  font-size: 4.5rem;
+  margin-top:4rem;
+  line-height: 1.1;
   margin-bottom: 1rem;
   color: #F47600;
 }
@@ -1948,7 +1948,7 @@ footer {
 }
 
 .feature-item {
-  padding: 1.5rem;
+  padding: 0.8rem;
   border-radius: 12px;
   background: rgba(244, 118, 0, 0.05);
   border-left: 4px solid #F47600;

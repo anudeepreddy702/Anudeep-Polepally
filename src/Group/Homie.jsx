@@ -9,8 +9,7 @@ function Homie({ darkMode, toggleMode }) {
       <section className="intro-section">
         <h2>Life is an Adventure</h2>
         <p>
-          I believe in collecting experiences, not things. This website is my digital journal
-          where I track my dreams, goals, and the incredible experiences I've had along the way.
+        I believe in collecting experiences, not things. Every moment, journey, and story holds the power to shape who we become. This website is my digital journal a space where I document my dreams, track my goals, and celebrate the incredible experiences that have inspired me along the way. 
         </p>
         <div className="story-image-homepage">
               <img 
