@@ -46,6 +46,22 @@ function Homepage({ darkMode, toggleMode }) {
               <p>Beyond coding, I continuously explore modern web trends, accessibility standards, and performance optimization techniques,
                  aiming to elevate front-end craftsmanship and create experiences that truly connect people with technology.
               </p>
+            
+              <p>
+                If you'd like a deeper look at my professional experience and technical background, feel free to check out my résumé below.
+              </p>
+              {/* Resume Download Button */}
+              <div className="resume-section">
+                <a 
+                  href="https://drive.google.com/file/d/14tOpSrvggNCw8fOcO-HjGr3Y4OzOcfet/view?usp=drive_link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="resume-button"
+                >
+                  <span className="resume-icon">📄</span>
+                  <span>View My Resume</span>
+                </a>
+              </div>
 
               <h3>My Origin story</h3>
               <p>
