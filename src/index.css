@@ -16,6 +16,7 @@ body {
   font-weight: 300;
   line-height: 30px;
   color: black;
+  
 }
 
 /* Also apply background to parent elements */
@@ -641,10 +642,11 @@ body:has(.appdark) {
   background: rgba(255, 255, 255, 0.8);
 }
 
+
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 33rem;
 }
 
 .logo {

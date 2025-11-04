@@ -53,19 +53,19 @@ function Template({ darkMode, toggleMode }) {
                     <p>
                         I started writing this list back when I was feeling the kind of stress that comes from just observing life, not living it. Before I knew it, a simple list of "things to do" exploded into a constantly evolving document of goals.
                     </p>
-          <div className="story-image-homepage">
-                    <img src="/IMG_945151.jpg" alt="Posing looking towards the waterfalls" className="hero-image-intro"
-height="250px" width="100%" />
-                </div>
+                    <div className="story-image-homepage">
+                        <img src="/IMG_945151.jpg" alt="Posing looking towards the waterfalls" className="hero-image-intro"
+                            height="250px" width="100%" />
+                    </div>
                     <p>
                         This is my living document of dreams, adventures, and experiences I want to collect throughout my lifetime.
-                         Each item represents a commitment to living fully, exploring boldly, and creating memories that matter.
+                        Each item represents a commitment to living fully, exploring boldly, and creating memories that matter.
                     </p>
-                <p>
-                    Crossing off a goal is a feeling like no other. 
-                    While I always strive to capture that moment with a picture, 
-                    sometimes the experience is too good to pause for the camera, and I simply choose to savor the moment instead. 
-                </p>
+                    <p>
+                        Crossing off a goal is a feeling like no other.
+                        While I always strive to capture that moment with a picture,
+                        sometimes the experience is too good to pause for the camera, and I simply choose to savor the moment instead.
+                    </p>
                 </div>
             </div>
             <section id="bucket-list">
@@ -142,7 +142,16 @@ height="250px" width="100%" />
                     <li>Go Camping in my own SUV.</li>
                     <li className="strikethrough">Say “no” to something that doesn’t feel right.</li>
                     <li>See Grand Canyon, AZ, United States.</li>
+                    <li>Create family bucket lists</li>
                     <li>Visit Hawaii, HI, United States.</li>
+                    <div className="img-container-square">
+                        <li className="strikethrough">Try fruit picking at a local farm</li>
+                        <div className="img-details">
+                            <img src="/IMG_2665_Edt.jpg" alt="Farm Picking Background" height="250px" width="100%" />
+                            <p><mark>Picked some fruits and the view was stellar.</mark></p>
+                        </div>
+                    </div>
+                    <li>Have my Family photoshoot</li>
                     <li>Attend a Tomorrowland festival.</li>
                     <li>Plant a tree</li>
                     <li className="strikethrough">Spend a full day without social media.</li>
@@ -165,6 +174,13 @@ height="250px" width="100%" />
                     <li>Learn a new language and talk fluently with a native person.</li>
                     <li>Buy a car.</li>
                     <li>Create a cinematic travel short film from drone footage.</li>
+                    <div className="img-container-square">
+                        <li className="strikethrough">Explore NYC.</li>
+                        <div className="img-details">
+                            <img src="/44040.jpg" alt="View of skyscrapers in NYC" height="250px" width="100%" />
+                            <p><mark>Tried capturing skyscrapers of NYC!</mark></p>
+                        </div>
+                    </div>
                     <li>Attend an anonymous wedding in India.</li>
                     <li>Visit Ferrari World, Abu Dhabi.</li>
                     <li>Travel to Canada.</li>
@@ -242,7 +258,7 @@ height="250px" width="100%" />
                     <li className="strikethrough">Do a photoshoot</li>
                     <li>Make a DIY scrapbook.</li>
                     <div className="img-container-square">
-                    <li className="strikethrough">Try to capture professional landscape photos.</li>
+                        <li className="strikethrough">Try to capture professional landscape photos.</li>
                         <img src="/45817.jpeg" alt="Mountains fall colours photo" height="250px" width="100%" />
                         <div className="img-details">
                             <p><mark>Mountains with fall colors - Stowe Mountain Resort, Stowe, VT 05672.</mark></p>
@@ -252,9 +268,9 @@ height="250px" width="100%" />
                     <li>Visit a lighthouse at night.</li>
                     <li>Give a speech infront of 100+ people.</li>
                     <div className="img-container-square">
-                    <li className="strikethrough">Play with a icicle which is formed naturally from dripping water freezing.</li>
-                    <img src="/Snow-sword.jpg" alt="Mountains fall colours photo" height="250px" width="100%" />
-                    <div className="img-details">
+                        <li className="strikethrough">Play with a icicle which is formed naturally from dripping water freezing.</li>
+                        <img src="/Snow-sword.jpg" alt="Mountains fall colours photo" height="250px" width="100%" />
+                        <div className="img-details">
                             <p><mark>On a snowy ground, holding a long icicle with both hands as if it were a sword.</mark></p>
                         </div>
                     </div>
@@ -311,6 +327,13 @@ height="250px" width="100%" />
                     <li className="strikethrough">Trek to Pandavula Gutta caves, Telangana, India.</li>
                     <li>Try and learn Skateboarding.</li>
                     <li>Explore the Grand Palace, Bangkok.</li>
+                    <div className="img-container-square">
+                        <li className="strikethrough">Go Hiking.</li>
+                        <img src="/47399_Edt.jpg" alt="In the middle of a hike" height="250px" width="100%" />
+                        <div className="img-details">
+                            <p><mark>Took a break while hiking.</mark></p>
+                        </div>
+                    </div>
                     <li>Explore mountain roads of Colorado, USA.</li>
                     <li>Explore wildlife sanctuaries in Madhya Pradesh, India.</li>
                     <li className="strikethrough">Try chicken shawarma.</li>
@@ -355,9 +378,9 @@ height="250px" width="100%" />
                     <li>Visit Sabarimala Temple, Kerala, India.</li>
                     <li>Go off-roading in Rajasthan desert.</li>
                     <div className="img-container-square">
-                    <li className="strikethrough">Go leaf peeping in New England.</li>
-                    <img src="/Andy_colors.jpg" alt="Mountains and andy with fall colours photo" height="250px" width="100%" />
-                    <div className="img-details">
+                        <li className="strikethrough">Go leaf peeping in New England.</li>
+                        <img src="/Andy_colors.jpg" alt="Mountains and andy with fall colours photo" height="250px" width="100%" />
+                        <div className="img-details">
                             <p><mark>Exoloring Fall Colors at Acadia National Park, ME.</mark></p>
                         </div>
                     </div>
