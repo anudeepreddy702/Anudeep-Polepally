@@ -35,6 +35,12 @@ function Navi({ darkMode, toggleMode }) {
           >
             Site Info & Contact
           </button>
+          <button
+          onClick={()=>navigate('/resources')}
+          className={location.pathname==='/resources'?'nav-link active':'nav-link'}
+          >
+            Learning Resources
+          </button>
 
         </div>
       </div>

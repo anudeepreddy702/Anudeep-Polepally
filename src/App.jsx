@@ -7,6 +7,7 @@ import Aboutsite from "./Group/Aboutsite"
 import Footer from "./Group/Footer"
 import ScrollToTop from "./Group/ScrollToTop"
 import Backtotop from "./Group/Backtotop"
+import Learning_resources from "./Group/Learning_resources"
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/bucketlist" element={<Template darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/about" element={<Homepage darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/aboutsite" element={<Aboutsite darkMode={darkMode} toggleMode={toggleMode} />} />
+        <Route path="/resources" element={<Learning_resources darkMode={darkMode} toggleMode={toggleMode}/>} />
       </Routes>
       <Backtotop/>
     </Router>

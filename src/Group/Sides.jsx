@@ -76,6 +76,17 @@ function SidebarMenu({ darkMode, toggleMode }) {  // Add these props
               <span className="menu-text">ABOUT SITE & CONTACT</span>
               <span className="menu-subtitle">Site information & contact details</span>
             </div>
+            <div 
+
+              className={`menu-item ${isActive('/resources') ? 'active' : ''}`}
+              onClick={() => handleNavigation('/resources')}
+            >
+              <span className="menu-number">V</span>
+              <span className="menu-text">RESOURCES</span>
+              <span className="menu-subtitle">Inspiration Library</span>
+            </div>
+
+
           </nav>
         </div>
       </div>

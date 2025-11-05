@@ -30,6 +30,7 @@ function Footer({ darkMode, toggleMode }) {
                 <li><button onClick={() => navigate("/about")}>About Me</button></li>
                 <li><button onClick={() => navigate("/bucketlist")}>Bucket List</button></li>
                 <li><button onClick={() => navigate("/aboutsite")}>Site Info & Contact</button></li>
+                <li><button onClick={()=>navigate("/resources")}>Learning Resources</button></li>
               </ul>
             </div>
 
@@ -54,6 +55,11 @@ function Footer({ darkMode, toggleMode }) {
                 <li>
                   <a href="https://www.instagram.com/anudeepreddy2525" target="_blank" rel="noopener noreferrer">
                     Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://roadmap.sh/u/polepallyanudeep" target="_blank" rel="noopener noreferrer">
+                  Roadmap
                   </a>
                 </li>
               </ul>
