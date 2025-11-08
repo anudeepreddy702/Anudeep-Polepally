@@ -200,6 +200,7 @@ function Template({ darkMode, toggleMode }) {
                     <li className="strikethrough">Inspire someone to start their own bucket list.</li>
                     <li>Visit Andaman & Nicobar Islands in India and explore the coral reefs.</li>
                     <li>Go off-roading.</li>
+                    <li>Make my own wine.</li>
                     <li>Visit Goa beaches, India.</li>
                     <li>Restore a bike to its old glory.</li>
                     <li>Buy a property on my own.</li>
@@ -215,6 +216,7 @@ function Template({ darkMode, toggleMode }) {
                     </div>
                     <li>Witness the Taj Mahal at sunrise.</li>
                     <li>Explore a ghost town.</li>
+                    <li>Try Caviar.</li>
                     <li className="strikethrough">Make a handmade gift.</li>
                     <li>Visit Thailand.</li>
                     <li>Achieve my ideal weight according to BMI</li>
@@ -335,6 +337,7 @@ function Template({ darkMode, toggleMode }) {
                         </div>
                     </div>
                     <li>Explore mountain roads of Colorado, USA.</li>
+                    <li>Have a backyard BBQ and beer party with friends.</li>
                     <li>Explore wildlife sanctuaries in Madhya Pradesh, India.</li>
                     <li className="strikethrough">Try chicken shawarma.</li>
                     <li>Attend Bonalu festival in Telangana, India.</li>
@@ -349,6 +352,8 @@ function Template({ darkMode, toggleMode }) {
                     <li className="strikethrough">Learn coding and build a personal website.</li>
                     <li>Visit Marina Bay Sands SkyPark, Singapore.</li>
                     <li>Explore Jaipur’s Pink City, India.</li>
+                    <li></li>
+                    <li>Go on a sunrise or sunset walk with family.</li>
                     <li>Take a houseboat ride in Alleppey, Kerala, India.</li>
                     <li>Visit the IT capital of India, Bengaluru,India.</li>
                     <li className="strikethrough">Visit the Thousand Pillar Temple, Telangana, India.</li>

@@ -43,7 +43,7 @@ function Footer({ darkMode, toggleMode }) {
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/anudeep-polepally" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/anudeepreddy702" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
                 </li>

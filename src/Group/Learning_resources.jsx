@@ -9,7 +9,37 @@ const resources = [
         url: "https://roadmap.sh/frontend?r=frontend",
         description:
         "A comprehensive roadmap covering the skills, tools, and concepts every modern frontend developer should know.",
-    },
+      },
+      {
+        name: "Fullstack Open – University of Helsinki",
+        url: "https://fullstackopen.com/en/",
+        description:
+        "A comprehensive, university-backed course that dives deep into modern web development using React, Node.js, Express, and MongoDB — ideal for mastering full-stack JavaScript from the ground up.",
+      },
+      {
+        name: "The Odin Project – Foundations Course",
+        url: "https://www.theodinproject.com/paths/foundations/courses/foundations",
+        description:
+          "A free, structured curriculum that covers HTML, CSS, Git, and JavaScript — ideal for building a strong foundation in full-stack web development.",
+      },
+      {
+        name: "Writing Semantic HTML – cs.fyi",
+        url: "https://cs.fyi/guide/writing-semantic-html",
+        description:
+        "A concise and practical guide explaining the importance of semantic HTML — helping developers write clean, accessible, and SEO-friendly markup that improves both usability and maintainability.",
+      },
+      {
+        name: "CSS-Tricks",
+        url: "https://css-tricks.com/",
+        description:
+        "A long-standing front-end blog packed with tutorials, design patterns, and tips for mastering CSS, layouts, and modern frontend workflows — written by developers for developers.",
+      },
+      {
+        name: "All About Floats – CSS-Tricks",
+        url: "https://css-tricks.com/all-about-floats/",
+        description:
+          "A classic guide from CSS-Tricks explaining how CSS floats really work — foundational for layout understanding.",
+      },
     {
         name: "Modern JavaScript Tutorial – javascript.info",
         url: "https://javascript.info/",
@@ -23,47 +53,36 @@ const resources = [
         "A deep, hands-on book that teaches JavaScript through clear explanations and interactive coding exercises — perfect for mastering the language fundamentals.",
     },
     {
-      name: "The Odin Project – Foundations Course",
-      url: "https://www.theodinproject.com/paths/foundations/courses/foundations",
-      description:
-        "A free, structured curriculum that covers HTML, CSS, Git, and JavaScript — ideal for building a strong foundation in full-stack web development.",
-    },
-    {
       name: "The Internet Explained – Vox",
       url: "https://www.vox.com/2014/6/16/18076282/the-internet",
       description:
         "An insightful breakdown of how the internet works behind the scenes — a great starting point for understanding the web.",
     },
     {
-      name: "All About Floats – CSS-Tricks",
-      url: "https://css-tricks.com/all-about-floats/",
-      description:
-        "A classic guide from CSS-Tricks explaining how CSS floats really work — foundational for layout understanding.",
-    },
+    name: "How DNS Works – Illustrated Guide",
+    url: "https://howdns.works/",
+    description:
+      "A beautifully illustrated comic explaining how DNS works — from domain names to IP addresses — making a complex topic easy to visualize and understand.",
+  },
+  {
+    name: "How HTTPS Works – Animated Guide",
+    url: "https://howhttps.works/episodes/",
+    description:
+    "A fun, visual explanation of HTTPS and web encryption concepts — simplifying how SSL/TLS, certificates, and secure connections protect user data and ensure safe browsing.",
+  },
+  {
+    name: "What Is Web Hosting – Hostinger",
+    url: "https://www.hostinger.com/tutorials/what-is-web-hosting",
+    description:
+      "An easy-to-understand introduction to web hosting — explaining servers, domains, and deployment basics for developers new to web infrastructure.",
+  },
   {
     name: "React Official Documentation",
     url: "https://react.dev/",
     description:
       "The official React docs with interactive tutorials and comprehensive guides for building modern web applications.",
   },
-  {
-  name: "How DNS Works – Illustrated Guide",
-  url: "https://howdns.works/",
-  description:
-    "A beautifully illustrated comic explaining how DNS works — from domain names to IP addresses — making a complex topic easy to visualize and understand.",
-},
-{
-  name: "How to Write Semantic HTML – HackerNoon",
-  url: "https://hackernoon.com/how-to-write-semantic-html-dkq3ulo",
-  description:
-    "A practical guide to writing semantic HTML that improves accessibility, SEO, and overall web structure for modern applications.",
-},
-{
-  name: "What Is Web Hosting – Hostinger",
-  url: "https://www.hostinger.com/tutorials/what-is-web-hosting",
-  description:
-    "An easy-to-understand introduction to web hosting — explaining servers, domains, and deployment basics for developers new to web infrastructure.",
-},
+
 ];
 
 function LearningResources({ darkMode, toggleMode }) {
