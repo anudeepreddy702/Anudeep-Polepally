@@ -1365,14 +1365,14 @@ footer {
 
 .site-info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
 .site-info-card {
   background: white;
-  padding: 1rem;
+  padding: 0.8rem;
   border-radius: 15px;
   text-align: center;
   transition: all 0.3s ease;
@@ -1454,7 +1454,6 @@ footer {
   opacity: 0.8;
   font-style: italic;
 }
-
 
 
 

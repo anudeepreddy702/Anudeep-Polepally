@@ -112,7 +112,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Explore India.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Pose like a model for a brand.</li>
+                            <li className="strikethrough">Pose like a model for a brand.</li>
                             <img src="/DSC_0311 Edited.jpg" alt="Posing listening to music on skull candy earphones" />
                             <p><mark>Tried to pose while listening to music.</mark></p>
                         </div>
@@ -130,13 +130,7 @@ function Template({ darkMode, toggleMode }) {
                     <li className="strikethrough">Take a solo trip abroad.</li>
                     <li>Trek to Valley of Flowers, Uttarakhand.</li>
                     <li>Visit Niagara Falls, NY, United States.</li>
-                    <div className="img-container-square">
-                        <li>Attend an F1 Race.</li>
-                        <div className="img-details">
-                            <img src="/2025-f1-wallpapers-2-2.jpg" alt="Lando_Norris F1_Car_2025" />
-                            <p><mark>Lando Norris F1 Car 2025 - my dream team I support.</mark></p>
-                        </div>
-                    </div>
+                    <li>Attend an F1 Race.</li>
                     <li>Run my own business.</li>
                     <li>Visit Las Vegas, NV, United States.</li>
                     <li>Go Camping in my own SUV.</li>
@@ -146,7 +140,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Visit Hawaii, HI, United States.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Try fruit picking at a local farm</li>
+                            <li className="strikethrough">Try fruit picking at a local farm</li>
                             <img src="/IMG_2665_Edt.jpg" alt="Farm Picking Background" height="250px" width="100%" />
                             <p><mark>Picked some fruits and the view was stellar.</mark></p>
                         </div>
@@ -162,7 +156,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Visit Alaska, AK, United States.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Visit the Statue of Liberty, NY, United States.</li>
+                            <li className="strikethrough">Visit the Statue of Liberty, NY, United States.</li>
                             <img src="/44072.jpg" alt="Statue of liberty" height="250px" width="100%" />
                             <p><mark>That's me, the guy in the Finisher Winter Hat, clicking pictures!</mark></p>
                         </div>
@@ -176,7 +170,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Create a cinematic travel short film from drone footage.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Explore NYC.</li>
+                            <li className="strikethrough">Explore NYC.</li>
                             <img src="/44040.jpg" alt="View of skyscrapers in NYC" height="250px" width="100%" />
                             <p><mark>Tried capturing skyscrapers of NYC!</mark></p>
                         </div>
@@ -189,7 +183,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Build a farmhouse with plantations and a Swimming Pool.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Visit Times Square, NY, United States.</li>
+                            <li className="strikethrough">Visit Times Square, NY, United States.</li>
                             <img src="/44150_times_square.jpg" alt="Times Square at Night" height="250px" width="100%" />
                             <p><mark>Yeah, that's me in the jacket. I witnessed Times Square.</mark></p>
                         </div>
@@ -209,7 +203,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Learn to speak Spanish fluently.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Experience Sensitive hydraulic lever Operations of Excavator.</li>
+                            <li className="strikethrough">Experience Sensitive hydraulic lever Operations of Excavator.</li>
                             <img src="/FB_IMG_1494518369546.jpg" alt="Excavator Driving" height="250px" width="100%" />
                             <p><mark>pose after driving, exhausted! (vintage edit).</mark></p>
                         </div>
@@ -233,8 +227,8 @@ function Template({ darkMode, toggleMode }) {
                     <li>Own a second property of land on my own.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Learn to play guitar.</li>
-                        <img src="/IMG-20200114-WA0019.jpg" alt="Guitar poster style pose" height="250px" width="100%" />
+                            <li className="strikethrough">Learn to play guitar.</li>
+                            <img src="/IMG-20200114-WA0019.jpg" alt="Guitar poster style pose" height="250px" width="100%" />
                             <p><mark>Guitar Poster - old poster style picture after learning some lessons.</mark></p>
                         </div>
                     </div>
@@ -261,8 +255,8 @@ function Template({ darkMode, toggleMode }) {
                     <li>Make a DIY scrapbook.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Try to capture professional landscape photos.</li>
-                        <img src="/45817.jpeg" alt="Mountains fall colours photo" height="250px" width="100%" />
+                            <li className="strikethrough">Try to capture professional landscape photos.</li>
+                            <img src="/45817.jpeg" alt="Mountains fall colours photo" height="250px" width="100%" />
                             <p><mark>Mountains with fall colors - Stowe Mountain Resort, Stowe, VT 05672.</mark></p>
                         </div>
                     </div>
@@ -271,8 +265,8 @@ function Template({ darkMode, toggleMode }) {
                     <li>Give a speech infront of 100+ people.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Play with a icicle which is formed naturally from dripping water freezing.</li>
-                        <img src="/Snow-sword.jpg" alt="Mountains fall colours photo" height="250px" width="100%" />
+                            <li className="strikethrough">Play with a icicle which is formed naturally from dripping water freezing.</li>
+                            <img src="/Snow-sword.jpg" alt="Mountains fall colours photo" height="250px" width="100%" />
                             <p><mark>On a snowy ground, holding a long icicle with both hands as if it were a sword.</mark></p>
                         </div>
                     </div>
@@ -293,8 +287,8 @@ function Template({ darkMode, toggleMode }) {
                     <li>Brew my own beer or cider.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Hike Mount Washington, New Hampshire, USA.</li>
-                        <img src="/47354.jpeg" alt="Mount Washington photo" height="250px" width="100%" />
+                            <li className="strikethrough">Hike Mount Washington, New Hampshire, USA.</li>
+                            <img src="/47354.jpeg" alt="Mount Washington photo" height="250px" width="100%" />
                             <p><mark>View from top of Mount Washington, NH - Live Free or Die.</mark></p>
                         </div>
                     </div>
@@ -314,8 +308,8 @@ function Template({ darkMode, toggleMode }) {
                     <li>Plant 100 trees in your lifetime.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Explore Singareni Collieries, Telangana, India.</li>
-                        <img src="/IMG-20200216-WA0017.jpg" alt="Me and My friends looking the mining sites" height="250px" width="100%" />
+                            <li className="strikethrough">Explore Singareni Collieries, Telangana, India.</li>
+                            <img src="/IMG-20200216-WA0017.jpg" alt="Me and My friends looking the mining sites" height="250px" width="100%" />
                             <p><mark>My friends and I are looking at the mining sites.</mark></p>
                         </div>
                     </div>
@@ -331,8 +325,8 @@ function Template({ darkMode, toggleMode }) {
                     <li>Explore the Grand Palace, Bangkok.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Go Hiking.</li>
-                        <img src="/47399_Edt.jpg" alt="In the middle of a hike" height="250px" width="100%" />
+                            <li className="strikethrough">Go Hiking.</li>
+                            <img src="/47399_Edt.jpg" alt="In the middle of a hike" height="250px" width="100%" />
                             <p><mark>Took a break while hiking.</mark></p>
                         </div>
                     </div>
@@ -344,15 +338,14 @@ function Template({ darkMode, toggleMode }) {
                     <li>Relax on Bali beaches, Indonesia.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Watch the rain from a beach or mountain.</li>
-                        <img src="/IMG_3975.jpg" alt="Rain and beach picture" height="250px" width="100%" />
+                            <li className="strikethrough">Watch the rain from a beach or mountain.</li>
+                            <img src="/IMG_3975.jpg" alt="Rain and beach picture" height="250px" width="100%" />
                             <p><mark>I witnessed the rain from a beach, it was phenomenal.</mark></p>
                         </div>
                     </div>
                     <li className="strikethrough">Learn coding and build a personal website.</li>
                     <li>Visit Marina Bay Sands SkyPark, Singapore.</li>
                     <li>Explore Jaipur’s Pink City, India.</li>
-                    <li></li>
                     <li>Go on a sunrise or sunset walk with family.</li>
                     <li>Take a houseboat ride in Alleppey, Kerala, India.</li>
                     <li>Visit the IT capital of India, Bengaluru,India.</li>
@@ -369,8 +362,8 @@ function Template({ darkMode, toggleMode }) {
                     <li>Go desert safari in Jaisalmer, India.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Try Octopus.</li>
-                        <img src="/IMG_3492_copy.jpg" alt="Eating octopus picture" height="250px" width="100%" />
+                            <li className="strikethrough">Try Octopus.</li>
+                            <img src="/IMG_3492_copy.jpg" alt="Eating octopus picture" height="250px" width="100%" />
                             <p><mark>I cannot hold it but I still tried it with chopsticks.</mark></p>
                         </div>
                     </div>
@@ -384,8 +377,8 @@ function Template({ darkMode, toggleMode }) {
                     <li>Go off-roading in Rajasthan desert.</li>
                     <div className="img-container-square">
                         <div className="img-details">
-                        <li className="strikethrough">Go leaf peeping in New England.</li>
-                        <img src="/Andy_colors.jpg" alt="Mountains and andy with fall colours photo" height="250px" width="100%" />
+                            <li className="strikethrough">Go leaf peeping in New England.</li>
+                            <img src="/Andy_colors.jpg" alt="Mountains and andy with fall colours photo" height="250px" width="100%" />
                             <p><mark>Exoloring Fall Colors at Acadia National Park, ME.</mark></p>
                         </div>
                     </div>
