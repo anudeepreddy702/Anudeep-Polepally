@@ -8,7 +8,7 @@ function Aboutsite({ darkMode, toggleMode }) {
     <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu />
     <section className="about-site-section">
-      <h2 className="about-site-title">About This Site</h2>
+      <h2 className="about-site-title">Behind This Website</h2>
       
       <div className="site-info-grid">
         <div className="site-info-card">
