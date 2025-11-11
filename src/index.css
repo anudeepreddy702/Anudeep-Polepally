@@ -1722,6 +1722,77 @@ footer {
 }
 
 
+/* ============================================
+   SCROLL FADE EFFECT - ADD THIS CSS
+   ============================================ */
+
+/* Update your existing .hero-section class with these additions */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 0;
+  background-image: url('/wall.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* ADD THIS - Makes the section take full viewport height for better scrolling */
+  min-height: 100vh;
+}
+
+/* Update your existing .hero-title and .hero-subtitle with transition */
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+  /* ADD THIS - Smooth transition for fade effect */
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  opacity: 0.95;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+  /* ADD THIS - Smooth transition for fade effect */
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* ADD THIS NEW CLASS - Container for fade text elements */
+.hero-fade-content {
+  position: relative;
+  z-index: 3;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE FOR SCROLL EFFECT
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 100vh; /* Ensure full height on mobile too */
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+
 /* ========================================
    LEARNING RESOURCES PAGE
    ======================================== */

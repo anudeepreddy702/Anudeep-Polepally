@@ -12,11 +12,9 @@ function Template({ darkMode, toggleMode }) {
         total: 0
     });
 
-    // Count strikethrough items from your existing JSX
+    // Existing count items effect
     useEffect(() => {
-        // This runs after component mounts and updates
         const countItems = () => {
-            // Count all li elements
             const allItems = document.querySelectorAll('#list li');
             const completedItems = document.querySelectorAll('#list li.strikethrough');
 
@@ -34,6 +32,39 @@ function Template({ darkMode, toggleMode }) {
         const timer = setTimeout(countItems, 0);
         return () => clearTimeout(timer);
     }, []);
+
+    // ADD THIS NEW EFFECT - Scroll fade effect for hero section
+    useEffect(() => {
+        const handleScroll = () => {
+            const heroTitle = document.querySelector('.hero-title');
+            const heroSubtitle = document.querySelector('.hero-subtitle');
+            
+            if (heroTitle && heroSubtitle) {
+                const scrollPosition = window.scrollY;
+                const windowHeight = window.innerHeight;
+                
+                // Calculate opacity based on scroll position
+                // Fades out completely by the time you scroll 70% of viewport height
+                const opacity = Math.max(0, 1 - (scrollPosition / (windowHeight * 0.7)));
+                
+                // Add slight upward movement for polish
+                const translateY = scrollPosition * 0.5;
+                
+                heroTitle.style.opacity = opacity;
+                heroTitle.style.transform = `translateY(-${translateY}px)`;
+                
+                heroSubtitle.style.opacity = opacity;
+                heroSubtitle.style.transform = `translateY(-${translateY}px)`;
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        // Cleanup
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+
     return (
         <>
             <Navi darkMode={darkMode} toggleMode={toggleMode} />
@@ -408,6 +439,5 @@ function Template({ darkMode, toggleMode }) {
             <Footer />
         </>
     )
-
 }
 export default Template
