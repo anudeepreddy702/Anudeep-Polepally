@@ -303,6 +303,7 @@ function Template({ darkMode, toggleMode }) {
                     </div>
                     <li>Bake bread from scratch.</li>
                     <li>Get an autograph from Martin Garrix.</li>
+                    <li>Go on a trip to Myanmar (Burma).</li>
                     <li>Visit Golden Temple, Amritsar, India.</li>
                     <li>Visit a new city solo and talk to a stranger.</li>
                     <li className="strikethrough">Visit a nearby waterfall or lake.</li>
@@ -347,6 +348,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Visit Nallamala Forest, Telangana, India.</li>
                     <li className="strikethrough">Try Bamboo Chicken at Araku Valley, Andhra Pradesh, India.</li>
                     <li>Watch a live cricket match in a Stadium.</li>
+                    <li>Visit Nepal.</li>
                     <li>Camp under the stars in Ladakh, India.</li>
                     <li>Witness the cherry blossom festival in Japan.</li>
                     <li>Visit Mount Rushmore National Memorial, SD, United States.</li>
@@ -365,6 +367,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Have a backyard BBQ and beer party with friends.</li>
                     <li>Explore wildlife sanctuaries in Madhya Pradesh, India.</li>
                     <li className="strikethrough">Try chicken shawarma.</li>
+                     <li>Visit Vietnam.</li>
                     <li>Attend Bonalu festival in Telangana, India.</li>
                     <li>Relax on Bali beaches, Indonesia.</li>
                     <div className="img-container-square">
@@ -375,8 +378,10 @@ function Template({ darkMode, toggleMode }) {
                         </div>
                     </div>
                     <li className="strikethrough">Learn coding and build a personal website.</li>
+                    <li>Explore Malaysia.</li>
                     <li>Visit Marina Bay Sands SkyPark, Singapore.</li>
                     <li>Explore Jaipur’s Pink City, India.</li>
+                    <li>Try Bengali desserts.</li>
                     <li>Go on a sunrise or sunset walk with family.</li>
                     <li>Take a houseboat ride in Alleppey, Kerala, India.</li>
                     <li>Visit the IT capital of India, Bengaluru,India.</li>
@@ -384,6 +389,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Visit the Lepakshi temple in Andhra Pradesh, India.</li>
                     <li>Drive a Tesla.</li>
                     <li>Stay in a 5-star hotel.</li>
+                    <li>Visit Bhutan.</li>
                     <li className="strikethrough">Drink palm water.</li>
                     <li>Skydiving over Dubai, UAE.</li>
                     <li>Ride the world’s fastest roller coaster in Abu Dhabi, UAE.</li>
