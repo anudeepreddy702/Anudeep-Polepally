@@ -48,18 +48,18 @@ function Homepage({ darkMode, toggleMode }) {
               </p>
 
               <p>
-                If you'd like a deeper look at my professional experience and technical background, feel free to check out my résumé below.
+                If you'd like a deeper look at my professional experience and technical background, feel free to check out my linkedin below.
               </p>
               {/* Resume Download Button */}
               <div className="resume-section">
                 <a
-                  href="https://drive.google.com/file/d/14tOpSrvggNCw8fOcO-HjGr3Y4OzOcfet/view?usp=drive_link"
+                  href="https://www.linkedin.com/in/polepally-anudeep"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="resume-button"
                 >
                   <span className="resume-icon">📄</span>
-                  <span>View My Resume</span>
+                  <span>View My Linkedin</span>
                 </a>
               </div>
 
