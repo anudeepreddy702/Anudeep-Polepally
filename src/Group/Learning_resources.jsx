@@ -90,7 +90,6 @@ function LearningResources({ darkMode, toggleMode }) {
     <>
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu />
-
       <div className="page-container">
         <section className="resources-section">
           <h1 className="resources-title">
@@ -103,7 +102,9 @@ function LearningResources({ darkMode, toggleMode }) {
             modern web development practices. I'm sharing them here hoping
             they'll help you on your own journey.
           </p>
+        </section>
 
+<section className="resources-content-section">
           <div className="resources-grid">
             {resources.map((res, index) => (
               <a
