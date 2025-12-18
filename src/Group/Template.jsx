@@ -1,9 +1,9 @@
 //Main component
-
 import React, { useState, useEffect } from "react";
 import Navi from "./Navi";
 import SidebarMenu from "./Sides";
 import Footer from "./Footer";
+import ScrollProgressBar from "./ScrollProgressBar";
 
 function Template({ darkMode, toggleMode }) {
     const [counts, setCounts] = useState({
@@ -67,6 +67,7 @@ function Template({ darkMode, toggleMode }) {
 
     return (
         <>
+            <ScrollProgressBar darkMode={darkMode}/>
             <Navi darkMode={darkMode} toggleMode={toggleMode} />
             <SidebarMenu />
             <div className="page-container">

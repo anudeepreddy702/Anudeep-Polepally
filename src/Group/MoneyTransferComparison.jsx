@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom"
 import Footer from "./Footer";
 import Navi from "./Navi";
 import SidebarMenu from "./Sides";
+import ScrollProgressBar from './ScrollProgressBar';
+
 
 export default function MoneyTransferComparison({ darkMode, toggleMode }) {
   const navigate = useNavigate();
@@ -174,6 +176,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
 
   return (
     <>
+    <ScrollProgressBar darkMode={darkMode} />
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu />
 

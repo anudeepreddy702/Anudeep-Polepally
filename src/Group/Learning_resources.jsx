@@ -2,6 +2,7 @@ import React from "react";
 import Navi from "./Navi";
 import SidebarMenu from "./Sides";
 import Footer from "./Footer";
+import ScrollProgressBar from "./ScrollProgressBar";
 
 const resources = [
     {
@@ -88,7 +89,8 @@ const resources = [
 function LearningResources({ darkMode, toggleMode }) {
   return (
     <>
-      <Navi darkMode={darkMode} toggleMode={toggleMode} />
+    <ScrollProgressBar darkMode={darkMode} />
+     <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu />
       <div className="page-container">
         <section className="resources-section">
