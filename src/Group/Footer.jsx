@@ -29,8 +29,9 @@ function Footer({ darkMode, toggleMode }) {
                 <li><button onClick={() => navigate("/")}>Home</button></li>
                 <li><button onClick={() => navigate("/about")}>About Me</button></li>
                 <li><button onClick={() => navigate("/bucketlist")}>Bucket List</button></li>
+                <li><button onClick={() => navigate("/MoneyTransferComparison")}>MC Tool</button></li>
+                <li><button onClick={()=>navigate("/resources")}>Resources</button></li>
                 <li><button onClick={() => navigate("/aboutsite")}>Site Info & Contact</button></li>
-                <li><button onClick={()=>navigate("/resources")}>Learning Resources</button></li>
               </ul>
             </div>
 

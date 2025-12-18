@@ -29,19 +29,19 @@ function Navi({ darkMode, toggleMode }) {
           >
             Bucket List
           </button>
+          
           <button
-            onClick={() => navigate('/aboutsite')}
-            className={location.pathname === '/aboutsite' ? 'nav-link active' : 'nav-link'}
+          onClick={()=>navigate('/MoneyTransferComparison')}
+          className={location.pathname==='/MoneyTransferComparison'?'nav-link active':'nav-link'}
           >
-            Site Info & Contact
+            MC Tool
           </button>
           <button
           onClick={()=>navigate('/resources')}
           className={location.pathname==='/resources'?'nav-link active':'nav-link'}
           >
-            Learning Resources
+            Resources
           </button>
-
         </div>
       </div>
       <div className="nav-right">

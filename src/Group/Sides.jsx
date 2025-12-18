@@ -69,12 +69,12 @@ function SidebarMenu({ darkMode, toggleMode }) {  // Add these props
 
             <div 
 
-              className={`menu-item ${isActive('/aboutsite') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/aboutsite')}
+              className={`menu-item ${isActive('/MoneyTransferComparison') ? 'active' : ''}`}
+              onClick={() => handleNavigation('/MoneyTransferComparison')}
             >
               <span className="menu-number">IV</span>
-              <span className="menu-text">ABOUT SITE & CONTACT</span>
-              <span className="menu-subtitle">Site information & contact details</span>
+              <span className="menu-text">MC TOOL</span>
+              <span className="menu-subtitle">Custom Money comparision tool</span>
             </div>
             <div 
 

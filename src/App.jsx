@@ -8,6 +8,8 @@ import Footer from "./Group/Footer"
 import ScrollToTop from "./Group/ScrollToTop"
 import Backtotop from "./Group/Backtotop"
 import Learning_resources from "./Group/Learning_resources"
+import MoneyTransferComparison from "./Group/MoneyTransferComparison"
+import NotFound from "./Group/NotFound"
 
 
 function App() {
@@ -27,15 +29,17 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Buckets darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/bucketlist" element={<Template darkMode={darkMode} toggleMode={toggleMode} />} />
+        <Route path="/MoneyTransferComparison" element={<MoneyTransferComparison darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/about" element={<Homepage darkMode={darkMode} toggleMode={toggleMode} />} />
+        <Route path="/resources" element={<Learning_resources darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/aboutsite" element={<Aboutsite darkMode={darkMode} toggleMode={toggleMode} />} />
-        <Route path="/resources" element={<Learning_resources darkMode={darkMode} toggleMode={toggleMode}/>} />
+        <Route path="*" element={<NotFound darkMode={darkMode} toggleMode={toggleMode} />} />
       </Routes>
-      <Backtotop/>
+      <Backtotop />
     </Router>
   )
 }
