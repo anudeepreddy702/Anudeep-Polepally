@@ -2578,7 +2578,7 @@ footer {
   padding: clamp(3rem, 6vw, 5rem) 1rem;
   margin-bottom: 0;
   background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
-  min-height: clamp(300px, 40vh, 400px);
+  min-height: clamp(1rem, 4vw, 1rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2627,7 +2627,7 @@ transfer-hero-section  > * {
 .transfer-content-section {
   max-width: 1400px;
   margin: 0 auto;
-  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
+  padding: clamp(2rem, 5vw, 4rem)
 }
 
 /* Currency Converter Card */

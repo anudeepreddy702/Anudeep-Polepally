@@ -34,7 +34,7 @@ function Navi({ darkMode, toggleMode }) {
           onClick={()=>navigate('/MoneyTransferComparison')}
           className={location.pathname==='/MoneyTransferComparison'?'nav-link active':'nav-link'}
           >
-            MC Tool
+            CMC Tool
           </button>
           <button
           onClick={()=>navigate('/resources')}

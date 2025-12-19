@@ -183,7 +183,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
       <div className="money-transfer-page">
         {/* Hero Section - Similar to Resources Page */}
         <div className="transfer-hero-section">
-          <h1 className="transfer-hero-title">Money Comparison Tool</h1>
+          <h1 className="transfer-hero-title">Custom Money Comparison Tool</h1>
           <p className="transfer-hero-intro">Compare real-time exchange rates and fees across multiple providers to find the best deal for your international money transfers</p>
         </div>
 

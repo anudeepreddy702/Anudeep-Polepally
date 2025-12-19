@@ -73,7 +73,7 @@ function SidebarMenu({ darkMode, toggleMode }) {  // Add these props
               onClick={() => handleNavigation('/MoneyTransferComparison')}
             >
               <span className="menu-number">IV</span>
-              <span className="menu-text">MC TOOL</span>
+              <span className="menu-text">CMC TOOL</span>
               <span className="menu-subtitle">Custom Money comparision tool</span>
             </div>
             <div 
