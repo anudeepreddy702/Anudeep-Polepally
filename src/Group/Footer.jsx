@@ -31,7 +31,7 @@ function Footer({ darkMode, toggleMode }) {
                 <li><button onClick={() => navigate("/bucketlist")}>Bucket List</button></li>
                 <li><button onClick={() => navigate("/MoneyTransferComparison")}>CMC Tool</button></li>
                 <li><button onClick={()=>navigate("/resources")}>Resources</button></li>
-                <li><button onClick={() => navigate("/aboutsite")}>Site Info & Contact</button></li>
+                <li><button onClick={() => navigate("/aboutsite")}>Site Info</button></li>
               </ul>
             </div>
 

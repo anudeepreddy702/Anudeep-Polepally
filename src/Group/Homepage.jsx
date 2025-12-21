@@ -18,35 +18,35 @@ function Homepage({ darkMode, toggleMode }) {
             <div className="about-intro">
               <h3>Hi, I'm <strong>Anudeep Reddy  Polepally(Andy)!</strong></h3>
 
-              <p>I'm a Frontend Engineer with over 4 years of experience in crafting dynamic, responsive,
-                and user-centric web interfaces.
-
-                My journey in software development began with a curiosity to bridge the gap between design and functionality.
-                Today, I transform complex ideas into engaging, scalable, and pixel-perfect solutions.
-                I'm passionate about usability, performance optimization, and the power of lifelong learning to deliver impactful results.
+              <p>
+                I’m a Frontend Engineer with 4+ years of experience building responsive, user-focused web applications.
+                My journey began with a passion for bridging design and functionality, and today I specialize in turning complex ideas into clean, scalable, and intuitive digital experiences.
               </p>
+              <p> I’m driven by a passion for creating meaningful digital experiences that not only look great but also perform exceptionally well.
+                I care deeply about usability, performance, and continuous learning and I enjoy building products that feel thoughtful, fast, and human.
+              </p>
+              <div className="img-special">
+                <img src="/IMG_2741.jpg" alt="Posing looking towards the waterfalls" height="250px" width="100%" />
+              </div>
               <p>
                 Let’s connect and bring great ideas to life!
               </p>
             </div>
 
-            <div className="img-special">
-              <img src="/IMG_2741.jpg" alt="Posing looking towards the waterfalls" height="250px" width="100%" />
-            </div>
             <div className="about-story">
               <h3>Professional Background</h3>
 
-              <p>I hold a Master’s degree in Computer Information Systems from New England College, NH, where I honed my skills in software development, frontend architecture, and user experience (UX) design.
-                My professional focus is on creating seamless digital experiences that are both beautiful and functional.</p>
+              <p>I hold a Master’s degree in Computer Information Systems from New England College, New Hampshire, where I developed a strong foundation in frontend architecture, software development, and user experience design.</p>
               <p>
-                Professionally, I specialize in building scalable, responsive, and visually refined web applications that combine performance and aesthetics.
-                My expertise lies in React.js, JavaScript (ES6+), TypeScript, and modern UI frameworks, crafting seamless interfaces that enhance both usability and engagement.</p>
+                Professionally, I focus on building scalable, responsive, and visually refined web applications. My core expertise includes React.js, JavaScript (ES6+), TypeScript, and modern UI frameworks, with an emphasis on performance, accessibility, and maintainable design systems.</p>
 
               <p>I’m passionate about translating complex business requirements into elegant, intuitive user experiences, ensuring every design decision is purposeful.
                 My approach blends engineering precision, creative design thinking, and data-driven insights to deliver impactful digital products that align with both user needs and organizational goals.</p>
 
-              <p>Beyond coding, I continuously explore modern web trends, accessibility standards, and performance optimization techniques,
-                aiming to elevate front-end craftsmanship and create experiences that truly connect people with technology.
+              <p>I enjoy translating complex business requirements into intuitive user experiences. My approach blends engineering discipline, creative problem-solving, and data-driven thinking to deliver products that align with both user needs and business goals.
+              </p>
+              <p>
+                Beyond day-to-day development, I actively explore modern web trends, accessibility standards, and performance optimization techniques to continuously improve front-end craftsmanship.
               </p>
 
               <p>
@@ -67,16 +67,11 @@ function Homepage({ darkMode, toggleMode }) {
 
               <h3>My Origin story</h3>
               <p>
-                I am originally from Telangana, a state in the southern part of India.
-                It's a region rich with history, and I grew up near a UNESCO World Heritage Site temple.
-                This sparked my lifelong passion for exploring new places, understanding different cultures, and appreciating history. </p>
+                I’m originally from Telangana, a state in southern India known for its rich culture and diversity. Growing up there sparked my curiosity for travel, new perspectives, and understanding different ways of life. </p>
 
-              <p>This curiosity has taken me across the world.
-                From the serene temples of India to the vibrant streets of New York City. Now based in Boston, Massachusetts, I continue to seek inspiration through travel, photography, and new experiences.
-              </p>
+              <p>That curiosity has taken me across the world from exploring different regions of India to experiencing the fast-paced energy of New York City. Now based in Boston, Massachusetts, I continue to find inspiration through travel, photography, and new experiences.</p>
               <p>
-                From learning to play guitar to operating an excavator, each moment represents a step in shaping the person I aspire to be curious, grounded, and always evolving.
-              </p>
+From learning to play the guitar to operating an excavator, each experience represents a step in shaping who I strive to be curious, grounded, and always evolving.</p>
             </div>
 
             <div className="about-philosophy">
@@ -88,11 +83,9 @@ function Homepage({ darkMode, toggleMode }) {
                 take our breath away."
               </blockquote>
               <p>
-                I believe in pushing boundaries, stepping out of comfort zones, and embracing both big adventures and small joys.
+                I believe in pushing boundaries, stepping outside my comfort zone, and embracing both big adventures and small, meaningful moments.
               </p>
             </div>
-
-
 
             <div className="about-achievements">
               <h3>Milestones So Far</h3>
@@ -132,7 +125,7 @@ function Homepage({ darkMode, toggleMode }) {
                 Every new step is a story in progress, and I’m excited to keep discovering, creating, and sharing what comes next.
               </p>
               <p>
-                Join me on this journey, and let's inspire each other to live life without regrets!
+                Join me on this journey, and let’s inspire each other to live with curiosity and intention.
               </p>
             </div>
 
@@ -142,7 +135,7 @@ function Homepage({ darkMode, toggleMode }) {
               <p>Life is too short to not pursue your dreams. What's on your bucket list?</p>
               <div className="page-container">
                 <button onClick={() => navigate("/bucketlist")} className="cta-button">
-                  View My Bucket List
+                  View My List of Adventures of a Lifetime
                 </button>
               </div>
             </div>

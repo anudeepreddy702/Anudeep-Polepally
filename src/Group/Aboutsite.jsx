@@ -5,61 +5,116 @@ import SidebarMenu from "./Sides";
 function Aboutsite({ darkMode, toggleMode }) {
   return (
     <>
-    <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu />
-    <section className="about-site-section">
-      <h2 className="about-site-title">Behind This Website</h2>
+      <Navi darkMode={darkMode} toggleMode={toggleMode} />
+      <SidebarMenu  darkMode={darkMode} toggleMode={toggleMode} />
       
-      <div className="site-info-grid">
-        <div className="site-info-card">
-          <div className="info-icon">📱</div>
-          <h3>Photos</h3>
-          <p>Mobile Photography</p>
-          <p className="detail">All photos captured on mobile devices
-            Samsung S10, Apple Iphone 15 </p>
-        </div>
+      <div className={darkMode ? "appdark" : "app"}>
+        {/* Hero Section - Matching your other pages */}
+        {/* <section className="hero-section-bottom">
+          <div className="hero-image-container">
+            <img 
+              src="/website-showcase.jpg" 
+              alt="Website showcase" 
+              className="hero-image-intro"
+            />
+          </div>
+        </section> */}
 
-        <div className="site-info-card">
-          <div className="info-icon">✍️</div>
-          <h3>Typography</h3>
-          <p>Roboto Slab</p>
-          <p className="detail">Clean, modern serif font</p>
-        </div>
+        {/* Main Content - Prose Style like About page */}
+        <main>
+          <section className="intro-section-about">
+            <h2>Behind the Pixels</h2>
+            
+            <p>
+              This website exists as a digital canvas a place where life's moments, goals, and reflections 
+              converge into something tangible. Built from scratch over three months, every line of code 
+              carries intention, and every design choice tells a story.
+            </p>
 
-        <div className="site-info-card highlight-card">
-          <div className="info-icon">🎨</div>
-          <h3>Color Theme</h3>
-          <p className="orange-text">#F47600</p>
-          <p className="detail">Inspired by McLaren F1 Papaya Orange</p>
-        </div>
+            <h3>The Craft</h3>
+            
+            <p>
+              Every photograph you see here was captured on a mobile device no professional cameras, 
+              no elaborate setups. Just a Samsung S10 and an iPhone 15,
+              proving that the best camera is the one you have with you.
+            </p>
 
-        <div className="site-info-card">
-          <div className="info-icon">💡</div>
-          <h3>Design Inspiration</h3>
-          <p>A Shot of the World</p>
-          <p className="detail">Clean, minimal aesthetic</p>
-        </div>
+            <p>
+              The typography breathes through Inter, a modern, clean sans-serif font designed 
+              for digital screens. Each letter, each space, chosen for readability and elegance.
+            </p>
 
-        <div className="site-info-card">
-          <div className="info-icon">⚛️</div>
-          <h3>Tech Stack</h3>
-          <p>React + JSX + CSS</p>
-          <p className="detail">Modern web technologies</p>
-        </div>
+            <h3>The Color Story</h3>
+            
+            <p>
+              One color defines this space: <mark>#F47600</mark>. Inspired by McLaren F1's iconic 
+              Papaya Orange, it's bold, energetic, and impossible to ignore. This isn't just a color—it's 
+              a philosophy. Like the racing team that inspired it, this site is about speed, precision, 
+              and pushing boundaries.
+            </p>
 
-        <div className="site-info-card">
-          <div className="info-icon">⏱️</div>
-          <h3>Development Time</h3>
-          <p>Custom Built</p>
-          <p className="detail">Took 3 Months of my personal time, where I Crafted with passion & dedication</p>
-        </div>
+            <h3>The Technology</h3>
+            
+            <p>
+              Built with React, styled with pure CSS, and structured with 
+              JSX, this is modern web development stripped to its essentials. No unnecessary 
+              frameworks, no bloated libraries. Just clean, performant code that does exactly what it needs to do.
+            </p>
+
+            <h3>The Purpose</h3>
+            
+            <p>
+              This isn't just a portfolio. It's a commitment device. A public declaration of goals, 
+              adventures, and the journey from aspiration to achievement. The bucket list you see isn't 
+              decoration it's a living document, a challenge to myself to keep moving, keep exploring, 
+              keep growing.
+            </p>
+
+            <p>
+              Every page here serves a purpose: to inspire action, to document growth, to remind myself 
+              (and maybe you) that life is too short for passive observation. This website is proof that 
+              you don't need permission to start building the life you want.
+            </p>
+
+            <h3>The Journey</h3>
+            
+            <p>
+              Three months of late nights, countless iterations, and learning curves that felt more like 
+              learning cliffs. But that's the point, isn't it? Growth happens in the struggle, in the 
+              debugging sessions, in the moments when you finally solve that CSS alignment issue at 2 AM.
+            </p>
+
+            <blockquote>
+              "Every line of code here represents a choice to build rather than consume, to create 
+              rather than critique, to document rather than forget."
+            </blockquote>
+
+            <p>
+              This site will evolve, just like I do. New adventures will be added, goals will be checked 
+              off (and new ones created), and the design will mature. But the core principle remains: 
+              live intentionally, document honestly, and never stop moving forward.
+            </p>
+
+            <h3>Thank You</h3>
+            
+            <p>
+              For taking the time to explore this corner of the internet. Whether you're here for 
+              inspiration, curiosity, or just stumbled upon this randomly I hope you found something 
+              that resonates. If this site motivates even one person to start their own project, chase 
+              their own adventure, or build their own digital space, then every hour spent coding was 
+              worth it.
+            </p>
+            <p>
+              A creation of Anudeep Reddy Polepally.
+            </p>
+            <p>
+              Now go create something. Your own story is waiting to be written.
+            </p>
+          </section>
+        </main>
       </div>
-
-      <div className="site-footer-note">
-        <p>This website is a personal project built to track my life's adventures and goals. Every line of code represents a commitment to living intentionally and documenting the journey.</p>
-      </div>
-    </section>
-    <Footer/>
+      
+      <Footer />
     </>
   );
 }
