@@ -25,22 +25,7 @@ function Homie({ darkMode, toggleMode }) {
         <p>
           I’m driven by curiosity, creativity, and the belief that the best journeys are still ahead. I’m always looking for new ways to learn, grow, and make a positive impact in the world. Whether you’re a fellow traveler, a curious mind, or someone looking for inspiration, I hope you’ll find something here that resonates with you.
         </p>
-        {/* <div className="feature-grid">
-          <div className="feature-item">
-            <h3>🌍 Travel</h3>
-            <p>From Times Square to Indian temples, exploring cultures and places that inspire</p>
-          </div>
-          <div className="feature-item">
-            <h3>📸 Photography</h3>
-            <p>Capturing moments that tell stories through mobile photography</p>
-          </div>
-          <div className="feature-item">
-            <h3>🎯 Goals</h3>
-            <p>Turning dreams into actionable items and tracking progress</p>
-          </div>
-        </div> */}
-
-
+      
         {/* Featured Image with Story */}
         <div className="home-cta-section">
           <div className="featured-story">

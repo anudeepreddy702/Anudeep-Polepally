@@ -135,7 +135,7 @@ From learning to play the guitar to operating an excavator, each experience repr
               <p>Life is too short to not pursue your dreams. What's on your bucket list?</p>
               <div className="page-container">
                 <button onClick={() => navigate("/bucketlist")} className="cta-button">
-                  View My List of Adventures of a Lifetime
+                  View My Adventures of a Lifetime
                 </button>
               </div>
             </div>
