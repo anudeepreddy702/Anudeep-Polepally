@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useState, useEffect } from "react"
 import Buckets from "./Group/Buckets"
-import Homepage from "./Group/Homepage"
+import AboutMe from "./Group/AboutMe"
 import Template from "./Group/Template"
 import Aboutsite from "./Group/Aboutsite"
 import Footer from "./Group/Footer"
@@ -34,7 +34,7 @@ function App() {
         <Route path="/" element={<Buckets darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/bucketlist" element={< Template darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/MoneyTransferComparison" element={<MoneyTransferComparison darkMode={darkMode} toggleMode={toggleMode} />} />
-        <Route path="/about" element={<Homepage darkMode={darkMode} toggleMode={toggleMode} />} />
+        <Route path="/about" element={<AboutMe darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/resources" element={<Learning_resources darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/aboutsite" element={<Aboutsite darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="*" element={<NotFound darkMode={darkMode} toggleMode={toggleMode} />} />

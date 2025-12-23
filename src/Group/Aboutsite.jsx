@@ -6,7 +6,7 @@ import SidebarMenu from "./Sides";
 function Aboutsite({ darkMode, toggleMode }) {
   return (
     <>
-        <ScrollProgressBar darkMode={darkMode} />
+      <ScrollProgressBar darkMode={darkMode} />
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu  darkMode={darkMode} toggleMode={toggleMode} />
       

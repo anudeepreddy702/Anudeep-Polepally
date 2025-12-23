@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navi from "./Navi";
 import SidebarMenu from "./Sides";
 import Footer from "./Footer";
@@ -86,7 +86,40 @@ const resources = [
 
 ];
 
+
+
+
 function LearningResources({ darkMode, toggleMode }) {
+  // ADD THIS NEW EFFECT - Scroll fade effect for hero section
+  useEffect(() => {
+      const handleScroll = () => {
+          const resourcesTitle = document.querySelector('.resources-title');
+          const resourcesIntro = document.querySelector('.resources-intro');
+          
+          if (resourcesTitle && resourcesIntro) {
+              const scrollPosition = window.scrollY;
+              const windowHeight = window.innerHeight;
+              
+              // Calculate opacity based on scroll position
+              // Fades out completely by the time you scroll 70% of viewport height
+              const opacity = Math.max(0, 1 - (scrollPosition / (windowHeight * 0.7)));
+              
+              // Add slight upward movement for polish
+              const translateY = scrollPosition * 0.5;
+              
+              resourcesTitle.style.opacity = opacity;
+              resourcesTitle.style.transform = `translateY(-${translateY}px)`;
+              
+              resourcesIntro.style.opacity = opacity;
+              resourcesIntro.style.transform = `translateY(-${translateY}px)`;
+          }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      
+      // Cleanup
+      return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <>
     <ScrollProgressBar darkMode={darkMode} />
