@@ -1,10 +1,12 @@
 import Footer from "./Footer";
 import Navi from "./Navi";
+import ScrollProgressBar from "./ScrollProgressBar";
 import SidebarMenu from "./Sides";
 
 function Aboutsite({ darkMode, toggleMode }) {
   return (
     <>
+        <ScrollProgressBar darkMode={darkMode} />
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu  darkMode={darkMode} toggleMode={toggleMode} />
       

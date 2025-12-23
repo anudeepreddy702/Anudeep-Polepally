@@ -32,7 +32,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Buckets darkMode={darkMode} toggleMode={toggleMode} />} />
-        <Route path="/bucketlist" element={<Template darkMode={darkMode} toggleMode={toggleMode} />} />
+        <Route path="/bucketlist" element={< Template darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/MoneyTransferComparison" element={<MoneyTransferComparison darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/about" element={<Homepage darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/resources" element={<Learning_resources darkMode={darkMode} toggleMode={toggleMode} />} />

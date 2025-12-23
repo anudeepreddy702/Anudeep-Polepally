@@ -7,7 +7,7 @@ import ScrollProgressBar from "./ScrollProgressBar";
 function Buckets({ darkMode, toggleMode }) {
   return (
     <>
-        <ScrollProgressBar darkMode={darkMode} />
+      <ScrollProgressBar darkMode={darkMode} />
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <Homie darkMode={darkMode} toggleMode={toggleMode} />
