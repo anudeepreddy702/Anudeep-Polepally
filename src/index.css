@@ -29,6 +29,21 @@ body {
 }
 
 /* ============================================
+  A highlighted box where you can select text and see it in action
+Shows the lime background immediately when you highlight text.
+   ============================================ */
+
+::selection {
+  background-color: #F47600;
+  color: #0f172a;
+}
+
+::-moz-selection {
+  background-color: #F47600;
+  color: #0f172a;
+}
+
+/* ============================================
    2. ROOT CONTAINER
    ============================================ */
 #root {

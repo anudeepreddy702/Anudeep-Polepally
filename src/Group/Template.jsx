@@ -383,6 +383,7 @@ function Template({ darkMode, toggleMode }) {
                     <li>Visit Marina Bay Sands SkyPark, Singapore.</li>
                     <li>Explore Jaipur’s Pink City, India.</li>
                     <li>Try Bengali desserts.</li>
+                    <li>Learn to Drift.</li>
                     <li>Go on a sunrise or sunset walk with family.</li>
                     <li>Take a houseboat ride in Alleppey, Kerala, India.</li>
                     <li>Visit the IT capital of India, Bengaluru,India.</li>
