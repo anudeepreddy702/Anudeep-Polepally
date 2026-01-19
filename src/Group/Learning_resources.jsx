@@ -5,11 +5,17 @@ import Footer from "./Footer";
 import ScrollProgressBar from "./ScrollProgressBar";
 
 const resources = [
-    {
+  {
         name: "Frontend Developer Roadmap – roadmap.sh",
         url: "https://roadmap.sh/frontend?r=frontend",
         description:
         "A comprehensive roadmap covering the skills, tools, and concepts every modern frontend developer should know.",
+      },
+      {
+        name: "The Internet Explained – Vox",
+        url: "https://www.vox.com/2014/6/16/18076282/the-internet",
+        description:
+        "An insightful breakdown of how the internet works behind the scenes — a great starting point for understanding the web.",
       },
       {
         name: "Fullstack Open – University of Helsinki",
@@ -21,7 +27,7 @@ const resources = [
         name: "The Odin Project – Foundations Course",
         url: "https://www.theodinproject.com/paths/foundations/courses/foundations",
         description:
-          "A free, structured curriculum that covers HTML, CSS, Git, and JavaScript — ideal for building a strong foundation in full-stack web development.",
+        "A free, structured curriculum that covers HTML, CSS, Git, and JavaScript — ideal for building a strong foundation in full-stack web development.",
       },
       {
         name: "Writing Semantic HTML – cs.fyi",
@@ -46,18 +52,12 @@ const resources = [
         url: "https://javascript.info/",
         description:
         "In-depth, beginner-to-advanced JavaScript concepts explained clearly with practical examples.",
-    },
-    {
-      name: "Eloquent JavaScript",
+      },
+      {
+        name: "Eloquent JavaScript",
       url: "https://eloquentjavascript.net/",
       description:
         "A deep, hands-on book that teaches JavaScript through clear explanations and interactive coding exercises — perfect for mastering the language fundamentals.",
-    },
-    {
-      name: "The Internet Explained – Vox",
-      url: "https://www.vox.com/2014/6/16/18076282/the-internet",
-      description:
-        "An insightful breakdown of how the internet works behind the scenes — a great starting point for understanding the web.",
     },
     {
     name: "How DNS Works – Illustrated Guide",
@@ -75,15 +75,43 @@ const resources = [
     name: "What Is Web Hosting – Hostinger",
     url: "https://www.hostinger.com/tutorials/what-is-web-hosting",
     description:
-      "An easy-to-understand introduction to web hosting — explaining servers, domains, and deployment basics for developers new to web infrastructure.",
+    "An easy-to-understand introduction to web hosting — explaining servers, domains, and deployment basics for developers new to web infrastructure.",
   },
   {
     name: "React Official Documentation",
     url: "https://react.dev/",
     description:
       "The official React docs with interactive tutorials and comprehensive guides for building modern web applications.",
-  },
-
+    },
+    {
+      name: "React Developer Roadmap – roadmap.sh",
+      url: "https://roadmap.sh/react",
+      description:
+      "A detailed roadmap outlining the essential knowledge and skills needed to become a proficient React developer.",
+    },
+    {
+      name: "React Lifecycle Methods and Hooks – BairesDev Blog",
+      url: "https://www.bairesdev.com/blog/react-lifecycle-methods-hooks/",
+      description:
+      "An in-depth look at React lifecycle methods and hooks, explaining their usage and best practices in modern React development.",
+    },  
+    {
+      name: "Fine-Grained Control with React Memoization",
+      url: "https://medium.com/@vasanthancomrads/fine-grained-control-with-react-memoization-usememo-vs-usecallback-vs-react-memo-e0239311d6ee",
+      description: "Understanding useMemo vs useCallback vs React.memo",
+      
+    },
+    {
+      name: "Lazy Loading in React",
+      url: "https://medium.com/@swatikpl44/lazy-loading-in-react-4095e01a9dbc",
+      description: "Implementing lazy loading patterns in React applications",
+    },
+    {
+      name: "Angular Developer Roadmap – roadmap.sh",
+      url: "https://roadmap.sh/angular",
+      description:
+      "A structured guide to mastering Angular, covering core concepts, tools, and best practices for building robust applications.",
+    },
 ];
 
 
