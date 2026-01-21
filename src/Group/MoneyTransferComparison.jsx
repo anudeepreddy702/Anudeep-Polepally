@@ -176,7 +176,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
 
   return (
     <>
-    <ScrollProgressBar darkMode={darkMode} />
+      <ScrollProgressBar darkMode={darkMode} />
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu />
 
@@ -190,7 +190,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
         {/* Content Section */}
         <div className="transfer-content-section">
           <div className="converter-card">
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr', gap: '2rem', alignItems: 'center' }}>
+            <div className="converter-grid">
               <div className="currency-section">
                 <label className="currency-label">You Send</label>
                 <div className="currency-input-group">
@@ -234,7 +234,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
               <div className="currency-section">
                 <label className="currency-label">Recipient Gets</label>
                 <div className="currency-input-group">
-                  <div className="amount-input amount-display" style={{ background: '#fff7ed', color: '#F47600', fontWeight: 'bold', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  <div className="amount-input amount-display">
                     {loading ? '...' : receivedAmount.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                   </div>
                   <select
@@ -267,7 +267,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
                   <p className="rate-value">
                     1 {fromCurrency} = {loading ? '...' : googleRate ? googleRate.toFixed(4) : 'N/A'} {toCurrency}
                   </p>
-                  <p style={{ fontSize: '0.875rem', color: '#64748b', marginTop: '0.5rem' }}>
+                  <p className="rate-update-text">
                     Updated in real-time from European Central Bank
                   </p>
                 </div>
@@ -299,7 +299,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
                     <div className="service-card-content">
                       <div className="service-info">
                         <div className="service-header">
-                          <div style={{ marginBottom: '1rem' }}>
+                          <div className="service-title-group">
                             <div className={`service-name-badge ${service.className}`}>
                               {service.name}
                             </div>

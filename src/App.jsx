@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useState, useEffect } from "react"
-import Buckets from "./Group/Buckets"
+import Homie from "./Group/Homie"
 import AboutMe from "./Group/AboutMe"
 import Template from "./Group/Template"
 import Aboutsite from "./Group/Aboutsite"
@@ -31,7 +31,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Buckets darkMode={darkMode} toggleMode={toggleMode} />} />
+        <Route path="/" element={<Homie darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/bucketlist" element={< Template darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/MoneyTransferComparison" element={<MoneyTransferComparison darkMode={darkMode} toggleMode={toggleMode} />} />
         <Route path="/about" element={<AboutMe darkMode={darkMode} toggleMode={toggleMode} />} />
