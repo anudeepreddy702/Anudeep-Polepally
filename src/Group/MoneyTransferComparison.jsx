@@ -295,86 +295,73 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
                 ) - totalCost;
 
                 return (
-                  <div key={idx} className={`service-card ${service.className}`}>
-                    <div className="service-card-content">
-                      <div className="service-info">
-                        <div className="service-header">
-                          <div className="service-title-group">
-                            <div className={`service-name-badge ${service.className}`}>
-                              {service.name}
-                            </div>
-                            {service.type && (
-                              <span className="service-type">{service.type}</span>
-                            )}
-                          </div>
-                          <div className="service-rating">
-                            <span className="service-rating-star">★</span>
-                            <span className="service-rating-value">{service.rating}</span>
-                          </div>
-                        </div>
+                  <div key={idx} className="service-card">
+                    <div className="service-number">
+                      {String(idx + 1).padStart(2, "0")}
+                    </div>
 
-                        <div className="service-features">
-                          {service.features.map((feature, i) => (
-                            <span key={i} className="feature-tag">
-                              {feature}
-                            </span>
-                          ))}
-                        </div>
+                    <h3 className="service-name">{service.name}</h3>
+                    {service.type && (
+                      <span className="service-type">{service.type}</span>
+                    )}
 
-                        <div className="service-delivery">
-                          <span><strong>Delivery:</strong> {service.deliveryTime}</span>
-                        </div>
-                      </div>
+                    <div className="service-rating">
+                      <span className="service-rating-star">★</span>
+                      <span className="service-rating-value">{service.rating}</span>
+                    </div>
 
-                      <div className="cost-breakdown">
-                        <h4>Cost Breakdown</h4>
-                        <div className="cost-items">
-                          <div className="cost-item">
-                            <span className="cost-label">Transfer Fee:</span>
-                            <span className="cost-value">
-                              {fromCurrencyData?.symbol}{service.fee.toFixed(2)}
-                            </span>
-                          </div>
-                          <div className="cost-item">
-                            <span className="cost-label">Rate Markup:</span>
-                            <span className="cost-value markup">
-                              {(service.exchangeMarkup * 100).toFixed(2)}%
-                            </span>
-                          </div>
-                          <div className="cost-item cost-total">
-                            <span className="cost-label">Total Cost:</span>
-                            <span className="cost-value">
-                              {fromCurrencyData?.symbol}{totalCost.toFixed(2)}
-                            </span>
-                          </div>
-                          {savingsVsWorst > 1 && (
-                            <div className="savings-badge">
-                              Save {fromCurrencyData?.symbol}{savingsVsWorst.toFixed(2)} vs highest
-                            </div>
-                          )}
-                        </div>
-                      </div>
+                    <div className="service-features">
+                      {service.features.map((feature, i) => (
+                        <span key={i} className="feature-tag">
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
 
-                      <div className="recipient-section">
-                        <div className="recipient-label">Recipient Receives</div>
-                        <div className="recipient-amount">
-                          {toCurrencyData?.symbol}{received.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-                        </div>
-                        <div className="recipient-currency">{toCurrencyData?.code}</div>
-                        <div className="recipient-rate">
-                          Rate: 1 {fromCurrency} = {googleRate ? (googleRate * (1 - service.exchangeMarkup)).toFixed(4) : 'N/A'} {toCurrency}
-                        </div>
+                    <div className="service-delivery">
+                      <strong>Delivery:</strong> {service.deliveryTime}
+                    </div>
 
-                        <a
-                          href={service.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`service-cta-button ${service.className}`}
-                        >
-                          {service.ctaText}
-                        </a>
+                    <div className="cost-summary">
+                      <h4>Cost Breakdown</h4>
+                      <div className="cost-items">
+                        <div className="cost-item">
+                          <span className="cost-label">Transfer Fee:</span>
+                          <span className="cost-value">
+                            {fromCurrencyData?.symbol}{service.fee.toFixed(2)}
+                          </span>
+                        </div>
+                        <div className="cost-item">
+                          <span className="cost-label">Rate Markup:</span>
+                          <span className="cost-value markup">
+                            {(service.exchangeMarkup * 100).toFixed(2)}%
+                          </span>
+                        </div>
+                        <div className="cost-item cost-total">
+                          <span className="cost-label">Total Cost:</span>
+                          <span className="cost-value">
+                            {fromCurrencyData?.symbol}{totalCost.toFixed(2)}
+                          </span>
+                        </div>
                       </div>
                     </div>
+
+                    <div className="recipient-amount-display">
+                      <div className="recipient-label">Recipient Receives</div>
+                      <div className="recipient-amount">
+                        {toCurrencyData?.symbol}{received.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                      </div>
+                      <div className="recipient-currency">{toCurrencyData?.code}</div>
+                    </div>
+
+                    <a
+                      href={service.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="service-link-text"
+                    >
+                      {service.ctaText} →
+                    </a>
                   </div>
                 );
               })}
