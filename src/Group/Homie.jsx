@@ -19,10 +19,6 @@ function Homie({ darkMode, toggleMode }) {
           <p>
             I believe life is best measured by the experiences we collect, not the things we own. Every journey, challenge, and idea we explore shapes who we become both personally and professionally.
           </p>
-          <p>
-            This website is my digital journal and creative space. Here, I document my adventures, track personal goals, and reflect on the experiences that fuel my curiosity from traveling and discovering new cultures to building intuitive, meaningful digital experiences as a frontend engineer. It’s a living record of growth, exploration, and continuous learning.
-          </p>
-
           <div className="story-image-homepage">
             <img
               src="/43316.jpeg"
@@ -30,6 +26,10 @@ function Homie({ darkMode, toggleMode }) {
               className="hero-image-intro"
             />
           </div>
+          <p>
+            This website is my digital journal and creative space. Here, I document my adventures, track personal goals, and reflect on the experiences that fuel my curiosity from traveling and discovering new cultures to building intuitive, meaningful digital experiences as a frontend engineer. It’s a living record of growth, exploration, and continuous learning.
+          </p>
+
           <p>
             I’m driven by curiosity, creativity, and the belief that the best journeys are still ahead. I’m always looking for new ways to learn, grow, and make a positive impact in the world. Whether you’re a fellow traveler, a curious mind, or someone looking for inspiration, I hope you’ll find something here that resonates with you.
           </p>
