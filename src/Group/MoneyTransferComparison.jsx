@@ -8,33 +8,33 @@ import ScrollProgressBar from './ScrollProgressBar';
 
 export default function MoneyTransferComparison({ darkMode, toggleMode }) {
   const navigate = useNavigate();
-  const [fromAmount, setFromAmount] = useState('1000');
+  const [fromAmount, setFromAmount] = useState('1');
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('INR');
   const [exchangeRate, setExchangeRate] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const currencies = [
-    { code: 'USD', name: 'US Dollar', symbol: '$', flag: '🇺🇸' },
-    { code: 'EUR', name: 'Euro', symbol: '€', flag: '🇪🇺' },
-    { code: 'GBP', name: 'British Pound', symbol: '£', flag: '🇬🇧' },
-    { code: 'INR', name: 'Indian Rupee', symbol: '₹', flag: '🇮🇳' },
-    { code: 'CAD', name: 'Canadian Dollar', symbol: 'C$', flag: '🇨🇦' },
-    { code: 'AUD', name: 'Australian Dollar', symbol: 'A$', flag: '🇦🇺' },
-    { code: 'PHP', name: 'Philippine Peso', symbol: '₱', flag: '🇵🇭' },
-    { code: 'MXN', name: 'Mexican Peso', symbol: 'Mex$', flag: '🇲🇽' },
-    { code: 'JPY', name: 'Japanese Yen', symbol: '¥', flag: '🇯🇵' },
-    { code: 'CNY', name: 'Chinese Yuan', symbol: '¥', flag: '🇨🇳' },
-    { code: 'SGD', name: 'Singapore Dollar', symbol: 'S$', flag: '🇸🇬' },
-    { code: 'NZD', name: 'New Zealand Dollar', symbol: 'NZ$', flag: '🇳🇿' },
-    { code: 'THB', name: 'Thai Baht', symbol: '฿', flag: '🇹🇭' },
-    { code: 'VND', name: 'Vietnamese Dong', symbol: '₫', flag: '🇻🇳' },
-    { code: 'KRW', name: 'South Korean Won', symbol: '₩', flag: '🇰🇷' },
-    { code: 'BRL', name: 'Brazilian Real', symbol: 'R$', flag: '🇧🇷' },
-    { code: 'ZAR', name: 'South African Rand', symbol: 'R', flag: '🇿🇦' },
-    { code: 'AED', name: 'UAE Dirham', symbol: 'د.إ', flag: '🇦🇪' },
-    { code: 'SAR', name: 'Saudi Riyal', symbol: '﷼', flag: '🇸🇦' },
-    { code: 'CHF', name: 'Swiss Franc', symbol: 'CHF', flag: '🇨🇭' },
+    { code: 'USD', name: 'United States Dollar', symbol: '$' },
+    { code: 'EUR', name: 'Euro', symbol: '€'},
+    { code: 'GBP', name: 'British Pound', symbol: '£'},
+    { code: 'INR', name: 'Indian Rupee', symbol: '₹'},
+    { code: 'CAD', name: 'Canadian Dollar', symbol: 'C$'},
+    { code: 'AUD', name: 'Australian Dollar', symbol: 'A$' },
+    { code: 'PHP', name: 'Philippine Peso', symbol: '₱'},
+    { code: 'MXN', name: 'Mexican Peso', symbol: 'Mex$'},
+    { code: 'JPY', name: 'Japanese Yen', symbol: '¥' },
+    { code: 'CNY', name: 'Chinese Yuan', symbol: '¥' },
+    { code: 'SGD', name: 'Singapore Dollar', symbol: 'S$' },
+    { code: 'NZD', name: 'New Zealand Dollar', symbol: 'NZ$' },
+    { code: 'THB', name: 'Thai Baht', symbol: '฿' },
+    { code: 'VND', name: 'Vietnamese Dong', symbol: '₫' },
+    { code: 'KRW', name: 'South Korean Won', symbol: '₩' },
+    { code: 'BRL', name: 'Brazilian Real', symbol: 'R$' },
+    { code: 'ZAR', name: 'South African Rand', symbol: 'R' },
+    { code: 'AED', name: 'UAE Dirham', symbol: 'د.إ' },
+    { code: 'SAR', name: 'Saudi Riyal', symbol: '﷼' },
+    { code: 'CHF', name: 'Swiss Franc', symbol: 'CHF' },
   ];
 
   const swapCurrencies = () => {
@@ -190,6 +190,18 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
         {/* Content Section */}
         <div className="transfer-content-section">
           <div className="converter-card">
+            <div className="rate-display">
+              <div className="rate-header">
+                <div className="rate-title-section">
+                  <h3>Live Exchange Rate</h3>
+                  <p className="rate-value">
+                    1 {fromCurrency} = {loading ? '...' : googleRate ? googleRate.toFixed(4) : 'N/A'} {toCurrency}
+                  </p>
+                </div>
+                  <p className="rate-update-text">
+                    Updated in real-time from European Central Bank
+                  </p>
+              </div>
             <div className="converter-grid">
               <div className="currency-section">
                 <label className="currency-label">You Send</label>
@@ -199,7 +211,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
                     value={fromAmount}
                     onChange={(e) => setFromAmount(e.target.value)}
                     className="amount-input"
-                    placeholder="1000"
+                    placeholder="100"
                     min="0"
                     max="9999999999"
                   />
@@ -210,17 +222,17 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
                   >
                     {currencies.map((curr) => (
                       <option key={curr.code} value={curr.code}>
-                        {curr.flag} {curr.code}
+                         {curr.code}
                       </option>
                     ))}
                   </select>
                 </div>
                 <div className="currency-info-box">
-                  <span className="currency-flag">{fromCurrencyData?.flag}</span>
+                
                   <div className="currency-details">
                     <span className="currency-code">{fromCurrencyData?.code}</span>
                     <span className="currency-name"> - {fromCurrencyData?.name}</span>
-                    <span className="currency-symbol">({fromCurrencyData?.symbol})</span>
+                    <span className="currency-symbol">({fromCurrencyData?.symbol}) is equals to</span>
                   </div>
                 </div>
               </div>
@@ -244,13 +256,13 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
                   >
                     {currencies.map((curr) => (
                       <option key={curr.code} value={curr.code}>
-                        {curr.flag} {curr.code}
+                     {curr.code}
                       </option>
                     ))}
                   </select>
                 </div>
                 <div className="currency-info-box">
-                  <span className="currency-flag">{toCurrencyData?.flag}</span>
+                 
                   <div className="currency-details">
                     <span className="currency-code">{toCurrencyData?.code}</span>
                     <span className="currency-name"> - {toCurrencyData?.name}</span>
@@ -260,26 +272,14 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
               </div>
             </div>
 
-            <div className="rate-display">
-              <div className="rate-header">
-                <div className="rate-title-section">
-                  <h3>Live Exchange Rate</h3>
-                  <p className="rate-value">
-                    1 {fromCurrency} = {loading ? '...' : googleRate ? googleRate.toFixed(4) : 'N/A'} {toCurrency}
-                  </p>
-                  <p className="rate-update-text">
-                    Updated in real-time from European Central Bank
-                  </p>
-                </div>
-              </div>
+            </div>
+          </div>
 
               <div className="rate-note">
                 <p>
                   <strong>Note:</strong> This is the mid-market rate (real exchange rate). Transfer services add their own fees and exchange rate markups to this base rate.
                 </p>
               </div>
-            </div>
-          </div>
 
           <div className="services-section">
             <div className="services-header">
@@ -306,7 +306,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
                     )}
 
                     <div className="service-rating">
-                      <span className="service-rating-star">★</span>
+                      <span className="service-rating-star">Rated ★ </span>
                       <span className="service-rating-value">{service.rating}</span>
                     </div>
 

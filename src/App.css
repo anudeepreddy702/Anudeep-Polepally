@@ -1321,18 +1321,19 @@
 }
 
 /* Exchange Rate Display */
-.rate-display {
+/* .rate-display {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 2px solid #fed7aa;
-}
+} */
 
-.appdark .rate-display {
+/* .appdark .rate-display {
   border-top-color: rgba(244, 118, 0, 0.3);
-}
+} */
 
 .rate-header {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5rem;

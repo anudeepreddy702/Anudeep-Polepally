@@ -1120,7 +1120,7 @@ footer a:hover {
 }
 
 /* Rate Display */
-.rate-display {
+/* .rate-display {
   margin-top: 2rem;
   padding-top: 2rem;
   border-top: 1px solid #e2e8f0;
@@ -1128,7 +1128,7 @@ footer a:hover {
 
 .appdark .rate-display {
   border-top-color: #404040;
-}
+} */
 
 .rate-header {
   text-align: center;
