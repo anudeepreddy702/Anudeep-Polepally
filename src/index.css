@@ -812,7 +812,7 @@ footer a:hover {
 @media (max-width: 768px) {
   body {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.65;
   }
 
   header h1 {
@@ -825,7 +825,7 @@ footer a:hover {
 
   main {
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 0;
   }
 
   .intro-img img {
@@ -845,7 +845,9 @@ footer a:hover {
   }
 
   .counter-stats {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
   }
 
@@ -865,7 +867,7 @@ footer a:hover {
   }
 
   .footer-links {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
@@ -884,9 +886,9 @@ footer a:hover {
 
   .back-to-top {
     bottom: 1rem;
-    right: 1rem;
+    right: 0.75rem;
     padding: 0.6rem 0.4rem;
-    font-size: 0.85rem;
+    font-size: 0.6rem;
   }
 
   .img-container-circle {
@@ -898,13 +900,14 @@ footer a:hover {
     padding-left: 1rem;
   }
 
+  /* Keep at 2px — do NOT override to 3px */
   .scroll-progress-container {
-    height: 3px;
+    height: 2px;
   }
 
   .cta-button {
     padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    font-size: 0.82rem;
   }
 }
 
@@ -919,7 +922,7 @@ footer a:hover {
   }
 
   main {
-    margin: 1.5rem;
+    margin: 1.5rem auto;
     padding: 1.5rem;
   }
 
