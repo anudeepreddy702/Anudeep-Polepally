@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-function SidebarMenu({ darkMode, toggleMode }) {  // Add these props
+function SidebarMenu({ darkMode = false, toggleMode }) {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -25,7 +25,7 @@ function SidebarMenu({ darkMode, toggleMode }) {  // Add these props
         <span></span>
       </button>
 
-      <div className={`sidebar-overlay ${isOpen ? 'open' : ''}`}>
+      <div className={`sidebar-overlay ${isOpen ? 'open' : ''} ${darkMode ? 'sidebar-dark' : 'sidebar-light'}`}>
         <button className="close-btn" onClick={toggleMenu}>
           <span></span>
           <span></span>

@@ -30,6 +30,12 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ============================================
   A highlighted box where you can select text and see it in action
 Shows the lime background immediately when you highlight text.
@@ -171,23 +177,20 @@ blockquote {
    7. IMAGES - GLOBAL STYLES
    ============================================ */
 .intro-img img {
-  box-sizing: border-box;
-  height: 10%;
-  width: 20%;
-  max-width: 100%;
+  width: 100%;
+  max-width: 220px;
+  height: auto;
   border-radius: 150px;
-  align-items: center;
-  margin: 25px;
+  margin: 1.5rem auto;
+  display: block;
 }
 
 .img-container-square img {
-  box-sizing: border-box;
-  height: 10%;
   width: 100%;
+  height: auto;
   max-width: 100%;
   vertical-align: bottom;
   border-radius: 40px;
-  align-items: center;
   margin-bottom: 0;
   padding-bottom: 0;
   transition: transform 0.3s ease;
@@ -201,30 +204,27 @@ blockquote {
 
 .img-container-circle {
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
   margin: 1rem auto;
   display: flex;
   justify-content: center;
 }
 
 .img-container-circle img {
-  box-sizing: border-box;
-  height: 0%;
   width: 100%;
-  max-width: 70%;
+  height: auto;
+  max-width: 100%;
   vertical-align: bottom;
   border-radius: 4px;
-  clip-path: circle(30%);
-  align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  clip-path: circle(45%);
+  margin: 0 auto;
   padding: 0;
 }
 
 .img-container-circle img:hover {
   transform: translateY(-15px) scale(1.05);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-  clip-path: circle(35%);
+  clip-path: circle(50%);
   z-index: 10;
   position: relative;
 }
@@ -484,7 +484,7 @@ footer a:hover {
   color: #f5f5f5;
   padding: 1rem 2rem 1rem;
   margin: 0;
-  margin-top: 4rem;
+  margin-top: 0;
   border-top: 3px solid #F47600;
   width: 100%;
   box-sizing: border-box;

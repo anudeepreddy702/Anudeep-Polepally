@@ -155,7 +155,7 @@ function LearningResources({ darkMode, toggleMode }) {
     <>
       <ScrollProgressBar darkMode={darkMode} />
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu />
+      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <div className="page-container">
         <section className="resources-section">
           <h1 ref={titleRef} className="resources-title">

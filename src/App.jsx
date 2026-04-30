@@ -21,9 +21,9 @@ function App() {
 
   useEffect(() => {
     if (darkMode) {
-      document.body.className = "appdark";
+      document.body.className = "appdark app-dark";
     } else {
-      document.body.className = "app";
+      document.body.className = "app app-light";
     }
   }, [darkMode]);
 

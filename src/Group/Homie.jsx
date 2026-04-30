@@ -13,10 +13,9 @@ function Homie({ darkMode, toggleMode }) {
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
       <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <div className="page-container">
-        {/* Intro Section */}
-        <section className="intro-section">
-          <h2>Life is an Adventure</h2>
-          <p>
+        <section className="hero-section">
+          <h1 className="hero-title">Life is an Adventure</h1>
+          <p className="hero-subtitle">
             I believe life is best measured by the experiences we collect, not the things we own. Every journey, challenge, and idea we explore shapes who we become both personally and professionally.
           </p>
           <div className="story-image-homepage">
@@ -26,13 +25,15 @@ function Homie({ darkMode, toggleMode }) {
               className="hero-image-intro"
             />
           </div>
-          <p>
-            This website is my digital journal and creative space. Here, I document my adventures, track personal goals, and reflect on the experiences that fuel my curiosity from traveling and discovering new cultures to building intuitive, meaningful digital experiences as a frontend engineer. It’s a living record of growth, exploration, and continuous learning.
-          </p>
+          <div className="hero-fade-content">
+            <p>
+              This website is my digital journal and creative space. Here, I document my adventures, track personal goals, and reflect on the experiences that fuel my curiosity from traveling and discovering new cultures to building intuitive, meaningful digital experiences as a frontend engineer. It’s a living record of growth, exploration, and continuous learning.
+            </p>
 
-          <p>
-            I’m driven by curiosity, creativity, and the belief that the best journeys are still ahead. I’m always looking for new ways to learn, grow, and make a positive impact in the world. Whether you’re a fellow traveler, a curious mind, or someone looking for inspiration, I hope you’ll find something here that resonates with you.
-          </p>
+            <p>
+              I’m driven by curiosity, creativity, and the belief that the best journeys are still ahead. I’m always looking for new ways to learn, grow, and make a positive impact in the world. Whether you’re a fellow traveler, a curious mind, or someone looking for inspiration, I hope you’ll find something here that resonates with you.
+            </p>
+          </div>
 
           {/* Featured Image with Story */}
           <div className="home-cta-section">

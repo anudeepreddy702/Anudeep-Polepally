@@ -178,7 +178,7 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
     <>
       <ScrollProgressBar darkMode={darkMode} />
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu />
+      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
 
       <div className="money-transfer-page">
         {/* Hero Section - Similar to Resources Page */}

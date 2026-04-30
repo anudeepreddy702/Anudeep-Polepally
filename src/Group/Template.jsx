@@ -50,7 +50,7 @@ function Template({ darkMode, toggleMode }) {
         <>
             <ScrollProgressBar darkMode={darkMode} />
             <Navi darkMode={darkMode} toggleMode={toggleMode} />
-            <SidebarMenu />
+            <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
             <div className="page-container">
                 {/* Hero with background image */}
                 <section className="hero-section">

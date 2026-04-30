@@ -10,7 +10,7 @@ function Homepage({ darkMode, toggleMode }) {
     <>
       <ScrollProgressBar darkMode={darkMode} />
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu />
+      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <div className="page-container">
         <section className="about-section">
           <div className="about-content">
