@@ -6,21 +6,20 @@ test.describe('404 Page Tests', () => {
 
         // Should show 404 content
         await expect(page.locator('text=404')).toBeVisible()
-        await expect(page.locator('text=Page Not Found')).toBeVisible()
+        await expect(page.locator('text=Lost in the Woods?')).toBeVisible()
     })
 
     test('should display error message', async ({ page }) => {
         await page.goto('/invalid-route-12345')
 
         // Should show descriptive error message
-        // Should show descriptive error message
-        await expect(page.getByText(/doesn't exist/i)).toBeVisible()
+        await expect(page.getByText(/doesn't exist or has moved/i)).toBeVisible()
     })
 
-    test('should have "Go Home" link', async ({ page }) => {
+    test('should have "Back to Home" link', async ({ page }) => {
         await page.goto('/non-existent-page')
 
-        const homeLink = page.locator('a:has-text("Go Home")')
+        const homeLink = page.locator('a:has-text("Back to Home")')
         await expect(homeLink).toBeVisible()
 
         // Click and verify navigation

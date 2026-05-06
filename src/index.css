@@ -133,6 +133,20 @@ main {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  main {
+    padding: 0.75rem;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0.5rem;
+    margin: 5px;
+  }
+}
+
 /* ============================================
    5. GLOBAL UTILITIES
    ============================================ */
@@ -171,6 +185,18 @@ blockquote {
 .page-container {
   animation: fadeIn 0.4s ease-in;
   padding-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding-top: 55px;
+  }
 }
 
 /* ============================================

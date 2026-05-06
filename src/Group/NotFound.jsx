@@ -8,11 +8,9 @@ export default function NotFound({ darkMode, toggleMode }) {
   const navigate = useNavigate();
 
   const handleGoBack = () => {
-    // Check if there's history to go back to
     if (window.history.length > 2) {
       navigate(-1);
     } else {
-      // If no history, go to home
       navigate('/');
     }
   };
@@ -20,27 +18,45 @@ export default function NotFound({ darkMode, toggleMode }) {
   return (
     <div className={darkMode ? 'appdark' : 'app'}>
       <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu />
+      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       
-      <div className="notfound-page">
-        <div className="notfound-container">
-          <div className="notfound-icon">⚠️</div>
-          <h1 className="notfound-title">404</h1>
-          <h2 className="notfound-subtitle">Page Not Found</h2>
-          <p className="notfound-description">
-            Oops! The page you're looking for doesn't exist. It might have been moved or deleted.
-          </p>
-          
-          <div className="notfound-buttons">
-            <Link to="/" className="notfound-btn-primary">
-              Go Home
-            </Link>
+      <div className="page-container">
+        <section className="notfound-hero">
+          <div className="notfound-content">
+            <div className="notfound-graphic">
+              <div className="notfound-number">404</div>
+            </div>
             
-            <button onClick={handleGoBack} className="notfound-btn-secondary">
-              Go Back
-            </button>
+            <h1 className="notfound-title">Lost in the Woods?</h1>
+            
+            <p className="notfound-subtitle">
+              The page you're looking for doesn't exist or has moved to a different adventure.
+            </p>
+            
+            <p className="notfound-description">
+              Don't worry! Every great journey has a few detours. Let me help you get back on track.
+            </p>
+            
+            <div className="notfound-buttons">
+              <Link to="/" className="notfound-btn notfound-btn-primary">
+                Back to Home
+              </Link>
+              
+              <button onClick={handleGoBack} className="notfound-btn notfound-btn-secondary">
+                Go Back
+              </button>
+            </div>
+
+            <div className="notfound-links">
+              <p className="notfound-links-label">Or explore other pages:</p>
+              <div className="notfound-quick-links">
+                <Link to="/about" className="quick-link">About Me</Link>
+                <Link to="/bucketlist" className="quick-link">Bucket List</Link>
+                <Link to="/resources" className="quick-link">Resources</Link>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
       
       <Footer />

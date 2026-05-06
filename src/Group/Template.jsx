@@ -1,5 +1,5 @@
 //Main component
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import Navi from "./Navi";
 import SidebarMenu from "./Sides";
 import Footer from "./Footer";

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-function SidebarMenu({ darkMode = false, toggleMode }) {
+function SidebarMenu({ darkMode = false }) {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();

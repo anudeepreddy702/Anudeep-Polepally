@@ -7,7 +7,7 @@ import ScrollProgressBar from './ScrollProgressBar';
 
 
 export default function MoneyTransferComparison({ darkMode, toggleMode }) {
-  const navigate = useNavigate();
+
   const [fromAmount, setFromAmount] = useState('1');
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('INR');

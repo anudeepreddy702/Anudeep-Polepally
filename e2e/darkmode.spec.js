@@ -39,8 +39,6 @@ test.describe('Dark Mode Tests', () => {
             await toggleButton.click()
             await page.waitForTimeout(500)
 
-            const darkModeClass = await page.locator('body').getAttribute('class')
-
             // Navigate to another page
             const bucketListLink = page.locator('text=View My Bucket List')
             if (await bucketListLink.count() > 0) {

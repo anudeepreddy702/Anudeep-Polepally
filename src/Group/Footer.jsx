@@ -1,14 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import SidebarMenu from "./Sides";
+
 function Footer({ darkMode, toggleMode }) {
   const navigate = useNavigate();
+  
   return (
     <>
-      <SidebarMenu />
+      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <footer className="site-footer">
         <div className="footer-content">
+          {/* Brand Section */}
           <div className="footer-brand">
-            {/* Logo Image */}
             <div className="footer-logo">
               <img 
                 src="/A.png" 
@@ -16,58 +18,64 @@ function Footer({ darkMode, toggleMode }) {
                 className="brand-logo"
               />
             </div>
-            <h3>Andy's World</h3>
+            <h3 className="footer-brand-name">Andy's World</h3>
             <p className="footer-tagline">
-              <mark>It's an Andy Polepally Thing</mark>
+              <span className="tagline-highlight">It's an Andy Polepally Thing</span>
             </p>
           </div>
 
+          {/* Links Section */}
           <div className="footer-links">
+            {/* Navigation */}
             <div className="footer-section">
-              <h4>Navigate</h4>
-              <ul>
-                <li><button onClick={() => navigate("/")}>Home</button></li>
-                <li><button onClick={() => navigate("/about")}>About Me</button></li>
-                <li><button onClick={() => navigate("/bucketlist")}>Bucket List</button></li>
-                <li><button onClick={() => navigate("/MoneyTransferComparison")}>CMC Tool</button></li>
-                <li><button onClick={()=>navigate("/resources")}>Resources</button></li>
-                <li><button onClick={() => navigate("/aboutsite")}>Site Info</button></li>
-              </ul>
+              <h4 className="footer-section-title">Navigate</h4>
+              <nav className="footer-nav">
+                <ul>
+                  <li><button onClick={() => navigate("/")} className="footer-link">Home</button></li>
+                  <li><button onClick={() => navigate("/about")} className="footer-link">About Me</button></li>
+                  <li><button onClick={() => navigate("/bucketlist")} className="footer-link">Bucket List</button></li>
+                  <li><button onClick={() => navigate("/MoneyTransferComparison")} className="footer-link">CMC Tool</button></li>
+                  <li><button onClick={() => navigate("/resources")} className="footer-link">Resources</button></li>
+                  <li><button onClick={() => navigate("/aboutsite")} className="footer-link">Site Info</button></li>
+                </ul>
+              </nav>
             </div>
 
+            {/* Connect Section */}
             <div className="footer-section">
-              <h4>Connect</h4>
-              <ul>
+              <h4 className="footer-section-title">Connect</h4>
+              <ul className="footer-socials">
                 <li>
-                  <a href="mailto:anudeepreddypolepally@gmail.com">
+                  <a href="mailto:anudeepreddypolepally@gmail.com" className="footer-link social-link">
                     Email
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/anudeepreddy702" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/anudeepreddy702" target="_blank" rel="noopener noreferrer" className="footer-link social-link">
                     GitHub
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/polepally-anudeep" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/polepally-anudeep" target="_blank" rel="noopener noreferrer" className="footer-link social-link">
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/anudeepreddy2525" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/anudeepreddy2525" target="_blank" rel="noopener noreferrer" className="footer-link social-link">
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://roadmap.sh/u/polepallyanudeep" target="_blank" rel="noopener noreferrer">
-                  Roadmap
+                  <a href="https://roadmap.sh/u/polepallyanudeep" target="_blank" rel="noopener noreferrer" className="footer-link social-link">
+                    Roadmap
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div className="footer-section">
-              <h4>Philosophy</h4>
+            {/* Philosophy Section */}
+            <div className="footer-section footer-philosophy">
+              <h4 className="footer-section-title">Philosophy</h4>
               <p className="footer-quote">
                 "Collect experiences, not things. Live intentionally, travel fearlessly."
               </p>
@@ -75,9 +83,10 @@ function Footer({ darkMode, toggleMode }) {
           </div>
         </div>
 
+        {/* Footer Bottom */}
+        <div className="footer-divider"></div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Andy's World. All rights reserved.</p>
-
+          <p className="footer-copyright">&copy; {new Date().getFullYear()} Andy's World. All rights reserved.</p>
           <p className="footer-credit">Built with passion, powered by React</p>
         </div>
       </footer>
