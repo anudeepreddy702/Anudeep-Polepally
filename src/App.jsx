@@ -49,7 +49,14 @@ function App() {
           }
         />
 
-        <Route path="/money-transfer" element={<MoneyTransferComparison darkMode={darkMode} toggleMode={toggleMode} />} />
+        <Route
+          path="/money-transfer"
+          element={
+            <Layout darkMode={darkMode} toggleMode={toggleMode}>
+              <MoneyTransferComparison darkMode={darkMode} toggleMode={toggleMode} />
+            </Layout>
+          }
+        />
 
         <Route
           path="/about"

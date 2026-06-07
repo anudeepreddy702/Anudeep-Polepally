@@ -17,18 +17,18 @@ describe('Homie Component', () => {
 
     it('should display main heading', () => {
         render(<MockHomie />)
-        expect(screen.getByText('Life is an Adventure')).toBeInTheDocument()
+        expect(screen.getByText(/Anudeep Polepally builds fast/i)).toBeInTheDocument()
     })
 
     it('should display intro text', () => {
         render(<MockHomie />)
-        expect(screen.getByText(/I believe life is best measured/i)).toBeInTheDocument()
+        expect(screen.getByText(/4\+ years of experience/i)).toBeInTheDocument()
     })
 
     it('should display CTA buttons', () => {
         render(<MockHomie />)
-        expect(screen.getByText('Read My Story')).toBeInTheDocument()
-        expect(screen.getByText('View My Bucket List')).toBeInTheDocument()
+        expect(screen.getByText('Contact Me')).toBeInTheDocument()
+        expect(screen.getByText('About Anudeep')).toBeInTheDocument()
     })
 
     it('should have images', () => {
@@ -39,6 +39,6 @@ describe('Homie Component', () => {
 
     it('should render with dark mode', () => {
         render(<MockHomie darkMode={true} />)
-        expect(screen.getByText('Life is an Adventure')).toBeInTheDocument()
+        expect(screen.getByText(/Anudeep Polepally builds fast/i)).toBeInTheDocument()
     })
 })

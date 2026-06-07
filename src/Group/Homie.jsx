@@ -1,71 +1,146 @@
 import { useNavigate } from "react-router-dom"
-import Navi from "./Navi";
-import SidebarMenu from "./Sides";
-import Footer from "./Footer";
-import ScrollProgressBar from "./ScrollProgressBar";
 
-function Homie({ darkMode, toggleMode }) {
-  const navigate = useNavigate();
+function Homie() {
+  const navigate = useNavigate()
+
+  const skills = [
+    "React",
+    "Angular",
+    "TypeScript",
+    "JavaScript",
+    "REST APIs",
+    "GraphQL",
+    "Testing",
+    "Performance",
+  ]
+
+  const projects = [
+    {
+      title: "CMC Money Transfer Tool",
+      description:
+        "A focused comparison tool for currency conversion and transfer-service costs, designed for quick decisions and transparent breakdowns.",
+      tags: ["React", "UX", "Data UI"],
+      action: () => navigate("/money-transfer"),
+      actionLabel: "View Tool",
+    },
+    {
+      title: "Learning Resources Hub",
+      description:
+        "A curated resource page for frontend growth, pairing practical learning paths with clean, scannable navigation.",
+      tags: ["Content UX", "Frontend", "Curation"],
+      action: () => navigate("/resources"),
+      actionLabel: "Explore Resources",
+    },
+    {
+      title: "Adventure Journal",
+      description:
+        "A personal bucket-list experience that blends photography, storytelling, and interactive goal tracking.",
+      tags: ["React Router", "Personal Brand", "Responsive UI"],
+      action: () => navigate("/bucketlist"),
+      actionLabel: "See Journal",
+    },
+  ]
 
   return (
-    <>
-      <div className="page-container">
-        <section className="hero-section">
-          <h1 className="hero-title">Life is an Adventure</h1>
-          <p className="hero-subtitle">
-            I believe life is best measured by the experiences we collect, not the things we own. Every journey, challenge, and idea we explore shapes who we become both personally and professionally.
+    <div className="portfolio-page">
+      <section className="portfolio-hero">
+        <div className="portfolio-hero-copy">
+          <p className="portfolio-kicker">Frontend Engineer | Boston, MA</p>
+          <h1>Anudeep Polepally builds fast, thoughtful web experiences.</h1>
+          <p className="portfolio-lede">
+            I am a frontend engineer with 4+ years of experience turning complex product ideas into responsive, accessible, and maintainable user interfaces with React, Angular, TypeScript, and modern web tooling.
           </p>
-          <div className="story-image-homepage">
-            <img
-              src="/43316.jpeg"
-              alt="Andy's adventure"
-              className="hero-image-intro"
-            />
+          <div className="portfolio-actions">
+            <a
+              href="#contact"
+              className="cta-button"
+            >
+              Contact Me
+            </a>
+            <button onClick={() => navigate("/about")} className="cta-button cta-button-secondary">
+              About Anudeep
+            </button>
           </div>
-          <div className="hero-fade-content">
-            <p>
-              This website is my digital journal and creative space. Here, I document my adventures, track personal goals, and reflect on the experiences that fuel my curiosity from traveling and discovering new cultures to building intuitive, meaningful digital experiences as a frontend engineer. It’s a living record of growth, exploration, and continuous learning.
-            </p>
+        </div>
+        <div className="portfolio-portrait">
+          <img src="/Andy_colors.jpg" alt="Anudeep Polepally" />
+        </div>
+      </section>
 
+      <section className="portfolio-section portfolio-overview" aria-label="Professional overview">
+        <div className="portfolio-stat">
+          <span>4+</span>
+          <p>Years building production web applications</p>
+        </div>
+        <div className="portfolio-stat">
+          <span>React</span>
+          <p>Component-driven interfaces, routing, state, and testing</p>
+        </div>
+        <div className="portfolio-stat">
+          <span>UX</span>
+          <p>Accessible, performant experiences that stay easy to use</p>
+        </div>
+      </section>
+
+      <section className="portfolio-section">
+        <div className="portfolio-section-heading">
+          <p className="portfolio-kicker">Core Stack</p>
+          <h2>Tools I use to ship polished interfaces</h2>
+        </div>
+        <div className="skills-list">
+          {skills.map((skill) => (
+            <span key={skill}>{skill}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="portfolio-section">
+        <div className="portfolio-section-heading">
+          <p className="portfolio-kicker">Selected Work</p>
+          <h2>Projects and product thinking</h2>
+        </div>
+        <div className="project-grid">
+          {projects.map((project) => (
+            <article className="project-card" key={project.title}>
+              <div>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
+              <div className="project-tags">
+                {project.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
+              <button onClick={project.action} className="project-link">
+                {project.actionLabel}
+              </button>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="portfolio-section experience-section">
+        <div className="portfolio-section-heading">
+          <p className="portfolio-kicker">Experience</p>
+          <h2>Frontend engineering with product empathy</h2>
+        </div>
+        <div className="experience-list">
+          <div className="experience-item">
+            <h3>Frontend Engineer</h3>
             <p>
-              I’m driven by curiosity, creativity, and the belief that the best journeys are still ahead. I’m always looking for new ways to learn, grow, and make a positive impact in the world. Whether you’re a fellow traveler, a curious mind, or someone looking for inspiration, I hope you’ll find something here that resonates with you.
+              Build scalable web interfaces, translate business requirements into clean user flows, and collaborate across design, product, and engineering to improve real-world product experiences.
             </p>
           </div>
-
-          {/* Featured Image with Story */}
-          <div className="home-cta-section">
-            <div className="featured-story">
-              <div className="story-image">
-                <img
-                  src="/Maine-Andy.jpg"
-                  alt="Andy's adventure"
-                  className="hero-image"
-                />
-              </div>
-              <div className="story-content">
-                <h3>About My Journey</h3>
-                <p>
-                  My journey is shaped by curiosity exploring new places, cultures, and ideas while building intuitive digital experiences as a frontend engineer. I believe growth comes from learning continuously, stepping outside my comfort zone, and embracing every new challenge.
-                </p>
-                <p>
-                  This isn't just a bucket list. It's a commitment to living fully, exploring boldly,
-                  and creating memories that last a lifetime. Join me as I check off dreams and
-                  discover new ones along the way.
-                </p>
-                <div className="cta-buttons">
-                  <button onClick={() => navigate("/about")} className="cta-button">
-                    Read My Story
-                  </button>
-                  <button onClick={() => navigate("/bucketlist")} className="cta-button">
-                    View My Bucket List
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div className="experience-item">
+            <h3>Computer Information Systems, M.S.</h3>
+            <p>
+              Graduate foundation in software development, frontend architecture, data systems, and user-centered application design from New England College.
+            </p>
           </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+
+    </div>
   )
 }
 

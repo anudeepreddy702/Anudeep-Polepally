@@ -1,23 +1,14 @@
 import { useNavigate } from "react-router-dom"
-import Footer from "./Footer";
-import Navi from "./Navi";
-import SidebarMenu from "./Sides";
-import ScrollProgressBar from "./ScrollProgressBar";
-
-function Homepage({ darkMode, toggleMode }) {
+function Homepage() {
   const navigate = useNavigate();
   return (
     <>
-      <ScrollProgressBar darkMode={darkMode} />
-      <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <div className="page-container">
         <section className="about-section">
           <div className="about-content">
             <h2>Meet Anudeep R.</h2>
             <div className="about-intro">
               <h3>Hi, I'm <strong>Anudeep Reddy  Polepally(Andy)!</strong></h3>
-
               <p>
                 I’m a Frontend Engineer with 4+ years of experience building responsive, user-focused web applications.
                 My journey began with a passion for bridging design and functionality, and today I specialize in turning complex ideas into clean, scalable, and intuitive digital experiences.
@@ -146,5 +137,6 @@ From learning to play the guitar to operating an excavator, each experience repr
     </>
   );
 };
+
 
 export default Homepage

@@ -1,8 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import Navi from "./Navi";
-import SidebarMenu from "./Sides";
-import Footer from "./Footer";
-import ScrollProgressBar from "./ScrollProgressBar";
 
 const resources = [
   {
@@ -114,7 +110,7 @@ const resources = [
   },
 ];
 
-function LearningResources({ darkMode, toggleMode }) {
+function LearningResources() {
   const titleRef = useRef(null);
   const introRef = useRef(null);
 

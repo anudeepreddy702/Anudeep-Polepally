@@ -8,14 +8,14 @@ function Navi({ darkMode, toggleMode }) {
     <nav className="navbar">
       <div className="nav-left">
         <button onClick={() => navigate('/')} className="logo">
-          Andy's World
+          Anudeep Polepally
         </button>
         <div className="nav-links">
           <button
             onClick={() => navigate('/')}
             className={location.pathname === '/' ? 'nav-link active' : 'nav-link'}
           >
-            Home
+            Portfolio
           </button>
           <button
             onClick={() => navigate('/about')}
@@ -27,12 +27,12 @@ function Navi({ darkMode, toggleMode }) {
             onClick={() => navigate('/bucketlist')}
             className={location.pathname === '/bucketlist' ? 'nav-link active' : 'nav-link'}
           >
-            Bucket List
+            Journal
           </button>
           
           <button
-          onClick={()=>navigate('/Money-transfer')}
-          className={location.pathname==='/Money-transfer'?'nav-link active':'nav-link'}
+          onClick={()=>navigate('/money-transfer')}
+          className={location.pathname==='/money-transfer'?'nav-link active':'nav-link'}
           >
             CMC Tool
           </button>

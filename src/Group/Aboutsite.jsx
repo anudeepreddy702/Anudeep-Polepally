@@ -1,123 +1,73 @@
-import Footer from "./Footer";
-import Navi from "./Navi";
-import ScrollProgressBar from "./ScrollProgressBar";
-import SidebarMenu from "./Sides";
-
-function Aboutsite({ darkMode, toggleMode }) {
+function Aboutsite({ darkMode }) {
   return (
-    <>
-      <ScrollProgressBar darkMode={darkMode} />
-      <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu  darkMode={darkMode} toggleMode={toggleMode} />
-      
-      <div className={darkMode ? "appdark" : "app"}>
-        {/* Hero Section - Matching your other pages */}
-        {/* <section className="hero-section-bottom">
-          <div className="hero-image-container">
-            <img 
-              src="/website-showcase.jpg" 
-              alt="Website showcase" 
-              className="hero-image-intro"
-            />
+    <div className={darkMode ? "appdark" : "app"}>
+      <main>
+        <section className="intro-section-about site-info-page">
+          <p className="portfolio-kicker">Site Info</p>
+          <h2>Behind the Pixels</h2>
+
+          <p>
+            This website is a personal portfolio, technical playground, and living archive in one place. It brings together my frontend work, learning resources, travel journal, and small product experiments into a single experience that feels personal without losing professional clarity.
+          </p>
+
+          <div className="site-info-grid site-build-grid">
+            <div className="site-info-card">
+              <span className="orange-text">React</span>
+              <p>Component-driven UI with reusable page structure.</p>
+            </div>
+            <div className="site-info-card">
+              <span className="orange-text">Vite</span>
+              <p>Fast local development and optimized production builds.</p>
+            </div>
+            <div className="site-info-card">
+              <span className="orange-text">CSS</span>
+              <p>Custom responsive styling without a heavy design framework.</p>
+            </div>
           </div>
-        </section> */}
 
-        {/* Main Content - Prose Style like About page */}
-        <main>
-          <section className="intro-section-about">
-            <h2>Behind the Pixels</h2>
-            
-            <p>
-              This website exists as a digital canvas a place where life's moments, goals, and reflections 
-              converge into something tangible. Built from scratch over three months, every line of code 
-              carries intention, and every design choice tells a story.
-            </p>
+          <h3>The Craft</h3>
+          <p>
+            The site is intentionally built with a direct, hands-on frontend approach: React for structure, React Router for page flow, and pure CSS for layout, motion, dark mode, and responsive behavior. Every page is designed to work across phone, tablet, laptop, and wide desktop screens.
+          </p>
+          <p>
+            Most of the imagery comes from my own photos, which keeps the experience grounded in my actual story instead of making it feel like a generic template. The portfolio is meant to show both the engineer and the person behind the interface.
+          </p>
 
-            <h3>The Craft</h3>
-            
-            <p>
-              Every photograph you see here was captured on a mobile device no professional cameras, 
-              no elaborate setups. Just a Samsung S10 and an iPhone 15,
-              proving that the best camera is the one you have with you.
-            </p>
+          <h3>The Design System</h3>
+          <p>
+            One color anchors the visual identity: <mark>#F47600</mark>. It gives the site energy and continuity across buttons, links, highlights, progress states, and section details. The typography pairs expressive headings with readable body text so the pages can feel bold while staying easy to scan.
+          </p>
 
-            <p>
-              The typography breathes through Inter, a modern, clean sans-serif font designed 
-              for digital screens. Each letter, each space, chosen for readability and elegance.
-            </p>
+          <h3>The Pages</h3>
+          <p>
+            The portfolio homepage focuses on frontend engineering, selected work, skills, and contact links. The About page gives more personal and professional context. The Journal keeps the adventure/bucket-list side of the site alive. The CMC tool is now a clean mid-market currency converter, and Resources collects learning material that shaped my frontend journey.
+          </p>
 
-            <h3>The Color Story</h3>
-            
-            <p>
-              One color defines this space: <mark>#F47600</mark>. Inspired by McLaren F1's iconic 
-              Papaya Orange, it's bold, energetic, and impossible to ignore. This isn't just a color—it's 
-              a philosophy. Like the racing team that inspired it, this site is about speed, precision, 
-              and pushing boundaries.
-            </p>
+          <h3>Performance and Accessibility</h3>
+          <p>
+            The site is structured with semantic sections, keyboard-friendly links and buttons, responsive grids, readable contrast, and reduced layout overflow across common device sizes. I also use automated tests and production builds to catch regressions before changes feel finished.
+          </p>
 
-            <h3>The Technology</h3>
-            
-            <p>
-              Built with React, styled with pure CSS, and structured with 
-              JSX, this is modern web development stripped to its essentials. No unnecessary 
-              frameworks, no bloated libraries. Just clean, performant code that does exactly what it needs to do.
-            </p>
+          <h3>What I Learned</h3>
+          <p>
+            This project helped sharpen the parts of frontend work that matter in real products: aligning content, taming responsive edge cases, keeping navigation consistent, making interaction states clear, and balancing personality with usability.
+          </p>
 
-            <h3>The Purpose</h3>
-            
-            <p>
-              This isn't just a portfolio. It's a commitment device. A public declaration of goals, 
-              adventures, and the journey from aspiration to achievement. The bucket list you see isn't 
-              decoration it's a living document, a challenge to myself to keep moving, keep exploring, 
-              keep growing.
-            </p>
+          <blockquote>
+            "A portfolio should not just show what you built. It should show how you think."
+          </blockquote>
 
-            <p>
-              Every page here serves a purpose: to inspire action, to document growth, to remind myself 
-              (and maybe you) that life is too short for passive observation. This website is proof that 
-              you don't need permission to start building the life you want.
-            </p>
+          <h3>What Comes Next</h3>
+          <p>
+            This site will keep evolving as my work evolves. Future improvements may include stronger project case studies, richer screenshots, better performance reporting, and more refined writing around the decisions behind each build.
+          </p>
 
-            <h3>The Journey</h3>
-            
-            <p>
-              Three months of late nights, countless iterations, and learning curves that felt more like 
-              learning cliffs. But that's the point, isn't it? Growth happens in the struggle, in the 
-              debugging sessions, in the moments when you finally solve that CSS alignment issue at 2 AM.
-            </p>
-
-            <blockquote>
-              "Every line of code here represents a choice to build rather than consume, to create 
-              rather than critique, to document rather than forget."
-            </blockquote>
-
-            <p>
-              This site will evolve, just like I do. New adventures will be added, goals will be checked 
-              off (and new ones created), and the design will mature. But the core principle remains: 
-              live intentionally, document honestly, and never stop moving forward.
-            </p>
-
-            <h3>Thank You</h3>
-            
-            <p>
-              For taking the time to explore this corner of the internet. Whether you're here for 
-              inspiration, curiosity, or just stumbled upon this randomly I hope you found something 
-              that resonates. If this site motivates even one person to start their own project, chase 
-              their own adventure, or build their own digital space, then every hour spent coding was 
-              worth it.
-            </p>
-            <p>
-              A creation of Anudeep Reddy Polepally.
-            </p>
-            <p>
-              Now go create something. Your own story is waiting to be written.
-            </p>
-          </section>
-        </main>
-      </div>
-      
-      <Footer />
-    </>
+          <p>
+            Created and maintained by Anudeep Reddy Polepally.
+          </p>
+        </section>
+      </main>
+    </div>
   );
 }
 

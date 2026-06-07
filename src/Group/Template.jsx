@@ -1,12 +1,8 @@
 //Main component
 import React, { useEffect, useMemo } from "react";
-import Navi from "./Navi";
-import SidebarMenu from "./Sides";
-import Footer from "./Footer";
-import ScrollProgressBar from "./ScrollProgressBar";
 import { bucketList } from "../data/bucketList";
 
-function Template({ darkMode, toggleMode }) {
+function Template() {
     // Calculate counts directly from data
     const counts = useMemo(() => {
         const total = bucketList.length;

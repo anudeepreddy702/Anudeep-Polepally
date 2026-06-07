@@ -46,7 +46,7 @@ function SidebarMenu({ darkMode = false }) {
               onClick={() => handleNavigation('/')}
             >
               <span className="menu-number">I</span>
-              <span className="menu-text">HOME</span>
+              <span className="menu-text">PORTFOLIO</span>
             </div>
 
             <div 
@@ -63,18 +63,18 @@ function SidebarMenu({ darkMode = false }) {
               onClick={() => handleNavigation('/bucketlist')}
             >
               <span className="menu-number">III</span>
-              <span className="menu-text">BUCKET LIST</span>
-              <span className="menu-subtitle">My adventures & goals</span>
+              <span className="menu-text">JOURNAL</span>
+              <span className="menu-subtitle">Adventures & goals</span>
             </div>
 
             <div 
 
-              className={`menu-item ${isActive('/Money-transfer') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/Money-transfer')}
+              className={`menu-item ${isActive('/money-transfer') ? 'active' : ''}`}
+              onClick={() => handleNavigation('/money-transfer')}
             >
               <span className="menu-number">IV</span>
               <span className="menu-text">CMC TOOL</span>
-              <span className="menu-subtitle">Custom Money comparision tool</span>
+              <span className="menu-subtitle">Money comparison tool</span>
             </div>
             <div 
 
