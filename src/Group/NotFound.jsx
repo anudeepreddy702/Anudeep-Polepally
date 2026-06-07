@@ -58,8 +58,7 @@ export default function NotFound({ darkMode, toggleMode }) {
           </div>
         </section>
       </div>
-      
-      <Footer />
+
     </div>
   );
 }

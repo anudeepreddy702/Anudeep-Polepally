@@ -9,9 +9,6 @@ function Homie({ darkMode, toggleMode }) {
 
   return (
     <>
-      <ScrollProgressBar darkMode={darkMode} />
-      <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <div className="page-container">
         <section className="hero-section">
           <h1 className="hero-title">Life is an Adventure</h1>
@@ -68,7 +65,6 @@ function Homie({ darkMode, toggleMode }) {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   )
 }

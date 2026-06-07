@@ -48,12 +48,9 @@ function Template({ darkMode, toggleMode }) {
 
     return (
         <>
-            <ScrollProgressBar darkMode={darkMode} />
-            <Navi darkMode={darkMode} toggleMode={toggleMode} />
-            <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
             <div className="page-container">
                 {/* Hero with background image */}
-                <section className="hero-section">
+                <section className="hero-section bucket-hero">
                     <h1 className="hero-title">Welcome to My Journey: The Ultimate Quest</h1>
                     <p className="hero-subtitle">Exploring the world, one adventure at a time</p>
 
@@ -66,10 +63,6 @@ function Template({ darkMode, toggleMode }) {
                     <p>
                         I started writing this list back when I was feeling the kind of stress that comes from just observing life, not living it. Before I knew it, a simple list of "things to do" exploded into a constantly evolving document of goals.
                     </p>
-                    <div className="story-image-homepage">
-                        <img src="/IMG_945151.jpg" alt="Posing looking towards the waterfalls" className="hero-image-intro"
-                            height="250px" width="100%" />
-                    </div>
                     <p>
                         This is my living document of dreams, adventures, and experiences I want to collect throughout my lifetime.
                         Each item represents a commitment to living fully, exploring boldly, and creating memories that matter.
@@ -160,7 +153,7 @@ function Template({ darkMode, toggleMode }) {
                     ))}
                 </ul>
             </section>
-            <Footer />
+         
         </>
     )
 }

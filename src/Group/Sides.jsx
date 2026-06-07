@@ -69,8 +69,8 @@ function SidebarMenu({ darkMode = false }) {
 
             <div 
 
-              className={`menu-item ${isActive('/MoneyTransferComparison') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/MoneyTransferComparison')}
+              className={`menu-item ${isActive('/Money-transfer') ? 'active' : ''}`}
+              onClick={() => handleNavigation('/Money-transfer')}
             >
               <span className="menu-number">IV</span>
               <span className="menu-text">CMC TOOL</span>

@@ -379,7 +379,6 @@ export default function MoneyTransferComparison({ darkMode, toggleMode }) {
 
         </div>
       </div>
-      <Footer />
     </>
   );
 }

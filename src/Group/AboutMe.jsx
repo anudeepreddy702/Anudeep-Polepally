@@ -143,7 +143,6 @@ From learning to play the guitar to operating an excavator, each experience repr
         </section>
 
       </div>
-      <Footer />
     </>
   );
 };

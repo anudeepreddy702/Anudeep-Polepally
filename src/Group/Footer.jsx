@@ -1,12 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import SidebarMenu from "./Sides";
+
 
 function Footer({ darkMode, toggleMode }) {
   const navigate = useNavigate();
   
   return (
-    <>
-      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <footer className="site-footer">
         <div className="footer-content">
           {/* Brand Section */}
@@ -34,7 +32,7 @@ function Footer({ darkMode, toggleMode }) {
                   <li><button onClick={() => navigate("/")} className="footer-link">Home</button></li>
                   <li><button onClick={() => navigate("/about")} className="footer-link">About Me</button></li>
                   <li><button onClick={() => navigate("/bucketlist")} className="footer-link">Bucket List</button></li>
-                  <li><button onClick={() => navigate("/MoneyTransferComparison")} className="footer-link">CMC Tool</button></li>
+                  <li><button onClick={() => navigate("/Money-transfer")} className="footer-link">CMC Tool</button></li>
                   <li><button onClick={() => navigate("/resources")} className="footer-link">Resources</button></li>
                   <li><button onClick={() => navigate("/aboutsite")} className="footer-link">Site Info</button></li>
                 </ul>
@@ -90,7 +88,7 @@ function Footer({ darkMode, toggleMode }) {
           <p className="footer-credit">Built with passion, powered by React</p>
         </div>
       </footer>
-    </>
+   
   );
 }
 

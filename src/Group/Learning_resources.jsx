@@ -114,9 +114,6 @@ const resources = [
   },
 ];
 
-
-
-
 function LearningResources({ darkMode, toggleMode }) {
   const titleRef = useRef(null);
   const introRef = useRef(null);
@@ -153,9 +150,6 @@ function LearningResources({ darkMode, toggleMode }) {
   }, []);
   return (
     <>
-      <ScrollProgressBar darkMode={darkMode} />
-      <Navi darkMode={darkMode} toggleMode={toggleMode} />
-      <SidebarMenu darkMode={darkMode} toggleMode={toggleMode} />
       <div className="page-container">
         <section className="resources-section">
           <h1 ref={titleRef} className="resources-title">
@@ -191,8 +185,6 @@ function LearningResources({ darkMode, toggleMode }) {
           </div>
         </section>
       </div>
-
-      <Footer darkMode={darkMode} toggleMode={toggleMode} />
     </>
   );
 }
