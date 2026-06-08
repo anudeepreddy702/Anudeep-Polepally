@@ -4187,6 +4187,125 @@ margin-left: calc(50% - 50vw);
   overflow-wrap: anywhere;
 }
 
+.money-transfer-page .cmc-quick-pairs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: -0.5rem 0 1.75rem;
+}
+
+.money-transfer-page .cmc-quick-pairs button {
+  border: 1px solid rgba(244, 118, 0, 0.26);
+  border-radius: 999px;
+  background: transparent;
+  color: #384152;
+  cursor: pointer;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.6rem 0.85rem;
+  text-transform: uppercase;
+  transition: background 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease;
+}
+
+.money-transfer-page .cmc-quick-pairs button:hover,
+.money-transfer-page .cmc-quick-pairs button.active {
+  border-color: #F47600;
+  background: rgba(244, 118, 0, 0.1);
+  color: #C85F00;
+  transform: translateY(-1px);
+}
+
+.appdark .money-transfer-page .cmc-quick-pairs button {
+  color: rgba(232, 232, 240, 0.76);
+  border-color: rgba(244, 118, 0, 0.32);
+}
+
+.appdark .money-transfer-page .cmc-quick-pairs button:hover,
+.appdark .money-transfer-page .cmc-quick-pairs button.active {
+  color: #fff;
+  background: rgba(244, 118, 0, 0.2);
+}
+
+.money-transfer-page .cmc-panel {
+  border: 1px solid rgba(244, 118, 0, 0.2);
+  border-radius: 0;
+  background: #fff;
+  padding: clamp(1.1rem, 3vw, 1.6rem);
+  text-align: left;
+}
+
+.money-transfer-page .converter-card + .cmc-panel {
+  margin-top: 1rem;
+}
+
+.appdark .money-transfer-page .cmc-panel {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(244, 118, 0, 0.28);
+}
+
+.money-transfer-page .cmc-panel-heading {
+  margin-bottom: 1.25rem;
+}
+
+.money-transfer-page .cmc-panel-heading .portfolio-kicker {
+  margin-bottom: 0.45rem;
+}
+
+.money-transfer-page .cmc-panel-heading h2 {
+  margin: 0;
+  color: inherit;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.money-transfer-page .cmc-insight-stack {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.money-transfer-page .cmc-insight-stack > div,
+.money-transfer-page .cmc-details-grid > div {
+  min-width: 0;
+  border-top: 1px solid rgba(244, 118, 0, 0.18);
+  padding-top: 1rem;
+}
+
+.money-transfer-page .cmc-insight-stack strong,
+.money-transfer-page .cmc-details-grid strong {
+  display: block;
+  color: inherit;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.12rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.money-transfer-page .cmc-details-grid p {
+  margin: 0.45rem 0 0;
+  color: #64748b;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.appdark .money-transfer-page .cmc-details-grid p {
+  color: rgba(232, 232, 240, 0.68);
+}
+
+.money-transfer-page .cmc-details-panel {
+  margin-top: 1rem;
+}
+
+.money-transfer-page .cmc-details-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .money-transfer-page .rate-note,
 .money-transfer-page .disclaimer-section {
   max-width: 1120px;
@@ -4234,7 +4353,10 @@ margin-left: calc(50% - 50vw);
 
   .money-transfer-page .rate-header,
   .money-transfer-page .converter-grid,
-  .money-transfer-page .cmc-summary-row {
+  .money-transfer-page .cmc-summary-row,
+  .money-transfer-page .cmc-dashboard-grid,
+  .money-transfer-page .cmc-insight-stack,
+  .money-transfer-page .cmc-details-grid {
     grid-template-columns: 1fr;
   }
 
@@ -4250,6 +4372,14 @@ margin-left: calc(50% - 50vw);
   .money-transfer-page .swap-container {
     justify-content: flex-start;
     padding-top: 0;
+  }
+
+  .money-transfer-page .cmc-panel-heading-row {
+    display: grid;
+  }
+
+  .money-transfer-page .cmc-panel-heading-row > span {
+    white-space: normal;
   }
 }
 
@@ -4273,6 +4403,20 @@ margin-left: calc(50% - 50vw);
   .money-transfer-page .currency-select {
     border-left: 0;
     border-top: 1px solid rgba(244, 118, 0, 0.25);
+  }
+
+  .money-transfer-page .cmc-quick-pairs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .money-transfer-page .cmc-quick-pairs button {
+    width: 100%;
+    padding-inline: 0.6rem;
+  }
+
+  .money-transfer-page .cmc-chart-scale {
+    display: grid;
   }
 }
 
