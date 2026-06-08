@@ -1,142 +1,134 @@
-import { useNavigate } from "react-router-dom"
-function Homepage() {
-  const navigate = useNavigate();
+function AboutMe() {
+  const focusAreas = [
+    "React",
+    "Angular",
+    "TypeScript",
+    "Responsive UI",
+    "Accessibility",
+    "Performance",
+  ]
+
   return (
-    <>
-      <div className="page-container">
-        <section className="about-section">
-          <div className="about-content">
-            <h2>Meet Anudeep R.</h2>
-            <div className="about-intro">
-              <h3>Hi, I'm <strong>Anudeep Reddy  Polepally(Andy)!</strong></h3>
-              <p>
-                I’m a Frontend Engineer with 4+ years of experience building responsive, user-focused web applications.
-                My journey began with a passion for bridging design and functionality, and today I specialize in turning complex ideas into clean, scalable, and intuitive digital experiences.
-              </p>
-              <p> I’m driven by a passion for creating meaningful digital experiences that not only look great but also perform exceptionally well.
-                I care deeply about usability, performance, and continuous learning and I enjoy building products that feel thoughtful, fast, and human.
-              </p>
-              <div className="img-special">
-                <img src="/IMG_2741.jpg" alt="Posing looking towards the waterfalls" height="250px" width="100%" />
-              </div>
-              <p>
-                Let’s connect and bring great ideas to life!
-              </p>
-            </div>
+    <div className="about-page about-page-v2">
+      <section className="about-hero">
+        <div className="about-hero-copy">
+          <p className="portfolio-kicker">About Me</p>
+          <h1>Meet Anudeep R.</h1>
+          <p>
+            Hi, I am Anudeep Reddy Polepally, also known as Andy. I am a frontend engineer based in Boston, MA with 4+ years of experience building responsive, accessible, and maintainable web experiences.
+          </p>
+        </div>
 
-            <div className="about-story">
-              <h3>Professional Background</h3>
-
-              <p>I hold a Master’s degree in Computer Information Systems from New England College, New Hampshire, where I developed a strong foundation in frontend architecture, software development, and user experience design.</p>
-              <p>
-                Professionally, I focus on building scalable, responsive, and visually refined web applications. My core expertise includes React.js, JavaScript (ES6+), TypeScript, and modern UI frameworks, with an emphasis on performance, accessibility, and maintainable design systems.</p>
-
-              <p>I’m passionate about translating complex business requirements into elegant, intuitive user experiences, ensuring every design decision is purposeful.
-                My approach blends engineering precision, creative design thinking, and data-driven insights to deliver impactful digital products that align with both user needs and organizational goals.</p>
-
-              <p>I enjoy translating complex business requirements into intuitive user experiences. My approach blends engineering discipline, creative problem-solving, and data-driven thinking to deliver products that align with both user needs and business goals.
-              </p>
-              <p>
-                Beyond day-to-day development, I actively explore modern web trends, accessibility standards, and performance optimization techniques to continuously improve front-end craftsmanship.
-              </p>
-
-              <p>
-                If you'd like a deeper look at my professional experience and technical background, feel free to check out my linkedin below.
-              </p>
-              {/* Resume Download Button */}
-              <div className="resume-section">
-                <a
-                  href="https://www.linkedin.com/in/polepally-anudeep"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="resume-button"
-                >
-                  <span className="resume-icon">📄</span>
-                  <span>View My Linkedin</span>
-                </a>
-              </div>
-
-              <h3>My Origin story</h3>
-              <p>
-                I’m originally from Telangana, a state in southern India known for its rich culture and diversity. Growing up there sparked my curiosity for travel, new perspectives, and understanding different ways of life. </p>
-
-              <p>That curiosity has taken me across the world from exploring different regions of India to experiencing the fast-paced energy of New York City. Now based in Boston, Massachusetts, I continue to find inspiration through travel, photography, and new experiences.</p>
-              <p>
-From learning to play the guitar to operating an excavator, each experience represents a step in shaping who I strive to be curious, grounded, and always evolving.</p>
-            </div>
-
-            <div className="about-philosophy">
-              <h3>My Philosophy</h3>
-              <p>
-                Beyond coding, I’m a traveler, adventurer, and life enthusiast. I live by the belief:</p>
-              <blockquote>
-                "Life is not measured by the number of breaths we take, but by the moments that
-                take our breath away."
-              </blockquote>
-              <p>
-                I believe in pushing boundaries, stepping outside my comfort zone, and embracing both big adventures and small, meaningful moments.
-              </p>
-            </div>
-
-            <div className="about-achievements">
-              <h3>Milestones So Far</h3>
-              <div className="achievement-grid">
-                <div className="achievement-card">
-                  <span className="achievement-number">7</span>
-                  <span className="achievement-label">US States Visited</span>
-                </div>
-                <div className="achievement-card">
-                  <span className="achievement-number">15+</span>
-                  <span className="achievement-label">Goals Completed</span>
-                </div>
-                <div className="achievement-card">
-                  <span className="achievement-number">∞</span>
-                  <span className="achievement-label">Memories Created</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="story-image-homepage">
-              <img
-                src="/IMG_6263.jpeg"
-                alt="Andy's camping in car"
-                className="hero-image-intro"
-              />
-            </div>
-            <div className="about-next">
-              <h3>What's Next?</h3>
-              <p>
-                The adventure never stops! I'm currently working towards attending a Martin Garrix
-                concert, running a marathon, and exploring more of India's incredible heritage sites.
-                I'm also passionate about photography, entrepreneurship, and building meaningful
-                connections with people around the world.
-              </p>
-              <p>
-                As I continue growing both personally and professionally, I aim to blend creativity with technology building experiences that inspire, empower, and bring people together.
-                Every new step is a story in progress, and I’m excited to keep discovering, creating, and sharing what comes next.
-              </p>
-              <p>
-                Join me on this journey, and let’s inspire each other to live with curiosity and intention.
-              </p>
-            </div>
-
-            {/* Call to Action Banner */}
-            <div className="home-banner">
-              <h2>Start Your Own Adventure</h2>
-              <p>Life is too short to not pursue your dreams. What's on your bucket list?</p>
-              <div className="page-container">
-                <button onClick={() => navigate("/bucketlist")} className="cta-button">
-                  View My Adventures of a Lifetime
-                </button>
-              </div>
-            </div>
+        <aside className="about-profile-panel" aria-label="Anudeep profile summary">
+          <div className="about-hero-image">
+            <img src="/DSC_0311 Edited.jpg" alt="Anudeep listening to music outdoors" />
           </div>
-        </section>
+          <div className="about-profile-meta">
+            <span>Frontend Engineer</span>
+            <span>Boston, MA</span>
+            <span>Originally from Telangana, India</span>
+          </div>
+        </aside>
+      </section>
 
-      </div>
-    </>
-  );
-};
+      <section className="about-stats" aria-label="About Anudeep highlights">
+        <div>
+          <span>4+</span>
+          <p>Years building user-focused frontend applications</p>
+        </div>
+        <div>
+          <span>MS</span>
+          <p>Computer Information Systems, New England College</p>
+        </div>
+        <div>
+          <span>UI</span>
+          <p>Focused on clarity, performance, and thoughtful interaction</p>
+        </div>
+      </section>
 
+      <section className="about-section-modern about-two-column">
+        <div>
+          <p className="portfolio-kicker">Professional Background</p>
+          <h2>Building interfaces that feel clear, fast, and human.</h2>
+        </div>
+        <div className="about-prose">
+          <p>
+            My work is centered on translating complex product requirements into clean digital experiences. I care about component structure, responsive behavior, maintainable styling, and small interaction details that make a product easier to use.
+          </p>
+          <p>
+            I enjoy working close to design and product thinking, shaping frontend systems that can grow without becoming difficult to understand.
+          </p>
+        </div>
+      </section>
 
-export default Homepage
+      <section className="about-section-modern about-focus-section">
+        <div className="about-section-heading">
+          <p className="portfolio-kicker">Core Stack</p>
+          <h2>Tools and habits I keep close</h2>
+        </div>
+        <div className="about-focus-list">
+          {focusAreas.map((area) => (
+            <span key={area}>{area}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="about-section-modern about-split-story">
+        <div className="about-story-image">
+          <img src="/IMG_6263.jpeg" alt="Anudeep outdoors during a road trip" />
+        </div>
+        <div className="about-prose">
+          <p className="portfolio-kicker">The Person Behind The Interface</p>
+          <h2>Curiosity is the thread through everything.</h2>
+          <p>
+            Growing up in Telangana shaped my love for culture, travel, language, and perspective. Moving through different places and experiences continues to influence how I think about people and the products they use.
+          </p>
+          <p>
+            Outside of code, I am drawn to photography, music, road trips, and trying things that stretch my comfort zone. That same curiosity shows up in how I learn and build.
+          </p>
+        </div>
+      </section>
+
+      <section className="about-section-modern about-principles">
+        <div>
+          <p className="portfolio-kicker">Principles</p>
+          <h2>What guides my work</h2>
+        </div>
+        <div className="about-principle-grid">
+          <article>
+            <h3>Clarity</h3>
+            <p>Every screen should make the next action easier to understand.</p>
+          </article>
+          <article>
+            <h3>Craft</h3>
+            <p>Good frontend work is equal parts structure, detail, and restraint.</p>
+          </article>
+          <article>
+            <h3>Growth</h3>
+            <p>I keep learning because the web keeps moving, and that is part of the fun.</p>
+          </article>
+        </div>
+      </section>
+
+      <section className="about-next-modern">
+        <div>
+          <p className="portfolio-kicker">Next</p>
+          <h2>More useful products, sharper craft, better stories.</h2>
+          <p>
+            I am continuing to grow as a frontend engineer while building projects that combine practical utility with personal voice. This portfolio is part showcase, part lab, and part living record of that growth.
+          </p>
+        </div>
+        <div className="about-next-actions">
+          <a href="/bucketlist" className="cta-button">
+            View Journal
+          </a>
+          <a href="/resources" className="cta-button cta-button-secondary">
+            Resources
+          </a>
+        </div>
+      </section>
+    </div>
+  )
+}
+
+export default AboutMe

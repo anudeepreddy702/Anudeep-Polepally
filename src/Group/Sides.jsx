@@ -25,71 +25,73 @@ function SidebarMenu({ darkMode = false }) {
         <span></span>
       </button>
 
-      <div className={`sidebar-overlay ${isOpen ? 'open' : ''} ${darkMode ? 'sidebar-dark' : 'sidebar-light'}`}>
-        <button className="close-btn" onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-        </button>
+      {isOpen && (
+        <div className={`sidebar-overlay open ${darkMode ? 'sidebar-dark' : 'sidebar-light'}`}>
+          <button className="close-btn" onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+          </button>
 
-        <div className="menu-label">MENU</div>
+          <div className="menu-label">MENU</div>
 
-        <div className="sidebar-image">
-          <div className="image-placeholder">
-            <img src="/IMG_6325.jpeg" alt="Guitar poster" height="500px" width="100%"/>
+          <div className="sidebar-image">
+            <div className="image-placeholder">
+              <img src="/IMG_6325.jpeg" alt="Guitar poster" height="500px" width="100%" />
+            </div>
+          </div>
+
+          <div className="sidebar-content">
+            <nav className="sidebar-nav">
+              <div
+                className={`menu-item ${isActive('/') ? 'active' : ''}`}
+                onClick={() => handleNavigation('/')}
+              >
+                <span className="menu-number">I</span>
+                <span className="menu-text">PORTFOLIO</span>
+              </div>
+
+              <div
+                className={`menu-item ${isActive('/about') ? 'active' : ''}`}
+                onClick={() => handleNavigation('/about')}
+              >
+                <span className="menu-number">II</span>
+                <span className="menu-text">ABOUT ME</span>
+                <span className="menu-subtitle">My story & journey</span>
+              </div>
+
+              <div
+                className={`menu-item ${isActive('/bucketlist') ? 'active' : ''}`}
+                onClick={() => handleNavigation('/bucketlist')}
+              >
+                <span className="menu-number">III</span>
+                <span className="menu-text">JOURNAL</span>
+                <span className="menu-subtitle">Adventures & goals</span>
+              </div>
+
+              <div
+
+                className={`menu-item ${isActive('/money-transfer') ? 'active' : ''}`}
+                onClick={() => handleNavigation('/money-transfer')}
+              >
+                <span className="menu-number">IV</span>
+                <span className="menu-text">CMC TOOL</span>
+                <span className="menu-subtitle">Money comparison tool</span>
+              </div>
+              <div
+
+                className={`menu-item ${isActive('/resources') ? 'active' : ''}`}
+                onClick={() => handleNavigation('/resources')}
+              >
+                <span className="menu-number">V</span>
+                <span className="menu-text">RESOURCES</span>
+                <span className="menu-subtitle">Inspiration Library</span>
+              </div>
+
+
+            </nav>
           </div>
         </div>
-
-        <div className="sidebar-content">
-          <nav className="sidebar-nav">
-            <div 
-              className={`menu-item ${isActive('/') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/')}
-            >
-              <span className="menu-number">I</span>
-              <span className="menu-text">PORTFOLIO</span>
-            </div>
-
-            <div 
-              className={`menu-item ${isActive('/about') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/about')}
-            >
-              <span className="menu-number">II</span>
-              <span className="menu-text">ABOUT ME</span>
-              <span className="menu-subtitle">My story & journey</span>
-            </div>
-
-            <div 
-              className={`menu-item ${isActive('/bucketlist') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/bucketlist')}
-            >
-              <span className="menu-number">III</span>
-              <span className="menu-text">JOURNAL</span>
-              <span className="menu-subtitle">Adventures & goals</span>
-            </div>
-
-            <div 
-
-              className={`menu-item ${isActive('/money-transfer') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/money-transfer')}
-            >
-              <span className="menu-number">IV</span>
-              <span className="menu-text">CMC TOOL</span>
-              <span className="menu-subtitle">Money comparison tool</span>
-            </div>
-            <div 
-
-              className={`menu-item ${isActive('/resources') ? 'active' : ''}`}
-              onClick={() => handleNavigation('/resources')}
-            >
-              <span className="menu-number">V</span>
-              <span className="menu-text">RESOURCES</span>
-              <span className="menu-subtitle">Inspiration Library</span>
-            </div>
-
-
-          </nav>
-        </div>
-      </div>
+      )}
     </>
   );
 }
