@@ -119,6 +119,18 @@ function Homie() {
         </div>
       </section>
 
+      <section className="portfolio-section portfolio-signature-section" aria-label="ARP's Create Edit Build Deliver">
+        <div className="portfolio-signature-lines" aria-hidden="true">
+          <span className="signature-static">ARP's</span>
+          <span className="signature-rotator">
+            <span>Create,</span>
+            <span>Edit,</span>
+            <span>Build,</span>
+            <span>Deliver.</span>
+          </span>
+        </div>
+      </section>
+
       <section className="portfolio-section experience-section">
         <div className="portfolio-section-heading">
           <p className="portfolio-kicker">Experience</p>

@@ -634,6 +634,97 @@ footer a:hover {
   opacity: 0.8;
 }
 
+.signature-static {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(245, 245, 245, 0.78);
+  text-stroke: 1.5px rgba(245, 245, 245, 0.78);
+}
+
+.signature-rotator {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 5.6em;
+  width: 5.6em;
+  max-width: 100%;
+  height: 1.05em;
+  color: #F47600;
+  overflow: hidden;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.signature-rotator span {
+  position: absolute;
+  inset: 0 -0.14em 0 0;
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  padding-right: 0.14em;
+  text-overflow: clip;
+  transform: translateY(70%);
+  white-space: nowrap;
+  animation: signatureWordSwap 12s infinite;
+}
+
+.signature-rotator span:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.signature-rotator span:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.signature-rotator span:nth-child(4) {
+  animation-delay: 9s;
+}
+
+@keyframes signatureWordSwap {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+
+  7%,
+  22% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  29%,
+  100% {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+}
+
+@media (max-width: 1100px) {
+  .signature-rotator {
+    flex-basis: auto;
+    width: min(100%, 5.6em);
+  }
+}
+
+@media (max-width: 360px) {
+  .signature-rotator {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signature-rotator span {
+    animation: none;
+    transform: none;
+  }
+
+  .signature-rotator span:first-child {
+    opacity: 1;
+  }
+
+  .signature-rotator span:not(:first-child) {
+    display: none;
+  }
+}
+
 .footer-logo {
   margin-top: 1rem;
   margin-bottom: 0;
