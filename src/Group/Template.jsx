@@ -118,7 +118,7 @@ function Template() {
                                         <li className={item.completed ? "strikethrough" : ""}>
                                             {item.text}
                                         </li>
-                                        <img src={item.image} alt={item.alt} />
+                                        <img src={item.image} alt={item.alt} loading="lazy" decoding="async" />
                                         <p><mark>{item.caption}</mark></p>
                                     </div>
                                 </div>
@@ -154,3 +154,4 @@ function Template() {
     )
 }
 export default Template
+

@@ -63,7 +63,13 @@ function Homie() {
           </div>
         </div>
         <div className="portfolio-portrait">
-          <img src="/Andy_colors.jpg" alt="Anudeep Polepally" />
+          <img
+            src="/Andy_colors.jpg"
+            alt="Anudeep Polepally"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
         </div>
       </section>
 
@@ -157,3 +163,4 @@ function Homie() {
 }
 
 export default Homie
+

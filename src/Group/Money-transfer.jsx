@@ -60,6 +60,20 @@ export default function MoneyTransferComparison() {
     supportedCurrencies[fromCurrency] && supportedCurrencies[toCurrency],
   );
 
+  useEffect(() => {
+    const href = '/car-wide-1.jpg';
+    const existing = document.querySelector(`link[rel="preload"][as="image"][href="${href}"]`);
+
+    if (!existing) {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = href;
+      link.fetchPriority = 'high';
+      document.head.appendChild(link);
+    }
+  }, []);
+
   const swapCurrencies = () => {
     setFromCurrency(toCurrency);
     setToCurrency(fromCurrency);
@@ -329,3 +343,4 @@ export default function MoneyTransferComparison() {
     </div>
   );
 }
+

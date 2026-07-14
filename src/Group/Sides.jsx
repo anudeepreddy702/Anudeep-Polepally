@@ -36,7 +36,7 @@ function SidebarMenu({ darkMode = false }) {
 
           <div className="sidebar-image">
             <div className="image-placeholder">
-              <img src="/IMG_6325.jpeg" alt="Guitar poster" height="500px" width="100%" />
+              <img src="/IMG_6325.jpeg" alt="Guitar poster" height="500px" width="100%" loading="lazy" decoding="async" />
             </div>
           </div>
 
@@ -97,3 +97,4 @@ function SidebarMenu({ darkMode = false }) {
 }
 
 export default SidebarMenu;
+

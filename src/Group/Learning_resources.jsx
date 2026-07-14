@@ -114,6 +114,20 @@ function LearningResources() {
   const titleRef = useRef(null);
   const introRef = useRef(null);
 
+  useEffect(() => {
+    const href = '/IMG_4098.jpg';
+    const existing = document.querySelector(`link[rel="preload"][as="image"][href="${href}"]`);
+
+    if (!existing) {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = href;
+      link.fetchPriority = 'high';
+      document.head.appendChild(link);
+    }
+  }, []);
+
   // Scroll fade effect for hero section
   useEffect(() => {
     const handleScroll = () => {
@@ -186,3 +200,4 @@ function LearningResources() {
 }
 
 export default LearningResources;
+

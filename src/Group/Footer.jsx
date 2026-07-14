@@ -46,6 +46,8 @@ function Footer() {
                 src="/A.png" 
                 alt="Anudeep Polepally Logo" 
                 className="brand-logo"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <h3 className="footer-brand-name">Anudeep Polepally</h3>
@@ -91,7 +93,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/anudeepreddy2525" target="_blank" rel="noopener noreferrer" className="footer-link social-link">
+                  <a href="https://www.instagram.com/anudeepreddy52" target="_blank" rel="noopener noreferrer" className="footer-link social-link">
                     Instagram
                   </a>
                 </li>
@@ -110,3 +112,4 @@ function Footer() {
 }
 
 export default Footer;
+

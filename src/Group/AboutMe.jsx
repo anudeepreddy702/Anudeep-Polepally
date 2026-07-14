@@ -21,7 +21,13 @@ function AboutMe() {
 
         <aside className="about-profile-panel" aria-label="Anudeep profile summary">
           <div className="about-hero-image">
-            <img src="/DSC_0311 Edited.jpg" alt="Anudeep listening to music outdoors" />
+            <img
+              src="/DSC_0311 Edited.jpg"
+              alt="Anudeep listening to music outdoors"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
           </div>
           <div className="about-profile-meta">
             <span>Frontend Engineer</span>
@@ -75,7 +81,12 @@ function AboutMe() {
 
       <section className="about-section-modern about-split-story">
         <div className="about-story-image">
-          <img src="/IMG_6263.jpeg" alt="Anudeep outdoors during a road trip" />
+          <img
+            src="/IMG_6263.jpeg"
+            alt="Anudeep outdoors during a road trip"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
         <div className="about-prose">
           <p className="portfolio-kicker">The Person Behind The Interface</p>
@@ -118,13 +129,23 @@ function AboutMe() {
             I am continuing to grow as a frontend engineer while building projects that combine practical utility with personal voice. This portfolio is part showcase, part lab, and part living record of that growth.
           </p>
         </div>
-        <div className="about-next-actions">
-          <a href="/bucketlist" className="cta-button">
-            View Journal
-          </a>
-          <a href="/resources" className="cta-button cta-button-secondary">
-            Resources
-          </a>
+        <div className="about-next-visual">
+          <div className="about-story-image-beach">
+            <img
+              src="/20260704_155513.jpg"
+              alt="Anudeep outdoors during a personal project moment"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div className="about-next-actions">
+            <a href="/bucketlist" className="cta-button">
+              View Journal
+            </a>
+            <a href="/resources" className="cta-button cta-button-secondary">
+              Resources
+            </a>
+          </div>
         </div>
       </section>
     </div>
@@ -132,3 +153,4 @@ function AboutMe() {
 }
 
 export default AboutMe
+
