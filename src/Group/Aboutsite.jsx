@@ -22,11 +22,26 @@ const pageMap = [
 ];
 
 const qualityNotes = [
-  "Semantic page structure with shared navigation, main content, and footer landmarks.",
-  "Responsive grids and type scaling across phone, tablet, laptop, and wide displays.",
-  "Reduced-motion handling for decorative animation.",
-  "Native links, buttons, labels, and alt text used throughout core flows.",
-  "Production builds and route checks used before changes are considered finished.",
+  {
+    label: "Semantic Structure",
+    detail: "Shared navigation, main content, footer landmarks, headings, and section-based page flow.",
+  },
+  {
+    label: "Responsive Layout",
+    detail: "Grids and content widths adapt across phone, tablet, laptop, and wide displays.",
+  },
+  {
+    label: "Motion Care",
+    detail: "Decorative animation includes reduced-motion handling where movement is not essential.",
+  },
+  {
+    label: "Native Controls",
+    detail: "Core flows use links, buttons, labels, and image alt text instead of purely visual affordances.",
+  },
+  {
+    label: "Build Checks",
+    detail: "Production builds and route checks help catch regressions before changes feel finished.",
+  },
 ];
 
 function Aboutsite() {
@@ -90,11 +105,17 @@ function Aboutsite() {
           <p className="portfolio-kicker">Quality Notes</p>
           <h2>Performance, accessibility, and responsive behavior are part of the work.</h2>
         </div>
-        <ul>
-          {qualityNotes.map((note) => (
-            <li key={note}>{note}</li>
+        <ol>
+          {qualityNotes.map((note, index) => (
+            <li key={note.label}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <h3>{note.label}</h3>
+                <p>{note.detail}</p>
+              </div>
+            </li>
           ))}
-        </ul>
+        </ol>
       </section>
 
       <section className="site-story-section site-story-closing">

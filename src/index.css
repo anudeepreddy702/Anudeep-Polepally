@@ -184,7 +184,7 @@ blockquote {
 
 .page-container {
   animation: fadeIn 0.4s ease-in;
-  padding-top: 30px;
+  padding-top: 30px; 
 }
 
 @media (max-width: 768px) {
